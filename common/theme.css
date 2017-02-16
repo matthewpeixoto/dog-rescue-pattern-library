@@ -5,11 +5,11 @@
   --color-accent: #ff4081;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #c51162;
+  --color-neutral: #656667;
   --color-neutral-light: #f2f2f2;
   --color-neutral-dark: #333;
 
   --font-primary: roboto, sans-serif;
-  --font-secondary: "roboto slab", sans-serif;
 }
 
 html {
@@ -26,8 +26,7 @@ h4,
 h5,
 h6 {
   color: var(--color-primary);
-  font-family: var(--font-secondary);
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -79,6 +78,6 @@ mark {
 
 b,
 strong {
-  color: var(--color-accent);
+  color: var(--color-primary);
   font-weight: 700;
 }

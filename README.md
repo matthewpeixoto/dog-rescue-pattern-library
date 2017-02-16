@@ -4,8 +4,6 @@ fontUrl: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 fonts:
   primary: |
     Roboto's friendly and open curves express the LOYAL brand while it's geometric forms allow it to feel unobtrusive and readable at any size.
-  secondary: |
-    Roboto slab shares the same personality as it's san-serif counterpart but adds some extra personality and emphasis to headings.
 colors:
   primary: |
     The primary colours symbolize trust, loyalty, and faith. Use them for headers, footers, and emphasis.
