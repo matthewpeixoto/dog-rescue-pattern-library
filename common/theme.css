@@ -5,11 +5,83 @@
   --color-accent: #ff4081;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #c51162;
-  --color-grey-light: #f2f2f2;
+  --color-neutral-light: #f2f2f2;
+  --color-neutral-dark: #333;
+
 
   --font-primary: roboto, sans-serif;
+  --font-secondary: "roboto slab", sans-serif;
 }
 
 html {
+  color: var(--neutral-dark);
   font-family: var(--font-primary);
+}
+
+/*Headings*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primary);
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  text-align: center;
+}
+
+/*Lists*/
+
+li {
+  margin-top: .35em;
+}
+
+dt {
+  font-weight: 700;
+  float: left;
+  width: 30%
+}
+
+/*Links*/
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*Blockquotes*/
+
+blockquote {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+blockquote footer,
+cite {
+  font-size: .75rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+q {
+  font-style: italic;
+}
+
+/*Emphasis & edits*/
+
+mark {
+  background-color: #FFF59D;
+}
+
+b,
+strong {
+  color: var(--color-accent);
+  font-weight: 700;
 }
