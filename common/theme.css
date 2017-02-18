@@ -81,3 +81,14 @@ strong {
   color: var(--color-primary);
   font-weight: 700;
 }
+
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  outline: 3px solid var(--color-accent-light)
+}
