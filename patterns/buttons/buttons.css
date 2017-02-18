@@ -1,4 +1,4 @@
-/* Btn */
+/* Important button */
 
 .btn {
   padding: .3em .88em .336em;
@@ -8,6 +8,7 @@
   border: 1px solid var(--color-accent-dark);
 
   font-weight: 400;
+  margin: .55em;
 }
 
 .btn:focus::after,
@@ -34,7 +35,6 @@
 
 .btn-small {
   padding: 0 .88em;
-
 }
 /* Subtle button */
 
@@ -45,6 +45,11 @@
   border: none;
 
   color: var(--color-accent);
+}
+
+.i-arrow {
+  height: 1em;
+  width: .43em;
 }
 
 .btn-subtle:focus,
@@ -59,15 +64,11 @@
   text-decoration: underline;
 }
 
+.btn-subtle:focus::after,
 .btn-subtle:hover::after {
   opacity: 0;
 }
 
 .btn-subtle-large {
   font-weight: 300;
-}
-
-.i-arrow {
-  height: 1em;
-  width: .40625em;
 }
