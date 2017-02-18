@@ -44,7 +44,6 @@
 .btn-subtle:focus,
 .btn-subtle:hover {
   background-color: transparent;
-  border: none;
 
   color: var(--color-accent);
 }
@@ -64,5 +63,5 @@
 
 .i-arrow {
   height: 1em;
-  width: .40625em
+  width: .40625em;
 }
