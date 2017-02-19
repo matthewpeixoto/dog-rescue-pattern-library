@@ -3,9 +3,10 @@
   --color-primary-light: #c5cae9;
   --color-primary-dark: #303f9f;
   --color-accent: #ff4081;
+  --color-accent-ultralight: #fcc3d8;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #f50057;
-  --color-neutral: #888;
+  --color-neutral: #666;
   --color-neutral-light: #f2f2f2;
   --color-neutral-dark: #333;
 
@@ -13,7 +14,7 @@
 }
 
 html {
-  color: var(--neutral-dark);
+  color: var(--color-neutral-dark);
   font-family: var(--font-primary);
 }
 
@@ -27,17 +28,6 @@ h5,
 h6 {
   color: var(--color-primary);
   font-weight: 500;
-  text-align: center;
-}
-
-/* Lists */
-
-li {
-  margin-top: .35em;
-}
-
-dt {
-  font-weight: 700;
 }
 
 /* Links */
@@ -54,16 +44,13 @@ a:hover {
 /* Blockquotes */
 
 blockquote {
-  font-size: 1.25rem;
   font-weight: 300;
-  text-align: center;
 }
 
 blockquote footer,
 cite {
-  font-size: .75rem;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 q {
@@ -73,22 +60,18 @@ q {
 /* Emphasis & edits */
 
 mark {
-  background-color: #fff59d;
+  background-color: var(--color-accent-ultralight);
 }
 
 b,
+dt,
 strong {
   color: var(--color-primary);
   font-weight: 700;
 }
 
-a:focus,
-[tabindex="0"]:focus,
-details:focus,
-summary:focus,
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  outline: 3px solid var(--color-accent-light)
+dfn,
+em,
+i {
+  font-style: normal;
 }
