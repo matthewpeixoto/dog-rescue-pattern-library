@@ -35,13 +35,10 @@
   padding: 0 .88em;
 }
 
-/* Subtle button */
+/* Link button */
 
-.btn-subtle {
-  padding: 0;
-
+.btn-link {
   background: transparent;
-  border-radius: 0;
   border: none;
 
   color: var(--color-accent);
@@ -52,23 +49,23 @@
   width: .43em;
 }
 
-.btn-subtle:focus,
-.btn-subtle:hover {
+.btn-link:focus,
+.btn-link:hover {
   background-color: transparent;
 
   color: var(--color-accent);
 }
 
-.btn-subtle:hover .icon-text {
+.btn-link:hover .icon-text {
   text-decoration: underline;
 }
 
-.btn-subtle:focus::after,
-.btn-subtle:hover::after {
+.btn-link:focus::after,
+.btn-link:hover::after {
   opacity: 0;
 }
 
-.btn-subtle-large {
+.btn-link-thin {
   font-weight: 300;
 }
 

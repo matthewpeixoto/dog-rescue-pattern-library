@@ -41,6 +41,13 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Lists */
+
+ul,
+ol {
+  margin: 0 0 0 1.3rem;
+}
+
 /* Blockquotes */
 
 blockquote {
@@ -64,9 +71,8 @@ mark {
 }
 
 b,
-dt,
-strong {
-  color: var(--color-primary);
+strong,
+dt {
   font-weight: 700;
 }
 
