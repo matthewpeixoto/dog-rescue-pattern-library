@@ -1,0 +1,41 @@
+body {
+  background-color: var(--color-neutral-light);
+}
+
+.card {
+  background-color: var(--color-neutral-light);
+  border: 2px solid #fff;
+  height: 12em;
+}
+
+.card-content {
+  max-width: 17em;
+}
+
+.link-card {
+  background-color: #fff;
+
+  color: var(--color-neutral-dark);
+}
+
+.link-card:hover {
+  text-decoration: none;
+}
+
+.card-btn {
+  color: var(--color-neutral-dark);
+}
+
+.number {
+  color: var(--color-neutral);
+  letter-spacing: .1em;
+}
+
+.bullet::before {
+  content: " • ";
+}
+
+.link-card:hover .card-btn {
+  color: var(--color-accent);
+  text-decoration: none;
+}

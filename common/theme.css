@@ -3,17 +3,19 @@
   --color-primary-light: #c5cae9;
   --color-primary-dark: #303f9f;
   --color-accent: #ff4081;
-  --color-accent-ultralight: #fcc3d8;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #f50057;
-  --color-neutral: #666;
+  --color-accent-highlight: #fcc3d8;
+  --color-neutral: #888;
   --color-neutral-light: #f2f2f2;
   --color-neutral-dark: #333;
 
   --font-primary: roboto, sans-serif;
 }
 
-html {
+body {
+  min-width: 320px;
+
   color: var(--color-neutral-dark);
   font-family: var(--font-primary);
 }
@@ -41,11 +43,26 @@ a:hover {
   text-decoration: underline;
 }
 
+a:focus,
+[tabindex="0"]:focus,
+details:focus,
+summary:focus,
+input:focus,
+textarea:focus,
+button:focus,
+select:focus {
+  box-shadow: 0 0 0 3px var(--color-accent-ultralight);
+  outline: none;
+}
+
 /* Lists */
 
-ul,
-ol {
-  margin: 0 0 0 1.3rem;
+li {
+  margin-top: .35em;
+}
+
+li:first-child {
+  margin-top: 0;
 }
 
 /* Blockquotes */
