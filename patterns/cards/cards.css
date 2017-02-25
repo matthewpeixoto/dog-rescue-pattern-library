@@ -1,19 +1,11 @@
-body {
-  background-color: var(--color-neutral-light);
-}
-
 .card {
   background-color: var(--color-neutral-light);
   border: 2px solid #fff;
   height: 12em;
 }
 
-.card-content {
-  max-width: 17em;
-}
-
 .link-card {
-  background-color: #fff;
+  background-color: var(--color-neutral-light);
 
   color: var(--color-neutral-dark);
 }
@@ -22,13 +14,12 @@ body {
   text-decoration: none;
 }
 
-.card-btn {
-  color: var(--color-neutral-dark);
-}
+.card-list {
+  margin: 0;
 
-.number {
   color: var(--color-neutral);
   letter-spacing: .1em;
+  text-transform: uppercase;
 }
 
 .bullet::before {

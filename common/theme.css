@@ -57,12 +57,9 @@ select:focus {
 
 /* Lists */
 
-li {
-  margin-top: .35em;
-}
-
-li:first-child {
-  margin-top: 0;
+ul,
+ol {
+  margin: 0 0 0 1.3rem;
 }
 
 /* Blockquotes */
