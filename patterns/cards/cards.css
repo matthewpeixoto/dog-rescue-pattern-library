@@ -1,32 +1,36 @@
 .card {
-  background-color: var(--color-neutral-light);
-  border: 2px solid #fff;
-  height: 12em;
-}
-
-.link-card {
-  background-color: var(--color-neutral-light);
-
+  cursor: pointer;
   color: var(--color-neutral-dark);
 }
 
-.link-card:hover {
+.card:hover {
   text-decoration: none;
 }
 
-.card-list {
-  margin: 0;
-
-  color: var(--color-neutral);
-  letter-spacing: .1em;
-  text-transform: uppercase;
-}
-
-.bullet::before {
-  content: " • ";
-}
-
-.link-card:hover .card-btn {
+.card:hover .card-title {
   color: var(--color-accent);
-  text-decoration: none;
+}
+
+.basic-card {
+  height: 12em;
+
+  background-color: var(--color-neutral-light);
+  border: 2px solid #fff;
+}
+
+.dog-desc {
+  margin-left: 0;
+  color: var(--color-neutral);
+}
+
+.card-background {
+  background-color: var(--color-neutral-light);
+}
+
+.info-card {
+  background-color: #fff;
+}
+
+.slash::before {
+  content: " / "
 }
