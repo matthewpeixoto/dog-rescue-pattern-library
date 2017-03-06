@@ -18,19 +18,10 @@
   border: 2px solid #fff;
 }
 
-.dog-desc {
-  margin-left: 0;
-  color: var(--color-neutral);
-}
-
-.card-background {
-  background-color: var(--color-neutral-light);
-}
-
-.info-card {
+.dog-info-card {
   background-color: #fff;
 }
 
-.slash::before {
-  content: " / ";
+.dog-info-card-background {
+  background-color: var(--color-neutral-light);
 }
