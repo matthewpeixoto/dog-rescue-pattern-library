@@ -16,24 +16,13 @@
 
   <form class="grid max-length pad-t pad-b" method="post" novalidate>
 
-    <div class="unit xs-1 push-1-2 relative">
-      <label for="province">Province</label>
-      <select class="gutter-1-2 push-1-2" id="province" required aria-describedby="email-error"></label>
-        <option>Alberta</option>
-        <option>British Columbia</option>
-        <option>Manitoba</option>
-        <option>New Brunswick</option>
-        <option>Newfoundland and Labrador</option>
-        <option>Nova Scotia</option>
-        <option>Ontario</option>
-        <option>Prince Edward Island</option>
-        <option>Quebec</option>
-        <option>Saskatchewan</option>
-      </select>
-      <p class="error-message island-1-4 push-0 relative " id="email-error">
+    <div class="unit xs-1 push-1-2 relative gutter-1-4">
+      <input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="first-name-error">
+      <label for="agree">Agree to the terms and conditions.</label>
+      <p class="error-message island-1-4 push-0 relative milli" id="email-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter a valid email address.</span>
+        <span class="icon-label">Please enter your first name.</span>
       </p>
     </div>
 
