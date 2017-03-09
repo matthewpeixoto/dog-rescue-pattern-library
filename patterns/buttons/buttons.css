@@ -71,15 +71,3 @@
 .btn-subtle-large {
   font-weight: 300;
 }
-
-a:focus,
-[tabindex="0"]:focus,
-details:focus,
-summary:focus,
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  box-shadow: 0 0 0 3px var(--color-accent-ultralight);
-  outline: none;
-}

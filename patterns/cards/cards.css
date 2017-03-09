@@ -22,6 +22,10 @@
   background-color: #fff;
 }
 
+.dog-info-list {
+  margin: 0;
+}
+
 .dog-info-card-background {
   background-color: var(--color-neutral-light);
 }

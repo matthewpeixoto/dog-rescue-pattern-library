@@ -1,0 +1,20 @@
+.billboard {
+  background-color: var(--color-neutral-light);
+}
+/*
+.billboard-content {
+  height: 344px;
+}
+
+.billboard-img {
+  height: 215px;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .billboard-content,
+  .billboard-img {
+    height: 384px;
+  }
+
+}*/
