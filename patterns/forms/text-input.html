@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Inputs</title>
+  <title>Input</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
@@ -19,32 +19,34 @@
     <div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
       <label for="first-name">First Name</label>
       <input class="gutter-1-2 push-1-2" id="first-name" placeholder="first name" required aria-describedby="first-name-error">
-      <p class="error-message island-1-4 push-0 relative milli" id="email-error">
+      <p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter your first name.</span>
+        <span class="icon-label">Enter a first name.</span>
       </p>
     </div>
 
     <div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
       <label for="last-name">Last Name</label>
       <input class="gutter-1-2 push-1-2" id="last-name" placeholder="last name" required aria-describedby="last-name-error">
-      <p class="error-message island-1-4 push-0 relative milli" id="email-error">
+      <p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter your last name.</span>
+        <span class="icon-label">Enter a last name.</span>
       </p>
     </div>
 
     <div class="unit xs-1 s-1 push-1-2 relative gutter-1-4">
       <label for="email">Email</label>
       <input class="gutter-1-2 push-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
-      <p class="error-message island-1-4 push-0 relative milli" id="email-error">
+      <p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter a valid email address.</span>
+        <span class="icon-label">Enter a valid email address.</span>
       </p>
     </div>
+
+    <button type="submit">Submit</button>
 
   </form>
 

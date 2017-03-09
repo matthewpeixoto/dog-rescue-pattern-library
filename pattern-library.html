@@ -583,6 +583,7 @@
       <h2 class="pattern-name peta push-1-8">Forms</h2>
         <nav class="pattern-nav milli">
           <ol class="list-group-inline pad-t-1-4 push-0">
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#forms-checkbox">Checkbox</a></li>
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#forms-select-box">Select box</a></li>
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#forms-text-input">Text input</a></li>
           </ol>
@@ -593,6 +594,37 @@
 
   
 
+    <div class="pattern-details push" id="forms-checkbox">
+        <div class="push">
+          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
+            <h3 class="pattern-name tera push-1-8">Checkbox</h3>
+          </div>
+        </div>
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/forms/checkbox.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form class="grid max-length pad-t pad-b" method="post" novalidate=""&gt;
+
+  &lt;div class="unit xs-1 push-1-2 relative gutter-1-4">
+    &lt;input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="first-name-error">
+    &lt;label for="agree">Agree to the terms and conditions.&lt;/label>
+    &lt;p class="error-message island-1-4 push-0 relative milli" id="email-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please enter your first name.&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details push" id="forms-select-box">
         <div class="push">
           <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
@@ -652,18 +684,18 @@
 
   &lt;div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
     &lt;label for="first-name">First Name&lt;/label>
-    &lt;input class="gutter-1-2 push-1-2" id="first-name" placeholder="first name" required aria-describedby="email-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli" id="email-error">
+    &lt;input class="gutter-1-2 push-1-2" id="first-name" placeholder="first name" required aria-describedby="first-name-error">
+    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
       &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+
       &lt;span class="icon-label">Please enter your first name.&lt;/span>
     &lt;/p>
   &lt;/div>
 
   &lt;div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
     &lt;label for="last-name">Last Name&lt;/label>
-    &lt;input class="gutter-1-2 push-1-2" id="last-name" placeholder="last name" required aria-describedby="email-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli" id="email-error">
+    &lt;input class="gutter-1-2 push-1-2" id="last-name" placeholder="last name" required aria-describedby="last-name-error">
+    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
       &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Please enter your last name.&lt;/span>
@@ -673,16 +705,14 @@
   &lt;div class="unit xs-1 s-1 push-1-2 relative gutter-1-4">
     &lt;label for="email">Email&lt;/label>
     &lt;input class="gutter-1-2 push-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli" id="email-error">
+    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
       &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Please enter a valid email address.&lt;/span>
     &lt;/p>
   &lt;/div>
 
-  &lt;div class="unit xs-1 pad-t-1-2 text-center">
-    &lt;button class="btn " type="submit">Submit application&lt;/button>
-  &lt;/div>
+  &lt;button type="submit">Submit&lt;/button>
 
 &lt;/form>
 </pre></code>
