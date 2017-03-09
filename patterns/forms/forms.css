@@ -11,6 +11,10 @@ select:focus {
   border-color: var(--color-accent);
 }
 
+label {
+  color: #666;
+}
+
 .is-validated input:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   background-color: #fff8e1;
@@ -18,20 +22,23 @@ select:focus {
 
 .error-message {
   display: none;
+  margin-top: 9px;
+
   background-color: #ffecb3;
-  border: 1px solid #ffc107;
   border-radius: 4px;
+  border: 1px solid #ffc107;
 }
 
 .error-message-highlighted {
   background-color: #ffecb3;
+
   color: #fff;
 }
 
 .is-validated > .error-message:first-child,
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
-  display: block;
+  display: inline-block;
 }
 
 ::-webkit-input-placeholder {
@@ -39,34 +46,31 @@ select:focus {
 }
 
 .warning-arrow {
-  height: 12px;
+  height: 13px;
   left: calc(50% - 12px);
   top: -12px;
   width: 24px;
 }
 
-.warning-arrow-2 {
-  fill: #fff;
-}
-
 input[type="checkbox"] + label::before {
-  content: " ";
-  display: inline-block;
   height: 1em;
-  margin-right: .3em;
-  position: relative;
-  vertical-align: middle;
-  top: -.1em;
+  margin-right: .6em;
   width: 1em;
 }
 
 input[type="checkbox"]:checked + label::before {
   background-color: var(--color-accent);
-  border-color: var(--color-accent);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='btn-subtle-arrow' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23fff' d='M49.6 134.7l16.8-16.8 44.6 44.5 90.5-90.5 16.8 16.8L110.9 196l-61.3-61.3z'/%3E%3C/svg%3E");
+  border-color: var(--color-accent);
 }
 
 input[type="checkbox"]:focus + label::before {
   box-shadow: 0 0 0 3px var(--color-accent-highlight);
   outline: none;
+}
+
+select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='btn-subtle-arrow' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23919191' d='M220.6 56.3L128 148.9 35.4 56.3 10 81.7l118 118 118-118-25.4-25.4z'/%3E%3C/svg%3E");
+  background-position: calc(100% - .84em) center;
+  background-size: 9px auto;
 }
