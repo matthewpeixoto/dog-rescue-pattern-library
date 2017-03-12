@@ -3,10 +3,6 @@
   color: var(--color-neutral-dark);
 }
 
-.card:hover {
-  text-decoration: none;
-}
-
 .card:hover .card-title {
   color: var(--color-accent);
 }

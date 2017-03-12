@@ -1,3 +1,65 @@
+/*Hero banner*/
+
+.hero-container {
+  height: calc(100vh - 128px);
+  max-height: 640px;
+  min-height: 420px;
+
+  background-color: var(--color-neutral-light);
+}
+
+.hero-content {
+  height: 40%;
+}
+
+.hero-image {
+  top: 40%;
+
+  background-image: url("../../images/billboard-img.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.btn-subtle:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .hero-container {
+    max-height: 960px;
+    min-height: 500px;
+}
+
+@media only screen and (min-width: 67em) {
+
+  .hero-container {
+    max-height: 100%;
+    min-height: 540px;
+  }
+
+  .hero-content {
+    height: 30%;
+  }
+
+  .hero-image {
+    top: 30%;
+  }
+
+}
+
+
+@media only screen and (min-width: 90em) {
+
+  .hero-container {
+    height: calc(100vh - 248px);
+  }
+
+}
+
+/*Billboard*/
+
 .billboard {
   background-color: var(--color-neutral-light);
 }

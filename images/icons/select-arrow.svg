@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="btn-subtle-arrow" width="256" height="256" viewBox="0 0 256 256"><path fill="#919191" d="M220.6 56.3L128 148.9 35.4 56.3 10 81.7l118 118 118-118-25.4-25.4z"/></svg>
+<svg id="btn-subtle-arrow" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><title>select-arrow</title><polygon points="220.6 56.3 128 148.9 35.4 56.3 10 81.7 128 199.7 246 81.7 220.6 56.3" fill="#919191"/></svg>

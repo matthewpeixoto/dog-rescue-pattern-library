@@ -25,6 +25,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#navigation">Navigation</a></li>
           </ul>
         </nav>
       </div>
@@ -411,17 +412,28 @@
   <div class="push">
     <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
       <h2 class="pattern-name peta push-1-8">Banners</h2>
+        <nav class="pattern-nav milli">
+          <ol class="list-group-inline pad-t-1-4 push-0">
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#banners-billboard">Billboard</a></li>
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#banners-hero-banner">Hero banner</a></li>
+          </ol>
+        </nav>
     </div>
 
   </div>
 
   
 
-    <div class="pattern-details push" id="banners-section-banner">
+    <div class="pattern-details push" id="banners-billboard">
+        <div class="push">
+          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
+            <h3 class="pattern-name tera push-1-8">Billboard</h3>
+          </div>
+        </div>
 
       <div class="pattern-examples">
         <div class="gutter">
-          <iframe class="push" src="patterns/banners/section-banner.html" onload="resizeIframe(this)"></iframe>
+          <iframe class="push" src="patterns/banners/billboard.html" onload="resizeIframe(this)"></iframe>
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
@@ -435,6 +447,38 @@
     &lt;/div>
   &lt;/div>
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details push" id="banners-hero-banner">
+        <div class="push">
+          <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
+            <h3 class="pattern-name tera push-1-8">Hero banner</h3>
+          </div>
+        </div>
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/banners/hero-banner.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;article class="hero-container relative"&gt;
+  &lt;a class="hero-link block w-1 h-1 icon-link" href="#">
+    &lt;div class="hero-content center-contents text-center pad-t-2">
+      &lt;h2 class="exa push-1-4 icon-link">Find your perfect companion.&lt;/h2>
+      &lt;span class="btn btn-subtle btn-subtle-large giga" href="#">
+          &lt;span class="icon-text">View available dogs&lt;/span>
+      &lt;i class="icon i-arrow">
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+          &lt;/i>
+      &lt;/span>
+    &lt;/div>
+    &lt;figure class="hero-image absolute pin-bl pin-br push-0">&lt;/figure>
+  &lt;/a>
+&lt;/article>
 </pre></code>
             </div>
           </div>
@@ -531,7 +575,7 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;a class="card basic-card block island text-center"&gt;
+              <code><pre>&lt;a class="card basic-card block island text-center icon-link"&gt;
   &lt;div class="card-content wrapper">
     &lt;h2 class="card-title push-1-8 mega">Newsletter&lt;/h2>
     &lt;p class="push-0">Join our weekly newsletter!&lt;/p>
@@ -558,7 +602,7 @@
               <code><pre>&lt;ul class="dog-info-card-background dog-info-list island-2"&gt;
 
   &lt;li class="unit-content-distribute list-group island-1-4">
-    &lt;a href="#" class="card dog-info-card block text-center content-fill unit-content-distribute island-2">
+    &lt;a href="#" class="card dog-info-card icon-link block text-center content-fill unit-content-distribute island-2">
       &lt;div class="pad-t push-2">
         &lt;img class="img-flex" src="http://placehold.it/275x275" alt="">
       &lt;/div>
@@ -641,7 +685,7 @@
               <code><pre>&lt;form class="grid max-length pad-t pad-b" method="post" novalidate=""&gt;
 
   &lt;div class="unit xs-1 push-1-2 relative">
-    &lt;label class="micro" for="province">Province&lt;/label>
+    &lt;label class="milli" for="province">Province&lt;/label>
     &lt;select class="gutter-1-2 push-1-2" id="province" required aria-describedby="email-error">
       &lt;option>Alberta&lt;/option>
       &lt;option>British Columbia&lt;/option>
@@ -680,13 +724,13 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;form class="grid max-length pad-t pad-b" method="post" novalidate=""&gt;
+              <code><pre>&lt;form class="grid max-length pad-t-2 pad-b-2 gutter-1-2" method="post" novalidate=""&gt;
 
   &lt;div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
     &lt;label class="milli" for="first-name">First Name&lt;/label>
-    &lt;input class="gutter-1-2 push-1-2" id="first-name" placeholder="first name" required aria-describedby="first-name-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow-2"/>&lt;/svg>&lt;/i>
+    &lt;input class="gutter-1-2" id="first-name" required aria-describedby="first-name-error">
+    &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Enter a first name.&lt;/span>
     &lt;/p>
@@ -694,9 +738,9 @@
 
   &lt;div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
     &lt;label class="milli" for="last-name">Last Name&lt;/label>
-    &lt;input class="gutter-1-2 push-1-2" id="last-name" placeholder="last name" required aria-describedby="last-name-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow-2"/>&lt;/svg>&lt;/i>
+    &lt;input class="gutter-1-2" id="last-name" required aria-describedby="last-name-error">
+    &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Enter a last name.&lt;/span>
     &lt;/p>
@@ -704,9 +748,9 @@
 
   &lt;div class="unit xs-1 s-1 push-1-2 relative gutter-1-4">
     &lt;label class="milli" for="email">Email&lt;/label>
-    &lt;input class="gutter-1-2 push-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
-    &lt;p class="error-message island-1-4 push-0 relative milli text-center" id="email-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow-2"/>&lt;/svg>&lt;/i>
+    &lt;input class="gutter-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
+    &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
       &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Enter a valid email address.&lt;/span>
     &lt;/p>
@@ -715,6 +759,55 @@
   &lt;button type="submit">Submit&lt;/button>
 
 &lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="navigation">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Navigation</h2>
+    </div>
+
+  </div>
+
+  
+
+    <div class="pattern-details push" id="navigation-navigation">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/navigation/navigation.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;header role="banner" class="masthead grid grid-middle"&gt;
+  &lt;div class="logo-wrapper unit [ xs-1 s-1-4 ] text-center">
+    &lt;a class="block ib">
+      &lt;h1 class="logo push-0 ir ib">Loyal Rescue&lt;/h1>
+    &lt;/a>
+  &lt;/div>
+  &lt;div class="nav-wrapper unit [ xs-1 s-3-4 ]">
+    &lt;input type="checkbox" class="nav-check absolute" id="nav-check">
+    &lt;label for="nav-check" class="nav-label absolute pin-tl">
+      &lt;span class="nav-icon nav-icon-top block absolute">&lt;/span>
+      &lt;span class="nav-icon nav-icon-bottom block absolute">&lt;/span>
+    &lt;/label>
+    &lt;nav role="navigation" class="nav" id="nav">
+      &lt;ul class="list-group push-0">
+        &lt;li>&lt;a class="link-box island" href="#">Adopt&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link-box island" href="#">Donate&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link-box island" href="#">Blog&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link-box island" href="#">About&lt;/a>&lt;/li>
+        &lt;li>&lt;a class="link-box island" href="#">Contact&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/nav>
+  &lt;/div>
+&lt;/header>
 </pre></code>
             </div>
           </div>

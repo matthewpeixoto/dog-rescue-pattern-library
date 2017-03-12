@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" id="btn-subtle-arrow" width="256" height="256" viewBox="0 0 256 256"><path fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="8" d="M96 160l64-64m-64 0l64 64"/></svg>
+<svg id="btn-subtle-arrow" xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256"><title>nav-close</title><line x1="96" y1="160" x2="160" y2="96" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="8"/><line x1="96" y1="96" x2="160" y2="160" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="8"/></svg>

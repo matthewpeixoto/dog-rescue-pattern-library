@@ -12,12 +12,12 @@ select:focus {
 }
 
 label {
-  color: #666;
+  color: var(--color-neutral);
 }
 
 .is-validated input:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
-  background-color: #fff8e1;
+  background-color: #fffde7;
 }
 
 .error-message {
