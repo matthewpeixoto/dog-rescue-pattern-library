@@ -63,12 +63,13 @@
 .billboard {
   background-color: var(--color-neutral-light);
 }
-/*
+
+
 .billboard-content {
   height: 344px;
 }
 
-.billboard-img {
+.billboard-image {
   height: 215px;
 }
 
@@ -79,4 +80,4 @@
     height: 384px;
   }
 
-}*/
+}

@@ -1,14 +1,21 @@
 input,
 input[type="checkbox"] + label::before,
-select {
+select,
+textarea {
   border-radius: 4px;
   border: 1px solid #d6d6d6;
 }
 
 input:focus,
 input[type="checkbox"]:focus + label::before,
-select:focus {
+select:focus,
+textarea:focus {
   border-color: var(--color-accent);
+}
+
+fieldset {
+  border-bottom: 1px solid #e7e7e8;
+  border-top: none;
 }
 
 label {
@@ -45,6 +52,18 @@ label {
   color: #b3b3b3;
 }
 
+::-moz-placeholder {
+  color: #b3b3b3;
+}
+
+:-ms-input-placeholder {
+  color: #b3b3b3;
+}
+
+:-moz-placeholder {
+  color: #b3b3b3;
+}
+
 .warning-arrow {
   height: 13px;
   left: calc(50% - 12px);
@@ -73,4 +92,16 @@ select {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='btn-subtle-arrow' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23919191' d='M220.6 56.3L128 148.9 35.4 56.3 10 81.7l118 118 118-118-25.4-25.4z'/%3E%3C/svg%3E");
   background-position: calc(100% - .84em) center;
   background-size: 9px auto;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .space-right {
+    padding-right: .3rem;
+  }
+
+  .space-left {
+    padding-left: .3rem;
+  }
+
 }

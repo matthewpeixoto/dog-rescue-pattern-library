@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Input</title>
+  <title>Text Input</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
@@ -14,39 +14,48 @@
 </head>
 <body>
 
-  <form class="grid max-length pad-t-2 pad-b-2 gutter-1-2" method="post" novalidate>
+  <form class="gutter-1-2 pad-t-2 pad-b-2 max-length" method="POST" novalidate>
+    <fieldset class="push pad-t pad-b">
+      <div class="grid">
+        <div class="unit xs-1 s-1-2 relative push-1-2 space-right">
+          <label class="milli" for="first-name">First Name</label>
+          <input class="gutter-1-2" id="first-name" required aria-describedby="first-name-error">
+          <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+            <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Enter a first name.</span>
+          </p>
+        </div>
+        <div class="unit xs-1 s-1-2 relative push-1-2 space-left">
+          <label class="milli" for="last-name">Last Name</label>
+          <input class="gutter-1-2" id="last-name" required aria-describedby="last-name-error">
+          <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+            <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Enter a last name.</span>
+          </p>
+        </div>
+        <div class="unit xs-1 s-1 relative push-1-2">
+          <label class="milli" for="email">Email</label>
+          <input class="gutter-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
+          <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli" id="email-error">
+            <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+            <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+            <span class="icon-label">Enter a valid email address.</span>
+          </p>
+        </div>
+      </div>
+    </fieldset>
 
-    <div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
-      <label class="milli" for="first-name">First Name</label>
-      <input class="gutter-1-2" id="first-name" required aria-describedby="first-name-error">
-      <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
-        <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Enter a first name.</span>
-      </p>
-    </div>
-
-    <div class="unit xs-1 s-1-2 push-1-2 relative gutter-1-4">
-      <label class="milli" for="last-name">Last Name</label>
-      <input class="gutter-1-2" id="last-name" required aria-describedby="last-name-error">
-      <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
-        <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Enter a last name.</span>
-      </p>
-    </div>
-
-    <div class="unit xs-1 s-1 push-1-2 relative gutter-1-4">
-      <label class="milli" for="email">Email</label>
-      <input class="gutter-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
-      <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="email-error">
+    <div class="relative push-1-2">
+      <label class="milli" for="text-area">If there is no fence and gate, how you will keep your dog secure on your property?</label>
+      <textarea class="gutter-1-2" id="text-area" required aria-describedby="text-area-error"></textarea>
+      <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="text-area-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
         <span class="icon-label">Enter a valid email address.</span>
       </p>
     </div>
-
-    <button type="submit">Submit</button>
 
   </form>
 

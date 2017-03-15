@@ -1,7 +1,5 @@
 :root {
   --color-primary: #3f51b5;
-  --color-primary-light: #c5cae9;
-  --color-primary-dark: #303f9f;
   --color-accent: #ff4081;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #f50057;
@@ -43,24 +41,7 @@ a:hover {
   text-decoration: underline;
 }
 
-a:focus,
-[tabindex="0"]:focus,
-details:focus,
-summary:focus,
-input:focus,
-textarea:focus,
-button:focus,
-select:focus {
-  box-shadow: 0 0 0 3px var(--color-accent-ultralight);
-  outline: none;
-}
-
 /* Lists */
-
-ul,
-ol {
-  margin: 0 0 0 1.3rem;
-}
 
 /* Blockquotes */
 

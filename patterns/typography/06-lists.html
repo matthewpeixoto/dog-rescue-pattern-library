@@ -4,6 +4,9 @@
   <meta charset="utf-8">
   <title>Typography</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    html { color: rgb(var(--color-patternbot-interface), var(--color-patternbot-interface), var(--color-patternbot-interface)); }
+  </style>
   <link href="modulifier.min.css" rel="stylesheet">
     <link href="../../common/modules.css" rel="stylesheet">
   <link href="gridifier.min.css" rel="stylesheet">
@@ -19,18 +22,38 @@
   <div class="gutter text-left">
 
   <ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
-    <li><code>&lt;blockquote&gt;</code></li>
-    <li><code>&lt;cite&gt;</code></li>
+    <li><code>&lt;ul&gt;</code></li>
+    <li><code>&lt;li&gt;</code></li>
   </ul>
-  <blockquote>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
-    <footer>— <cite>Citing a person</cite></footer>
-  </blockquote>
+  <ul>
+    <li>List item 1</li>
+    <li>List item 1</li>
+    <li>List item 1</li>
+    <li>List item 1</li>
+  </ul>
 
   <ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
-    <li><code>&lt;q&gt;</code></li>
+    <li><code>&lt;ol&gt;</code></li>
+    <li><code>&lt;li&gt;</code></li>
   </ul>
-  <p>This is a paragraph with <q>An amazing quote</q> inside</p>
+  <ol>
+    <li>List item 1</li>
+    <li>List item 1</li>
+    <li>List item 1</li>
+    <li>List item 1</li>
+  </ol>
+
+  <ul class="patternbot-code-details list-group-inline micro push-1-2 pad-t">
+    <li><code>&lt;dl&gt;</code></li>
+    <li><code>&lt;dt&gt;</code></li>
+    <li><code>&lt;dd&gt;</code></li>
+  </ul>
+  <dl>
+    <dt>List item 1</dt>
+    <dd>List item 1</dd>
+    <dt>List item 1</dt>
+    <dd>List item 1</dd>
+  </dl>
 
 </div>
 
