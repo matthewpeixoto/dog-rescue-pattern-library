@@ -2,7 +2,7 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Select Box</title>
+  <title>Text Input</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="../../common/modules.css" rel="stylesheet">
   <link href="../../common/grid.css" rel="stylesheet">
@@ -14,26 +14,15 @@
 </head>
 <body>
 
-  <form class="grid max-length pad-t pad-b" method="post" novalidate>
+  <form class="gutter-1-2 pad-t-2 pad-b-2 max-length" method="POST" novalidate>
 
-    <div class="unit xs-1 push-1-2 relative">
-      <label class="milli" for="province">Province</label>
-      <select class="gutter-1-2 push-1-2" id="province" required aria-describedby="email-error"></label>
-        <option>Alberta</option>
-        <option>British Columbia</option>
-        <option>Manitoba</option>
-        <option>New Brunswick</option>
-        <option>Newfoundland and Labrador</option>
-        <option>Nova Scotia</option>
-        <option>Ontario</option>
-        <option>Prince Edward Island</option>
-        <option>Quebec</option>
-        <option>Saskatchewan</option>
-      </select>
-      <p class="error-message island-1-4 push-0 relative " id="email-error">
+    <div class="relative push-1-2">
+      <label class="milli" for="text-area">If there is no fence and gate, how you will keep your dog secure on your property?</label>
+      <textarea class="gutter-1-2" id="text-area" required aria-describedby="text-area-error"></textarea>
+      <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="text-area-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter a valid email address.</span>
+        <span class="icon-label">Enter a valid email address.</span>
       </p>
     </div>
 

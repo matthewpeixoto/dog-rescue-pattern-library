@@ -620,10 +620,6 @@
       </nav>
   </div>
 
-    <div class="pattern-desc milli island">
-      <div class="max-length"><p>Banners are a great way to call action</p>
-</div>
-    </div>
 
   
 
@@ -639,7 +635,7 @@
             </div>
         </div>
           <div class="pattern-desc milli island">
-            <div class="max-length"><p>Info cards should be used to display dogs and their basic information. These cards link the user to the dogs full page where they can learn more details and choose to adopt.</p>
+            <div class="max-length"><p>The billboard is used to provide visual context for inside pages. The billboard features a relevant photo and page title.</p>
 </div>
           </div>
 
@@ -669,7 +665,7 @@
     &lt;div class="billboard-info w-1 pad-t-2 text-center">
       &lt;h2 class="push-0">Find your perfect companion.&lt;/h2>
     &lt;/div>
-    &lt;div>
+    &lt;div class="billboard-img">
       &lt;img class="img-flex" src="../../images/billboard-img.jpg" alt="">
     &lt;/div>
   &lt;/div>
@@ -691,7 +687,7 @@
             </div>
         </div>
           <div class="pattern-desc milli island">
-            <div class="max-length"><p>The basic card is used for call-to-actions on the homepage and gives users a window into inside pages.</p>
+            <div class="max-length"><p>The hero banner is used on the homepage and is the first visual a visitor encounters on the site. The hero banner&#39;s purpose is to present an overview of the site&#39;s most important content.</p>
 </div>
           </div>
 
@@ -893,7 +889,7 @@
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
-          <div class="resizeable-pattern relative" style="">
+          <div class="resizeable-pattern relative" style="width:400px">
             <iframe src="patterns/cards/info-card.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
@@ -939,16 +935,100 @@
     <h2 class="pattern-name peta push-1-4">Forms</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
+            <li><a href="#forms-basic-input">Basic input</a></li>
             <li><a href="#forms-checkbox">Checkbox</a></li>
             <li><a href="#forms-select-box">Select box</a></li>
-            <li><a href="#forms-text-input">Text input</a></li>
+            <li><a href="#forms-textarea">Textarea</a></li>
         </ol>
       </nav>
   </div>
 
+    <div class="pattern-desc milli island">
+      <div class="max-length"><p>Forms can be daunting but they are a crucial aspect in the aspect. These form elements carry a subtle and refined design that help create a more pleasant experience for users.</p>
+</div>
+    </div>
 
   
 
+    <div class="pattern-details" id="forms-basic-input">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Basic input</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/forms/basic-input.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>Basic input is used for simple, short, and single-line text inputs.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/basic-input.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form class="gutter-1-2 pad-t-2 pad-b-2 max-length" method="POST" novalidate=""&gt;
+  &lt;div class="grid">
+
+    &lt;div class="unit xs-1 s-1-2 relative push-1-2 space-right">
+      &lt;label class="milli" for="first-name">First Name&lt;/label>
+      &lt;input class="gutter-1-2" id="first-name" required aria-describedby="first-name-error">
+      &lt;p class="error-message pin-bl gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+        &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Enter a first name.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="unit xs-1 s-1-2 relative push-1-2 space-left">
+      &lt;label class="milli" for="last-name">Last Name&lt;/label>
+      &lt;input class="gutter-1-2" id="last-name" required aria-describedby="last-name-error">
+      &lt;p class="error-message pin-bl gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+        &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Enter a last name.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+    &lt;div class="unit xs-1 s-1 relative push-1-2">
+      &lt;label class="milli" for="email">Email&lt;/label>
+      &lt;input class="gutter-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
+      &lt;p class="error-message pin-bl gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli" id="email-error">
+        &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Enter a valid email address.&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="pad-t-1-2">
+      &lt;button class="btn" type="submit">Send&lt;/button>
+    &lt;/div>
+
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="forms-checkbox">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
           <h3 class="pattern-name tera push-1-8">Checkbox</h3>
@@ -960,6 +1040,10 @@
               </a>
             </div>
         </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>Checkboxes allow a selection of multiple items out of a few possibilities.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -1011,6 +1095,10 @@
               </a>
             </div>
         </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>Select boxes allow a user to pick one option of many.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -1062,22 +1150,26 @@
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="forms-text-input">
+    <div class="pattern-details" id="forms-textarea">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
-          <h3 class="pattern-name tera push-1-8">Text input</h3>
+          <h3 class="pattern-name tera push-1-8">Textarea</h3>
             <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/forms/text-input.html" target="_blank" title="Open pattern in a new tab">
+              <a class="pattern-pop" href="patterns/forms/textarea.html" target="_blank" title="Open pattern in a new tab">
                 <i class="icon i-18">
                   <svg><use xlink:href="#pop-out" /></svg>
                 </i>
               </a>
             </div>
         </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>Textareas are similar to basic inputs but they allows multiple lines and longer text.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/forms/text-input.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe src="patterns/forms/textarea.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1096,37 +1188,6 @@
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
               <code><pre>&lt;form class="gutter-1-2 pad-t-2 pad-b-2 max-length" method="POST" novalidate=""&gt;
-  &lt;fieldset class="push pad-t pad-b">
-    &lt;div class="grid">
-      &lt;div class="unit xs-1 s-1-2 relative push-1-2 space-right">
-        &lt;label class="milli" for="first-name">First Name&lt;/label>
-        &lt;input class="gutter-1-2" id="first-name" required aria-describedby="first-name-error">
-        &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
-          &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Enter a first name.&lt;/span>
-        &lt;/p>
-      &lt;/div>
-      &lt;div class="unit xs-1 s-1-2 relative push-1-2 space-left">
-        &lt;label class="milli" for="last-name">Last Name&lt;/label>
-        &lt;input class="gutter-1-2" id="last-name" required aria-describedby="last-name-error">
-        &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
-          &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Enter a last name.&lt;/span>
-        &lt;/p>
-      &lt;/div>
-      &lt;div class="unit xs-1 s-1 relative push-1-2">
-        &lt;label class="milli" for="email">Email&lt;/label>
-        &lt;input class="gutter-1-2" type="email" id="email" placeholder="name@example.com" required aria-describedby="email-error">
-        &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli" id="email-error">
-          &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Enter a valid email address.&lt;/span>
-        &lt;/p>
-      &lt;/div>
-    &lt;/div>
-  &lt;/fieldset>
 
   &lt;div class="relative push-1-2">
     &lt;label class="milli" for="text-area">If there is no fence and gate, how you will keep your dog secure on your property?&lt;/label>
@@ -1150,19 +1211,68 @@
         <section class="pattern" id="navigation">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Navigation</h2>
-        <div class="gutter absolute pin-cr">
-          <a class="pattern-pop" href="patterns/navigation/navigation.html" target="_blank" title="Open pattern in a new tab">
-            <i class="icon i-18">
-              <svg><use xlink:href="#pop-out" /></svg>
-            </i>
-          </a>
-        </div>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4">
+            <li><a href="#navigation-filter">Filter</a></li>
+            <li><a href="#navigation-navigation">Navigation</a></li>
+            <li><a href="#navigation-sub-navigation">Sub navigation</a></li>
+        </ol>
+      </nav>
   </div>
 
 
   
 
+    <div class="pattern-details" id="navigation-filter">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Filter</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/navigation/filter.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/navigation/filter.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="navigation-navigation">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Navigation</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/navigation/navigation.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -1199,17 +1309,79 @@
         &lt;span class="nav-icon nav-icon-bottom block absolute">&lt;/span>
       &lt;/label>
       &lt;nav role="navigation" class="nav" id="nav">
-        &lt;ul class="list-group push-0 gutter-2 pad-b-2 pad-t-1-2">
-          &lt;li class="border-bottom">&lt;a class="block milli pad-t pad-b" href="#">Adopt&lt;/a>&lt;/li>
-          &lt;li class="border-bottom">&lt;a class="block milli pad-t pad-b" href="#">Donate&lt;/a>&lt;/li>
-          &lt;li class="border-bottom">&lt;a class="block milli pad-t pad-b" href="#">Blog&lt;/a>&lt;/li>
-          &lt;li class="border-bottom">&lt;a class="block milli pad-t pad-b" href="#">About&lt;/a>&lt;/li>
-          &lt;li class="border-bottom">&lt;a class="block milli pad-t pad-b" href="#">Contact&lt;/a>&lt;/li>
+        &lt;ul class="nav-links list-group push-0 gutter-2 pad-b pad-t-1-2">
+          &lt;li class="nav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Adopt&lt;/a>&lt;/li>
+          &lt;li class="nav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Donate&lt;/a>&lt;/li>
+          &lt;li class="nav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Blog&lt;/a>&lt;/li>
+          &lt;li class="nav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">About&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Contact&lt;/a>&lt;/li>
         &lt;/ul>
       &lt;/nav>
     &lt;/div>
   &lt;/div>
 &lt;/header>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="navigation-sub-navigation">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Sub navigation</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/navigation/sub-navigation.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/navigation/sub-navigation.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;div class="subnav-wrapper center-contents-vertical"&gt;
+  &lt;div class="grid grid-middle subnav-container wrapper relative">
+    &lt;h1 class="unit xs-1 s-1-2 giga push-0">
+        &lt;a href="#" class="subnav-header ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
+      &lt;/h1>
+    &lt;div class="unit xs-1 s-1-2 subnav-link-wrapper">
+      &lt;input id="subnav-check" type="checkbox" class="subnav-check absolute">
+      &lt;label for="subnav-check" class="subnav-label absolute pin-tr">
+        &lt;span class="ir block pad-t-1-2 pad-b-1-2 gutter giga">Open toggle navigation&lt;/span>
+        &lt;span class="subnav-icon-group absolute pin-c">
+            &lt;span class="subnav-icon subnav-icon-left block absolute">&lt;/span>
+        &lt;span class="subnav-icon subnav-icon-right block absolute">&lt;/span>
+        &lt;/span>
+      &lt;/label>
+      &lt;nav role="navigation" class="subnav" id="subnav">
+        &lt;ul class="subnav-links list-group milli push-0 gutter-2 pad-t-1-2 pad-b">
+          &lt;li class="subnav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Adoption Process&lt;/a>&lt;/li>
+          &lt;li class="subnav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Application&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">FAQ&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
 </pre></code>
             </div>
           </div>
