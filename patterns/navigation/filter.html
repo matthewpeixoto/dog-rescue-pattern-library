@@ -9,59 +9,57 @@
   <link href="../../common/type.css" rel="stylesheet">
   <link href="../../common/theme.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-  <link href="../buttons/buttons.css" rel="stylesheet">
   <link href="navigation.css" rel="stylesheet">
 </head>
 <body>
 
-  <div class="filter-container nav-border-bottom">
-    <div class="filter-wrapper wrapper relative">
+  <div class="nav-border-bottom">
+    <div class="wrapper">
 
-      <input id="filters-check" type="checkbox" class="filters-check absolute">
-      <label for="filters-check" class="filter-label w-1 pad-t-1-2 pad-b-1-2 gutter">
+      <input id="filter-check" type="checkbox" class="filter-check absolute">
+      <label for="filter-check" class="filter-label w-1 pad-t-1-2 pad-b-1-2 gutter">
         <i class="icon i-16 push-r-1-4">
           <svg><use xlink:href="../../images/icons.svg#filter" /></svg>
         </i>
         <span class="icon-label milli">Filter:</span>
       </label>
       <div class="filters grid grid-middle gutter pad-t-1-2 pad-b" id="filters">
-
-          <div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
-            <label class="filter-label bold milli" for="species">Species</label>
-            <select class="filter-select milli" id="species" required aria-describedby="email-error"></label>
-              <option>All</option>
-              <option>Dog</option>
-              <option>Cat</option>
-            </select>
-          </div>
-          <div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
-            <label class="filter-label bold milli" for="breed">Breed</label>
-            <select class="filter-select milli" id="breed">
-              <option>All</option>
-              <option>Boxer</option>
-              <option>Dog</option>
-            </select>
-          </div>
-          <div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
-            <label class="filter-label bold milli" for="age">Age</label>
-            <select class="filter-select milli" id="age">
-              <option>All</option>
-              <option>Baby</option>
-              <option>Young</option>
-              <option>Adult</option>
-              <option>Senior</option>
-            </select>
-          </div>
-          <div class="filter-item unit xs-1 s-1-4 relative pad-t pad-b">
-            <label class="filter-label bold milli" for="sex">Sex</label>
-            <select class="filter-select milli" id="sex">
-              <option>All</option>
-              <option>Male</option>
-              <option>Female</option>
-            </select>
-          </div>
-
+        <div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
+          <label class="filter-label bold milli" for="species">Species</label>
+          <select class="filter-select milli" id="species" required aria-describedby="email-error"></label>
+            <option>All</option>
+            <option>Dog</option>
+            <option>Cat</option>
+          </select>
         </div>
+        <div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
+          <label class="filter-label bold milli" for="breed">Breed</label>
+          <select class="filter-select milli" id="breed">
+            <option>All</option>
+            <option>Boxer</option>
+            <option>Dog</option>
+          </select>
+        </div>
+        <div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
+          <label class="filter-label bold milli" for="age">Age</label>
+          <select class="filter-select milli" id="age">
+            <option>All</option>
+            <option>Baby</option>
+            <option>Young</option>
+            <option>Adult</option>
+            <option>Senior</option>
+          </select>
+        </div>
+        <div class="filter-item unit xs-1 s-1-4 pad-t pad-b">
+          <label class="filter-label bold milli" for="sex">Sex</label>
+          <select class="filter-select milli" id="sex">
+            <option>All</option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </div>
+      </div>
+
     </div>
   </div>
 

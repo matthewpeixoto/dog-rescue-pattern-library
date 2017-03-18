@@ -285,11 +285,11 @@ input[type="checkbox"] + label::before {
   display: none;
 }
 
-.filters-check:checked ~ .filters {
+.filter-check:checked ~ .filters {
   display: block;
 }
 
-.filters-check {
+.filter-check {
   top: -3em;
 }
 
