@@ -1069,7 +1069,7 @@
               <code><pre>&lt;form class="grid max-length pad-t pad-b" method="post" novalidate=""&gt;
 
   &lt;div class="unit xs-1 push-1-2 relative gutter-1-4">
-    &lt;input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="first-name-error">
+    &lt;input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="error">
     &lt;label for="agree">Agree to the terms and conditions.&lt;/label>
     &lt;p class="error-message island-1-4 push-0 relative milli" id="email-error">
       &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
@@ -1256,7 +1256,56 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>
+              <code><pre>&lt;div class="filter-container nav-border-bottom"&gt;
+  &lt;div class="filter-wrapper wrapper relative">
+
+    &lt;input id="filters-check" type="checkbox" class="filters-check absolute">
+    &lt;label for="filters-check" class="filter-label w-1 pad-t-1-2 pad-b-1-2 gutter">
+      &lt;i class="icon i-16 push-r-1-4">
+          &lt;svg>&lt;use xlink:href="../../images/icons.svg#filter"/>&lt;/svg>
+        &lt;/i>
+      &lt;span class="icon-label milli">Filter:&lt;/span>
+    &lt;/label>
+    &lt;div class="filters grid grid-middle gutter pad-t-1-2 pad-b" id="filters">
+
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
+        &lt;label class="filter-label bold milli" for="species">Species&lt;/label>
+        &lt;select class="filter-select milli" id="species" required aria-describedby="email-error">
+          &lt;option>All&lt;/option>
+          &lt;option>Dog&lt;/option>
+          &lt;option>Cat&lt;/option>
+        &lt;/select>
+      &lt;/div>
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
+        &lt;label class="filter-label bold milli" for="breed">Breed&lt;/label>
+        &lt;select class="filter-select milli" id="breed">
+          &lt;option>All&lt;/option>
+          &lt;option>Boxer&lt;/option>
+          &lt;option>Dog&lt;/option>
+        &lt;/select>
+      &lt;/div>
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 relative pad-t pad-b">
+        &lt;label class="filter-label bold milli" for="age">Age&lt;/label>
+        &lt;select class="filter-select milli" id="age">
+          &lt;option>All&lt;/option>
+          &lt;option>Baby&lt;/option>
+          &lt;option>Young&lt;/option>
+          &lt;option>Adult&lt;/option>
+          &lt;option>Senior&lt;/option>
+        &lt;/select>
+      &lt;/div>
+      &lt;div class="filter-item unit xs-1 s-1-4 relative pad-t pad-b">
+        &lt;label class="filter-label bold milli" for="sex">Sex&lt;/label>
+        &lt;select class="filter-select milli" id="sex">
+          &lt;option>All&lt;/option>
+          &lt;option>Male&lt;/option>
+          &lt;option>Female&lt;/option>
+        &lt;/select>
+      &lt;/div>
+
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
 </pre></code>
             </div>
           </div>
@@ -1358,8 +1407,8 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="subnav-wrapper center-contents-vertical"&gt;
-  &lt;div class="grid grid-middle subnav-container wrapper relative">
+              <code><pre>&lt;div class="subnav-container nav-border-bottom"&gt;
+  &lt;div class="subnav-wrapper grid grid-middle wrapper relative">
     &lt;h1 class="unit xs-1 s-1-2 giga push-0">
         &lt;a href="#" class="subnav-header ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
       &lt;/h1>
@@ -1367,7 +1416,7 @@
       &lt;input id="subnav-check" type="checkbox" class="subnav-check absolute">
       &lt;label for="subnav-check" class="subnav-label absolute pin-tr">
         &lt;span class="ir block pad-t-1-2 pad-b-1-2 gutter giga">Open Menu&lt;/span>
-        &lt;span class="subnav-icon-group absolute pin-c h-1 w-1">
+        &lt;span class="absolute pin-c h-1 w-1">
             &lt;span class="subnav-icon subnav-icon-left block absolute">&lt;/span>
         &lt;span class="subnav-icon subnav-icon-right block absolute">&lt;/span>
         &lt;/span>
