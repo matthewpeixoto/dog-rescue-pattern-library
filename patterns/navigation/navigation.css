@@ -8,7 +8,7 @@
 
 .masthead a {
   cursor: pointer;
-  transition: opacity 200ms cubic-bezier(0.65, 0.05, 0.35, 1);
+  transition: opacity 200ms ease-in-out;
 
   color: #fff;
 }
@@ -93,7 +93,7 @@
   width: 48px;
 
   cursor: pointer;
-  transition: 200ms cubic-bezier(0.65, 0.05, 0.35, 1);
+  transition: 200ms ease-in-out;
 }
 
 input[type="checkbox"] + label::before {
@@ -110,7 +110,7 @@ input[type="checkbox"] + label::before {
   width: 16px;
 
   background: #fff;
-  transition: 400ms ease;
+  transition: 200ms ease-in-out;
 }
 
 .nav-icon-top {
@@ -135,7 +135,7 @@ input[type="checkbox"] + label::before {
 
 /*Sub Navigation*/
 
-.subnav-wrapper {
+.nav-border-bottom {
   border-bottom: 1px solid #cdcdcd;
 }
 
@@ -178,7 +178,7 @@ input[type="checkbox"] + label::before {
     display: inline-block;
   }
 
-  .subnav-container {
+  .subnav-wrapper {
     padding: .7rem 1.4rem;
   }
 
@@ -204,7 +204,7 @@ input[type="checkbox"] + label::before {
 
 @media only screen and (min-width: 67em) {
 
-  .subnav-container {
+  .subnav-wrapper {
     padding: .75rem 1.5rem;
   }
 
@@ -214,14 +214,9 @@ input[type="checkbox"] + label::before {
 
 }
 
-/*Subnavigation Label*/
+/*Sub Navigation Label*/
 
 .subnav-label {
-  width: 52px;
-}
-
-.subnav-icon-group {
-  height: 52px;
   width: 52px;
 }
 
@@ -229,10 +224,10 @@ input[type="checkbox"] + label::before {
   height: 2px;
   left: 20px;
   top: 30px;
-  width: 11.5px;
+  width: 12px;
 
   background: #333;
-  transition: transform 400ms ease, top 400ms ease;
+  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
 }
 
 .subnav-label:hover .subnav-icon {
@@ -240,21 +235,50 @@ input[type="checkbox"] + label::before {
 }
 
 .subnav-icon-left {
-  transform: rotate(-40deg) translate(6px);
+  transform: rotate(-40deg) translate(5.24px);
 }
 
 .subnav-icon-right {
-  transform: rotate(40deg) translateX(-6px);
+  transform: rotate(40deg) translateX(-5.24px);
 }
 
 .subnav-check:checked ~ .subnav-label .subnav-icon-left {
   top: 22px;
 
-  transform: rotate(40deg) translate(6px);
+  transform: rotate(40deg) translate(5.24px);
 }
 
 .subnav-check:checked ~ .subnav-label .subnav-icon-right {
   top: 22px;
 
-  transform: rotate(-40deg) translateX(-6px);
+  transform: rotate(-40deg) translateX(-5.24px);
+}
+
+/*Filter*/
+
+.filter-select {
+  padding: 0;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23888' d='M128 184.1v-.1L255 73.7l-24.1-27.8L128 135.4 25.1 45.9 1 73.7 128 184v.1z'/%3E%3C/svg%3E");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 10px auto;
+  border: none;
+  cursor: pointer;
+
+  color: var(--color-neutral);
+}
+
+.filter-select:hover {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256' viewBox='0 0 256 256'%3E%3Cpath fill='%23ff4081' d='M128 184.1v-.1L255 73.7l-24.1-27.8L128 135.4 25.1 45.9 1 73.7 128 184v.1z'/%3E%3C/svg%3E");
+
+  color: var(--color-accent);
+}
+
+.filter-label {
+  color: var(--color-primary);
+}
+
+.border-right {
+  border-right: 1px solid #eaeaea;
 }
