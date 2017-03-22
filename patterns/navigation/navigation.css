@@ -1,4 +1,4 @@
-/*Main navigation*/
+/*Main Navigation*/
 
 .masthead {
   background-color: var(--color-primary);
@@ -86,7 +86,7 @@
 
 }
 
-/*Nav label*/
+/*Main Navigation label*/
 
 .nav-label {
   height: 48px;
@@ -273,8 +273,13 @@ input[type="checkbox"] + label::before {
   color: var(--color-accent);
 }
 
-.filter-label {
+.filter-label,
+.filter-item-label {
   color: var(--color-primary);
+}
+
+.filter-label:hover {
+  color: var(--color-accent);
 }
 
 .filter-item-border {
@@ -321,4 +326,20 @@ input[type="checkbox"] + label::before {
     padding: 0 1.5rem;
   }
 
+}
+
+/*Step Navigation*/
+
+.step-link {
+  color: var(--color-neutral);
+}
+
+.step-link:hover {
+  text-decoration: none;
+}
+
+.step-current {
+  border-bottom: 1px solid var(--color-neutral-dark);
+
+  color: var(--color-neutral-dark);
 }

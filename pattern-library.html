@@ -55,6 +55,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#navigation">Navigation</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#sections">Sections</a></li>
           </ul>
         </nav>
       </div>
@@ -860,11 +861,11 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;a class="card basic-card block island text-center icon-link"&gt;
+              <code><pre>&lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill"&gt;
   &lt;div class="card-content wrapper">
-    &lt;h2 class="card-title push-1-8 mega">Newsletter&lt;/h2>
-    &lt;p class="push-0">Join our weekly newsletter!&lt;/p>
-  &lt;/div>
+    &lt;h3 class="card-title push-1-8 mega">Newsletter
+      &lt;p class="content-fill push-0">Join our weekly newsletter!&lt;/p>
+    &lt;/h3>&lt;/div>
 &lt;/a>
 </pre></code>
             </div>
@@ -1267,24 +1268,24 @@
       &lt;span class="icon-label milli">Filter:&lt;/span>
     &lt;/label>
     &lt;div class="filters grid grid-middle gutter pad-t-1-2 pad-b" id="filters">
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
-        &lt;label class="filter-label bold milli" for="species">Species&lt;/label>
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
+        &lt;label class="filter-item-label bold milli" for="species">Species&lt;/label>
         &lt;select class="filter-select milli" id="species" required aria-describedby="email-error">
           &lt;option>All&lt;/option>
           &lt;option>Dog&lt;/option>
           &lt;option>Cat&lt;/option>
         &lt;/select>
       &lt;/div>
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
-        &lt;label class="filter-label bold milli" for="breed">Breed&lt;/label>
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
+        &lt;label class="filter-item-label bold milli" for="breed">Breed&lt;/label>
         &lt;select class="filter-select milli" id="breed">
           &lt;option>All&lt;/option>
           &lt;option>Boxer&lt;/option>
           &lt;option>Dog&lt;/option>
         &lt;/select>
       &lt;/div>
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t pad-b">
-        &lt;label class="filter-label bold milli" for="age">Age&lt;/label>
+      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
+        &lt;label class="filter-item-label bold milli" for="age">Age&lt;/label>
         &lt;select class="filter-select milli" id="age">
           &lt;option>All&lt;/option>
           &lt;option>Baby&lt;/option>
@@ -1293,8 +1294,8 @@
           &lt;option>Senior&lt;/option>
         &lt;/select>
       &lt;/div>
-      &lt;div class="filter-item unit xs-1 s-1-4 pad-t pad-b">
-        &lt;label class="filter-label bold milli" for="sex">Sex&lt;/label>
+      &lt;div class="filter-item unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
+        &lt;label class="filter-item-label bold milli" for="sex">Sex&lt;/label>
         &lt;select class="filter-select milli" id="sex">
           &lt;option>All&lt;/option>
           &lt;option>Male&lt;/option>
@@ -1430,6 +1431,88 @@
     &lt;/div>
   &lt;/div>
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="sections">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Sections</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/sections/quick-links.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="sections-quick-links">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/sections/quick-links.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;ul class="grid grid-stretch"&gt;
+
+  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
+    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
+      &lt;div class="card-content wrapper">
+        &lt;h3 class="card-title push-1-8 mega">Newsletter
+          &lt;p class="content-fill push-0">Join our weekly newsletter!&lt;/p>
+        &lt;/h3>&lt;/div>
+    &lt;/a>
+  &lt;/li>
+  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute m-border-right">
+    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
+      &lt;div class="card-content wrapper">
+        &lt;h3 class="card-title push-1-8 mega">Latest Blog
+          &lt;p class="content-fill push-0">Wizard is enjoying his new life in a safe and happy home!&lt;/p>
+        &lt;/h3>&lt;/div>
+    &lt;/a>
+  &lt;/li>
+  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
+    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
+      &lt;div class="card-content wrapper">
+        &lt;h3 class="card-title push-1-8 mega">Featured Dog
+          &lt;p class="content-fill push-0">Tony is a young brindle Cane Corso and absolutely loves kids.&lt;/p>
+        &lt;/h3>&lt;/div>
+    &lt;/a>
+  &lt;/li>
+  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute">
+    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
+      &lt;div class="card-content wrapper">
+        &lt;h3 class="card-title push-1-8 mega">Helping Lost Pets
+          &lt;p class="content-fill push-0">Learn the procedure of helping a lost pet.&lt;/p>
+        &lt;/h3>&lt;/div>
+    &lt;/a>
+  &lt;/li>
+
+&lt;/ul>
 </pre></code>
             </div>
           </div>

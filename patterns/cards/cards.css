@@ -1,5 +1,7 @@
 .card {
+  border-top: 2px solid #fff;
   cursor: pointer;
+
   color: var(--color-neutral-dark);
 }
 
@@ -8,10 +10,7 @@
 }
 
 .basic-card {
-  height: 12em;
-
   background-color: var(--color-neutral-light);
-  border: 2px solid #fff;
 }
 
 .dog-info-card {
@@ -24,4 +23,20 @@
 
 .dog-info-card-background {
   background-color: var(--color-neutral-light);
+}
+
+@media only screen and (min-width: 46em) {
+
+  .s-border-right {
+    border-right: 2px solid #fff;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .m-border-right {
+    border-right: 2px solid #fff;
+  }
+
 }
