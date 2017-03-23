@@ -59,7 +59,7 @@
 
 /* Billboard */
 
-.billboard {
+.billboard-container {
   background-color: var(--color-neutral-light);
 }
 

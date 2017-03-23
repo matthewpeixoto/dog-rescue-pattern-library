@@ -1,0 +1,24 @@
+.photo-section {
+  height: 90vh;
+  min-height: 960px;
+}
+
+.section-content-container {
+  height: 30%;
+}
+
+.section-img-container {
+  height: 70%;
+}
+
+.section-img {
+  height: 100%;
+  background-image: url("../../images/section-img.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-content p {
+  max-width: 20em;
+}

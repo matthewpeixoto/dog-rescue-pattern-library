@@ -715,21 +715,20 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;article class="hero-container relative"&gt;
+              <code><pre>&lt;div class="hero-container relative"&gt;
   &lt;a class="hero-link block w-1 h-1 icon-link" href="#">
-    &lt;div class="hero-content center-contents text-center">
+    &lt;div class="hero-content center-contents text-center pad-t-2">
       &lt;h2 class="exa push-1-4 block gutter">Find your perfect companion.&lt;/h2>
-      &lt;span class="btn btn-subtle btn-subtle-large giga">
-          &lt;span class="icon-text">View available dogs&lt;/span>
-      &lt;i class="icon i-arrow">
-          &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
-        &lt;/i>
-      &lt;/span>
+      &lt;div class="btn btn-subtle btn-subtle-large giga">
+        &lt;span class="icon-text">View available dogs&lt;/span>
+        &lt;i class="icon i-arrow">
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+          &lt;/i>
+      &lt;/div>
     &lt;/div>
-    &lt;figure class="hero-image absolute pin-bl pin-br push-0">
-    &lt;/figure>
+    &lt;span class="hero-image absolute pin-bl pin-br push-0">&lt;/span>
   &lt;/a>
-&lt;/article>
+&lt;/div>
 </pre></code>
             </div>
           </div>
@@ -866,6 +865,11 @@
             <div class="pattern-code milli island-1-2">
               <code><pre>&lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill"&gt;
   &lt;div class="card-content wrapper">
+    &lt;i class="icon i-64">
+        &lt;svg>
+
+        &lt;/svg>
+      &lt;/i>
     &lt;h3 class="card-title push-1-8 mega">Newsletter&lt;/h3>
     &lt;p class="content-fill push-0">Join our weekly newsletter!&lt;/p>
   &lt;/div>
@@ -1235,7 +1239,7 @@
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Header</h2>
         <div class="gutter absolute pin-cr">
-          <a class="pattern-pop" href="" target="_blank" title="Open pattern in a new tab">
+          <a class="pattern-pop" href="patterns/header/header.html" target="_blank" title="Open pattern in a new tab">
             <i class="icon i-18">
               <svg><use xlink:href="#pop-out" /></svg>
             </i>
@@ -1246,6 +1250,75 @@
 
   
 
+    <div class="pattern-details" id="header-header">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/header/header.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;header role="banner"&gt;
+  &lt;div class="nav-container absolute w-1 zindex-2">
+    &lt;div class="logo-wrapper-xs unit-s-hidden text-center">
+      &lt;a class="ib" href="#">
+        &lt;h1 class="logo logo-xs push-0 ir">Loyal Rescue&lt;/h1>
+      &lt;/a>
+    &lt;/div>
+    &lt;div class="wrapper">
+      &lt;input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+      &lt;label class="mainnav-label absolute pin-tl" for="mainnav-check">
+        &lt;span class="mainnav-icon mainnav-icon-top block absolute">&lt;/span>
+        &lt;span class="mainnav-icon mainnav-icon-bottom block absolute">&lt;/span>
+      &lt;/label>
+      &lt;nav role="navigation" class="mainnav" id="mainnav">
+        &lt;ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+          &lt;li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper">&lt;a class="logo-wrapper ib" href="#">&lt;h1 class="logo push-0 ib ir">Loyal Rescue&lt;/h1>&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ]">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="hero-container relative">
+    &lt;a class="hero-link block w-1 h-1 icon-link" href="#">
+      &lt;div class="hero-content center-contents text-center pad-t-2">
+        &lt;h2 class="exa push-1-4 block gutter">Find your perfect companion.&lt;/h2>
+        &lt;div class="btn btn-subtle btn-subtle-large giga">
+          &lt;span class="icon-text">View available dogs&lt;/span>
+          &lt;i class="icon i-arrow">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+            &lt;/i>
+        &lt;/div>
+      &lt;/div>
+      &lt;span class="hero-image absolute pin-bl pin-br push-0">&lt;/span>
+    &lt;/a>
+  &lt;/div>
+&lt;/header>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
 
 </section>
 
@@ -1255,8 +1328,8 @@
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
             <li><a href="#navigation-filter">Filter</a></li>
-            <li><a href="#navigation-global-nav">Global nav</a></li>
-            <li><a href="#navigation-local-nav">Local nav</a></li>
+            <li><a href="#navigation-main-nav">Main nav</a></li>
+            <li><a href="#navigation-sub-nav">Sub nav</a></li>
             <li><a href="#navigation-tab-nav">Tab nav</a></li>
         </ol>
       </nav>
@@ -1302,7 +1375,7 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="nav-border-bottom"&gt;
+              <code><pre>&lt;div class="filter-container"&gt;
   &lt;div class="wrapper">
 
     &lt;input id="filter-check" type="checkbox" class="filter-check absolute">
@@ -1356,11 +1429,11 @@
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="navigation-global-nav">
+    <div class="pattern-details" id="navigation-main-nav">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
-          <h3 class="pattern-name tera push-1-8">Global nav</h3>
+          <h3 class="pattern-name tera push-1-8">Main nav</h3>
             <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/navigation/global-nav.html" target="_blank" title="Open pattern in a new tab">
+              <a class="pattern-pop" href="patterns/navigation/main-nav.html" target="_blank" title="Open pattern in a new tab">
                 <i class="icon i-18">
                   <svg><use xlink:href="#pop-out" /></svg>
                 </i>
@@ -1368,14 +1441,14 @@
             </div>
         </div>
           <div class="pattern-desc milli island">
-            <div class="max-length"><p>The global navigation is used at the top of every pages. It drives users to the various inside pages of the website and helps express the Loyal Rescue brand.</p>
+            <div class="max-length"><p>The main navigation is used at the top of every pages. It drives users to the various inside pages of the website and helps express the Loyal Rescue brand.</p>
 </div>
           </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/navigation/global-nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe src="patterns/navigation/main-nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1393,40 +1466,40 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;header role="banner" class="masthead"&gt;
+              <code><pre>&lt;div class="nav-container absolute w-1 zindex-2"&gt;
   &lt;div class="logo-wrapper-xs unit-s-hidden text-center">
     &lt;a class="ib" href="#">
       &lt;h1 class="logo logo-xs push-0 ir">Loyal Rescue&lt;/h1>
     &lt;/a>
   &lt;/div>
-  &lt;div>
-    &lt;input type="checkbox" class="globalnav-check absolute wrapper" id="globalnav-check">
-    &lt;label for="globalnav-check" class="globalnav-label absolute pin-tl">
-      &lt;span class="globalnav-icon globalnav-icon-top block absolute">&lt;/span>
-      &lt;span class="globalnav-icon globalnav-icon-bottom block absolute">&lt;/span>
+  &lt;div class="wrapper">
+    &lt;input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+    &lt;label class="mainnav-label absolute pin-tl" for="mainnav-check">
+      &lt;span class="mainnav-icon mainnav-icon-top block absolute">&lt;/span>
+      &lt;span class="mainnav-icon mainnav-icon-bottom block absolute">&lt;/span>
     &lt;/label>
-    &lt;nav role="navigation" class="globalnav wrapper" id="globalnav">
-      &lt;ul class="globalnav-links grid grid-middle milli list-group push-0 gutter-2 pad-b pad-t-1-2">
-        &lt;li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper">&lt;a class="ib" href="#">&lt;h1 class="ib logo push-0 ir">Loyal Rescue&lt;/h1>&lt;/a>&lt;/li>
-        &lt;li class="unit [ xs-1 s-1-7 ] globalnav-border">&lt;a class="globalnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt&lt;/a>&lt;/li>
-        &lt;li class="unit [ xs-1 s-1-7 ] globalnav-border">&lt;a class="globalnav-link block pad-t-1-2 pad-b-1-2" href="#">Donate&lt;/a>&lt;/li>
-        &lt;li class="unit [ xs-1 s-1-7 ] globalnav-border">&lt;a class="globalnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog&lt;/a>&lt;/li>
-        &lt;li class="unit [ xs-1 s-1-7 ] globalnav-border">&lt;a class="globalnav-link block pad-t-1-2 pad-b-1-2" href="#">About&lt;/a>&lt;/li>
-        &lt;li class="unit [ xs-1 s-1-7 ]">&lt;a class="nav-link block pad-t-1-2 pad-b-1-2" href="#">Contact&lt;/a>&lt;/li>
+    &lt;nav role="navigation" class="mainnav" id="mainnav">
+      &lt;ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+        &lt;li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper">&lt;a class="logo-wrapper ib" href="#">&lt;h1 class="logo push-0 ib ir">Loyal Rescue&lt;/h1>&lt;/a>&lt;/li>
+        &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt&lt;/a>&lt;/li>
+        &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster&lt;/a>&lt;/li>
+        &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About&lt;/a>&lt;/li>
+        &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog&lt;/a>&lt;/li>
+        &lt;li class="unit [ xs-1 s-1-7 ]">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact&lt;/a>&lt;/li>
       &lt;/ul>
     &lt;/nav>
   &lt;/div>
-&lt;/header>
+&lt;/div>
 </pre></code>
             </div>
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="navigation-local-nav">
+    <div class="pattern-details" id="navigation-sub-nav">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
-          <h3 class="pattern-name tera push-1-8">Local nav</h3>
+          <h3 class="pattern-name tera push-1-8">Sub nav</h3>
             <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/navigation/local-nav.html" target="_blank" title="Open pattern in a new tab">
+              <a class="pattern-pop" href="patterns/navigation/sub-nav.html" target="_blank" title="Open pattern in a new tab">
                 <i class="icon i-18">
                   <svg><use xlink:href="#pop-out" /></svg>
                 </i>
@@ -1434,14 +1507,14 @@
             </div>
         </div>
           <div class="pattern-desc milli island">
-            <div class="max-length"><p>The local navigation is used on inside pages and provides navigation that relates to the specific page.</p>
+            <div class="max-length"><p>The sub navigation is used on inside pages and provides navigation that relates to the specific page.</p>
 </div>
           </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/navigation/local-nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe src="patterns/navigation/sub-nav.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1459,25 +1532,25 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="subnav-container nav-border-bottom"&gt;
+              <code><pre>&lt;div class="subnav-container"&gt;
   &lt;div class="subnav-wrapper grid grid-middle wrapper relative">
-    &lt;h1 class="unit xs-1 s-1-2 giga push-0">
-        &lt;a href="#" class="subnav-header ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
+    &lt;h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
+        &lt;a href="#" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
       &lt;/h1>
     &lt;div class="unit xs-1 s-1-2 subnav-link-wrapper">
       &lt;input id="subnav-check" type="checkbox" class="subnav-check absolute">
       &lt;label for="subnav-check" class="subnav-label absolute pin-tr">
-        &lt;span class="ir block pad-t-1-2 pad-b-1-2 gutter giga">Open Menu&lt;/span>
-        &lt;span class="absolute pin-c h-1 w-1">
-          &lt;span class="subnav-icon subnav-icon-left block absolute">&lt;/span>
-        &lt;span class="subnav-icon subnav-icon-right block absolute">&lt;/span>
-        &lt;/span>
+        &lt;span class="ir block giga gutter pad-t-1-2 pad-b-1-2">Open Menu&lt;/span>
+        &lt;strong class="absolute pin-c h-1 w-1">
+            &lt;span class="subnav-icon subnav-icon-left block absolute">&lt;/span>
+            &lt;span class="subnav-icon subnav-icon-right block absolute">&lt;/span>
+          &lt;/strong>
       &lt;/label>
       &lt;nav role="navigation" class="subnav" id="subnav">
-        &lt;ul class="subnav-links list-group milli push-0 gutter-2 pad-t-1-2 pad-b">
-          &lt;li class="subnav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Adoption Process&lt;/a>&lt;/li>
-          &lt;li class="subnav-border">&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">Application&lt;/a>&lt;/li>
-          &lt;li>&lt;a class="block pad-t-1-2 pad-b-1-2" href="#">FAQ&lt;/a>&lt;/li>
+        &lt;ul class="subnav-link-group list-group push-0 milli gutter-2 pad-t-1-2 pad-b">
+          &lt;li class="subnav-link-style">&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Adoption Process&lt;/a>&lt;/li>
+          &lt;li class="subnav-link-style">&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Application&lt;/a>&lt;/li>
+          &lt;li>&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">FAQ&lt;/a>&lt;/li>
         &lt;/ul>
       &lt;/nav>
     &lt;/div>
@@ -1545,19 +1618,91 @@
         <section class="pattern" id="sections">
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Sections</h2>
-        <div class="gutter absolute pin-cr">
-          <a class="pattern-pop" href="patterns/sections/quick-links.html" target="_blank" title="Open pattern in a new tab">
-            <i class="icon i-18">
-              <svg><use xlink:href="#pop-out" /></svg>
-            </i>
-          </a>
-        </div>
+      <nav class="pattern-nav">
+        <ol class="list-group-inline push-1-4">
+            <li><a href="#sections-photo-section">Photo section</a></li>
+            <li><a href="#sections-quick-links">Quick links</a></li>
+        </ol>
+      </nav>
   </div>
 
 
   
 
+    <div class="pattern-details" id="sections-photo-section">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Photo section</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/sections/photo-section.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>The photo section is bold and simple. Use this section to deliver written information in a pleasant and engaging manner.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/sections/photo-section.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="photo-section"&gt;
+  &lt;div class="section-content-container gutter">
+    &lt;div class="section-content pad-t-2 wrapper">
+      &lt;h2 class="yotta bold push-1-2">About Loyal&lt;/h2>
+      &lt;p class="push-1-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p>
+      &lt;div class="btn btn-subtle">
+        &lt;span class="icon-text">Learn more&lt;/span>
+        &lt;i class="icon i-arrow">
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+          &lt;/i>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+  &lt;div class="section-img-container">
+    &lt;span class="section-img push-0">&lt;/span>
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="sections-quick-links">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Quick links</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/sections/quick-links.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+          <div class="pattern-desc milli island">
+            <div class="max-length"><p>This section is used to group together quick links in an organized grid.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
@@ -1585,6 +1730,11 @@
   &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
     &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
       &lt;div class="card-content wrapper">
+        &lt;i class="icon i-64">
+            &lt;svg>
+
+            &lt;/svg>
+          &lt;/i>
         &lt;h3 class="card-title push-1-8 mega">Newsletter&lt;/h3>
         &lt;p class="content-fill push-0">Join our weekly newsletter!&lt;/p>
       &lt;/div>
@@ -1593,14 +1743,24 @@
   &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute m-border-right">
     &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
       &lt;div class="card-content wrapper">
-        &lt;h3 class="card-title push-1-8 mega">Latest Blog&lt;/h3>
-        &lt;p class="content-fill push-0">Wizard is enjoying his new life in a safe and happy home!&lt;/p>
+        &lt;i class="icon i-64">
+            &lt;svg>
+
+            &lt;/svg>
+          &lt;/i>
+        &lt;h3 class="card-title push-1-8 mega">Donate&lt;/h3>
+        &lt;p class="content-fill push-0">All funds raised go directly to the dogs in care.&lt;/p>
       &lt;/div>
     &lt;/a>
   &lt;/li>
   &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
     &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
       &lt;div class="card-content wrapper">
+        &lt;i class="icon i-64">
+            &lt;svg>
+
+            &lt;/svg>
+          &lt;/i>
         &lt;h3 class="card-title push-1-8 mega">Featured Dog&lt;/h3>
         &lt;p class="content-fill push-0">Tony is a young brindle Cane Corso and absolutely loves kids.&lt;/p>
       &lt;/div>
@@ -1609,6 +1769,11 @@
   &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute">
     &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
       &lt;div class="card-content wrapper">
+        &lt;i class="icon i-64">
+            &lt;svg>
+
+            &lt;/svg>
+          &lt;/i>
         &lt;h3 class="card-title push-1-8 mega">Helping Lost Pets&lt;/h3>
         &lt;p class="content-fill push-0">Learn the procedure of helping a lost pet.&lt;/p>
       &lt;/div>

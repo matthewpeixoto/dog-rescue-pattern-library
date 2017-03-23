@@ -1,18 +1,79 @@
-/* Global Nav */
+/* main Nav */
 
-.masthead {
+.nav-container,
+.mainnav-link-group {
   background-color: var(--color-primary);
 }
 
-.masthead a {
-  transition: opacity 200ms ease-in-out;
-
+.nav-container a {
   color: #fff;
 }
 
-.masthead a:hover {
+.nav-container a,
+.mainnav-label,
+.mainnav-icon,
+.subnav-icon {
+  transition: all 200ms ease-in-out;
+}
+
+.nav-container a:hover,
+.mainnav-label:hover {
   opacity: .65;
+
   text-decoration: none;
+}
+
+.mainnav-link-border {
+  border-bottom: 1px solid #5c6bc0;
+}
+
+.mainnav {
+  display: none;
+}
+
+.mainnav-check:checked ~ .mainnav {
+  display: block;
+}
+
+.mainnav-check {
+  top: -3em;
+}
+
+.mainnav-label {
+  height: 48px;
+  width: 48px;
+}
+
+input[type="checkbox"] + label::before {
+  display: none;
+}
+
+.mainnav-icon {
+  height: 2px;
+  left: 16px;
+  width: 16px;
+
+  background: #fff;
+}
+
+.mainnav-icon-top {
+  top: 23px;
+
+  transform: translateY(-3px);
+}
+
+.mainnav-icon-bottom {
+  bottom: 23px;
+
+  transform: translateY(3px);
+}
+
+.mainnav-check:checked ~ .mainnav-label .mainnav-icon-top {
+  transform: rotate(45deg);
+}
+
+.mainnav-check:checked ~ .mainnav-label .mainnav-icon-bottom {
+  transform: rotate(-45deg);
 }
 
 .logo-wrapper-xs {
@@ -26,44 +87,28 @@
   background-repeat: no-repeat;
 }
 
-.globalnav-border {
-  border-bottom: 1px solid #5C6BC0;
-}
-
-.globalnav {
-  display: none;
-}
-
-.globalnav-check:checked ~ .globalnav {
-  display: block;
-}
-
-.globalnav-check {
-  top: -3em;
-}
-
 @media only screen and (min-width: 46em) {
 
   input[type="checkbox"] + label {
     display: none;
   }
 
-  .globalnav {
+  .mainnav {
     display: block;
   }
 
-  .globalnav-links {
+  .mainnav-link-group {
     padding: 0 .7rem;
 
     text-align: right;
   }
 
-  .globalnav-link {
+  .mainnav-link {
     display: inline-block;
     padding: .7rem;
   }
 
-  .globalnav-border {
+  .mainnav-link-border {
     border: none;
   }
 
@@ -82,74 +127,36 @@
 
 @media only screen and (min-width: 67em) {
 
-  .globalnav-links {
+  .mainnav-link-group {
     padding: 0 .75rem;
   }
 
-  .globalnav-link {
+  .mainnav-link {
     padding: .75rem;
+  }
+
+  .logo-wrapper {
+    height: 57px;
+  }
+
+  .logo {
+    height: 57px;
+    background-size: auto 57px;
   }
 
 }
 
-/* Global Nav Label */
+/* sub Nav */
 
-.globalnav-label {
-  height: 48px;
-  width: 48px;
-
-  cursor: pointer;
-  transition: 200ms ease-in-out;
-}
-
-input[type="checkbox"] + label::before {
-  display: none;
-}
-
-.globalnav-label:hover {
-  opacity: .65;
-}
-
-.globalnav-icon {
-  height: 2px;
-  left: 16px;
-  width: 16px;
-
-  background: #fff;
-  transition: 200ms ease-in-out;
-}
-
-.globalnav-icon-top {
-  top: 23px;
-
-  transform: translateY(-3px);
-}
-
-.globalnav-icon-bottom {
-  bottom: 23px;
-
-  transform: translateY(3px);
-}
-
-.globalnav-check:checked ~ .globalnav-label .globalnav-icon-top{
-  transform: rotate(45deg);
-}
-
-.globalnav-check:checked ~ .globalnav-label .globalnav-icon-bottom{
-  transform: rotate(-45deg);
-}
-
-/* Local Nav */
-
-.nav-border-bottom {
+.subnav-container {
   border-bottom: 1px solid #cdcdcd;
 }
 
-.subnav-header {
+.subnav-header a {
   color: var(--color-primary);
 }
 
-.subnav-header:hover {
+.subnav-header a:hover {
   color: var(--color-primary);
 }
 
@@ -162,7 +169,7 @@ input[type="checkbox"] + label::before {
   text-decoration: none;
 }
 
-.subnav-border {
+.subnav-link-style {
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -178,52 +185,6 @@ input[type="checkbox"] + label::before {
   top: -3em;
 }
 
-@media only screen and (min-width: 46em) {
-
-  .subnav {
-    display: inline-block;
-  }
-
-  .subnav-wrapper {
-    padding: .7rem 1.4rem;
-  }
-
-  .subnav-link-wrapper {
-    text-align: right;
-  }
-
-  .subnav-border {
-    border: none;
-  }
-
-  .subnav-header,
-  .subnav-links,
-  .subnav-link {
-    padding: 0;
-  }
-
-  .subnav-links li {
-    display: inline-block;
-
-    margin-left: 1.4rem;
-  }
-
-}
-
-@media only screen and (min-width: 67em) {
-
-  .subnav-wrapper {
-    padding: .75rem 1.5rem;
-  }
-
-  .subnav-links li {
-    margin-left: 1.5rem;
-  }
-
-}
-
-/* Local Nav Label */
-
 .subnav-label {
   width: 52px;
 }
@@ -235,7 +196,6 @@ input[type="checkbox"] + label::before {
   width: 12px;
 
   background: #333;
-  transition: transform 200ms ease-in-out, top 200ms ease-in-out;
 }
 
 .subnav-label:hover .subnav-icon {
@@ -262,7 +222,59 @@ input[type="checkbox"] + label::before {
   transform: rotate(-40deg) translateX(-5.24px);
 }
 
+@media only screen and (min-width: 46em) {
+
+  .subnav {
+    display: inline-block;
+  }
+
+  .subnav-wrapper {
+    padding: .7rem 1.4rem;
+  }
+
+  .subnav-link-wrapper {
+    text-align: right;
+  }
+
+  .subnav-link-style {
+    margin-right: 1.4rem;
+
+    border-bottom: 0;
+  }
+
+  .subnav-border {
+    border: none;
+  }
+
+  .subnav-header a,
+  .subnav-link-group,
+  .subnav-link {
+    padding: 0;
+  }
+
+  .subnav-link-group li {
+    display: inline-block;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .subnav-wrapper {
+    padding: .75rem 1.5rem;
+  }
+
+  .subnav-link-style {
+    margin-right: 1.5rem;
+  }
+
+}
+
 /* Filter */
+
+.filter-container {
+  border-bottom: 1px solid var(--color-neutral-light);
+}
 
 .filter-select {
   padding: 0;

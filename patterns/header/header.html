@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Header</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="../navigation/nav.css" rel="stylesheet">
+  <link href="../banners/banners.css" rel="stylesheet">
+  <link href="header.css" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner">
+    <div class="nav-container absolute w-1 zindex-2">
+      <div class="logo-wrapper-xs unit-s-hidden text-center">
+        <a class="ib" href="#">
+          <h1 class="logo logo-xs push-0 ir">Loyal Rescue</h1>
+        </a>
+      </div>
+      <div class="wrapper">
+        <input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+        <label class="mainnav-label absolute pin-tl" for="mainnav-check">
+          <span class="mainnav-icon mainnav-icon-top block absolute"></span>
+          <span class="mainnav-icon mainnav-icon-bottom block absolute"></span>
+        </label>
+        <nav role="navigation" class="mainnav" id="mainnav">
+          <ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+            <li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper"><a class="logo-wrapper ib" href="#"><h1 class="logo push-0 ib ir">Loyal Rescue</h1></a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog</a></li>
+            <li class="unit [ xs-1 s-1-7 ]"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="hero-container relative">
+      <a class="hero-link block w-1 h-1 icon-link" href="#">
+        <div class="hero-content center-contents text-center pad-t-2">
+          <h2 class="exa push-1-4 block gutter">Find your perfect companion.</h2>
+          <div class="btn btn-subtle btn-subtle-large giga">
+            <span class="icon-text">View available dogs</span>
+            <i class="icon i-arrow">
+              <svg><use xlink:href="../../images/icons.svg#arrow-300" /></svg>
+            </i>
+          </div>
+        </div>
+        <span class="hero-image absolute pin-bl pin-br push-0"></span>
+      </a>
+    </div>
+  </header>
+
+</body>
+</html>
