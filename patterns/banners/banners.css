@@ -7,11 +7,11 @@
 }
 
 .hero-content {
-  height: 40%;
+  height: 45%;
 }
 
 .hero-image {
-  top: 40%;
+  top: 45%;
 
   background-image: url("../../images/banner-img.jpg");
   background-position: top center;
@@ -26,8 +26,8 @@
 @media only screen and (min-width: 46em) {
 
   .hero-container {
-    max-height: 960px;
-    min-height: 500px;
+    max-height: 1024px;
+    min-height: 512px;
   }
 
 }
@@ -36,7 +36,7 @@
 
   .hero-container {
     max-height: 100%;
-    min-height: 540px;
+    min-height: 768px;
   }
 
   .hero-content {

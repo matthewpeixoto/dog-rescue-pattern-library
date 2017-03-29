@@ -1,0 +1,1 @@
+The header is the face of the website. It is the very first thing the user sees and interacts with when they visit. Aside from housing the main navigation, the header features a prominent hero banner with a call-to-action. The header is reserved for the top of the home page for navigation and to promote important news, inside pages, and actions.
