@@ -3,7 +3,7 @@ name: "Loyal Rescue"
 fontUrl: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 fonts:
   primary: |
-    Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
+    Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric, yet features friendly and open curves. Roboto is well constructed, legible at small sizes, and delivers information in a clear and unobtrusive manner.
 colours:
   primary: |
     The primary colours symbolize loyality and trust. Use these colours for navigation bars, headers, and other elements where branding makes sense.

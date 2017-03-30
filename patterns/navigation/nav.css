@@ -203,7 +203,7 @@ input[type="checkbox"] + label::before {
   width: 12px;
 
   transition: top 200ms ease-in-out, transform 200ms ease-in-out;
-  background: var(--color-neutral-dark)
+  background: var(--color-neutral-dark);
 }
 
 .subnav-label:hover .subnav-icon {
@@ -358,15 +358,15 @@ input[type="checkbox"] + label::before {
 
 /* Tab Nav */
 
-.step-link {
+.tabnav-btn {
   color: var(--color-neutral);
 }
 
-.step-link:hover {
-  text-decoration: none;
-}
-
-.step-current {
+#agreement-control:checked ~ .tabnav-controls [for="agreement-control"],
+#about-control:checked ~ .tabnav-controls [for="about-control"],
+#lifestyle-control:checked ~ .tabnav-controls [for="lifestyle-control"],
+#petinfo-control:checked ~ .tabnav-controls [for="petinfo-control"],
+#other-control:checked ~ .tabnav-controls [for="other-control"] {
   border-bottom: 1px solid var(--color-neutral-dark);
 
   color: var(--color-neutral-dark);

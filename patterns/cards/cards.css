@@ -5,6 +5,10 @@
   color: var(--color-neutral-dark);
 }
 
+.card-icon {
+  color: var(--color-primary);
+}
+
 .card:hover .card-title {
   color: var(--color-accent);
 }
