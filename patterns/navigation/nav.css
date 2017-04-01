@@ -281,7 +281,7 @@ input[type="checkbox"] + label::before {
 /* Filter */
 
 .filter-container {
-  border-bottom: 1px solid var(--color-neutral-light);
+  border-bottom: 1px solid var(--color-neutral-ultralight);
 }
 
 .filter-select {

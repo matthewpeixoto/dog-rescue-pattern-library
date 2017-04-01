@@ -667,14 +667,16 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;div class="billboard"&gt;
-  &lt;div class="billboard-content wrapper">
-    &lt;div class="billboard-info w-1 pad-t-2 text-center">
-      &lt;h2 class="push-0">Find your perfect companion.&lt;/h2>
+              <code><pre>&lt;div class="billboard relative"&gt;
+  &lt;div class="wrapper">
+    &lt;div class="billboard-info-wrapper wrapper text-center zindex-2">
+      &lt;div class="billboard-info island">
+        &lt;h2 class="push-0">Find your perfect&#xA0;companion.&lt;/h2>
+      &lt;/div>
     &lt;/div>
-    &lt;div class="billboard-img">
-      &lt;img class="img-flex" src="../../images/billboard-img.jpg" alt="">
-    &lt;/div>
+  &lt;/div>
+  &lt;div class="billboard-image-wrapper relative chop w-1">
+    &lt;img class="billboard-image absolute pin-c" src="../../images/banners/billboard.jpg" alt="">
   &lt;/div>
 &lt;/div>
 </pre></code>
@@ -730,7 +732,7 @@
           &lt;/i>
       &lt;/div>
     &lt;/div>
-    &lt;figure class="hero-image absolute pin-bl pin-br push-0">&lt;/figure>
+    &lt;span class="hero-image absolute pin-bl pin-br push-0">&lt;/span>
   &lt;/a>
 &lt;/div>
 </pre></code>
@@ -792,16 +794,16 @@
 &lt;a class="btn btn-small micro" href="#">Small important button&lt;/a>
 
 &lt;a class="btn btn-subtle" href="#">
-  &lt;span class="icon-text">Standard subtle button&lt;/span>
+  &lt;span class="icon-label">Standard subtle button&lt;/span>
   &lt;i class="icon i-arrow">
-      &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-400"/>&lt;/svg>
+      &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
     &lt;/i>
 &lt;/a>
 
 &lt;a class="btn btn-subtle btn-subtle-large giga" href="#">
-  &lt;span class="icon-text">Large subtle button&lt;/span>
+  &lt;span class="icon-label">Large subtle button&lt;/span>
   &lt;i class="icon i-arrow">
-      &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+      &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
     &lt;/i>
 &lt;/a>
 </pre></code>
@@ -817,8 +819,8 @@
     <h2 class="pattern-name peta push-1-4">Cards</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
-            <li><a href="#cards-basic-card">Basic card</a></li>
             <li><a href="#cards-info-card">Info card</a></li>
+            <li><a href="#cards-quicklink-card">Quicklink card</a></li>
         </ol>
       </nav>
   </div>
@@ -830,59 +832,8 @@
 
   
 
-    <div class="pattern-details" id="cards-basic-card" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Basic card</h3>
-            <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/cards/basic-card.html" target="_blank" title="Open pattern in a new tab">
-                <i class="icon i-18">
-                  <svg><use xlink:href="#pop-out" /></svg>
-                </i>
-              </a>
-            </div>
-        </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The basic card is used for call-to-actions on the homepage and gives users a window into inside pages.</p>
-</div>
-          </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/cards/basic-card.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-          <div class="gutter">
-            <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill"&gt;
-  &lt;div class="card-content max-length">
-    &lt;i class="icon i-64 push-1-2 card-icon">
-        &lt;svg>&lt;use xlink:href="../../images/icons.svg#donate"/>&lt;/svg>
-      &lt;/i>
-    &lt;h3 class="card-title push-0 mega">Donate&lt;/h3>
-    &lt;p class="content-fill push-0 milli">All funds go directly to the dogs in care.&lt;/p>
-  &lt;/div>
-&lt;/a>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="pattern-details" id="cards-info-card" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+    <div class="pattern-details" id="cards-info-card" style="background-color:#f2f2f2;">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="background-color:rgba(0,0,0,.1); border-color:rgba(0,0,0,.1); color:rgba(0,0,0,.9);">
           <h3 class="pattern-name tera push-1-8">Info card</h3>
             <div class="gutter absolute pin-cr">
               <a class="pattern-pop" href="patterns/cards/info-card.html" target="_blank" title="Open pattern in a new tab">
@@ -892,15 +843,65 @@
               </a>
             </div>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>Info cards should be used to display dogs and their basic information. These cards link the user to the dogs full page where they can learn more details and choose to adopt.</p>
+          <div class="pattern-desc milli island" style="background-color:rgba(0,0,0,.05); border-color:rgba(0,0,0,.05); color:rgba(0,0,0,.9);">
+            <div class="max-length"><p>Info cards should be used to display dogs and their basic information. These cards link the user to the chosen dog&#39;s profile page where they can learn more details and initiate the adoption process.</p>
 </div>
           </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
           <div class="resizeable-pattern relative" style="width:400px">
-            <iframe src="patterns/cards/info-card.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+            <iframe src="patterns/cards/info-card.html" scrolling="no" onload="resizeIframe(this)" data-inject-css=":root { --color-patternbot-interface:0; --color-patternbot-interface-opposite:255; --color-patternbot-background:#f2f2f2; }"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="border-color:rgba(0,0,0,.1); color:rgba(0,0,0,.3);">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="border-color:rgba(0,0,0,.1); color:rgba(0,0,0,.3);">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2" style="background-color:rgba(0,0,0,.05); border-color:rgba(0,0,0,.05); color:rgba(0,0,0,.9);">
+              <code><pre>&lt;ul class="grid"&gt;
+  &lt;li class="unit unit-content-distribute list-group island-1-4">
+    &lt;a href="#" class="card dog-info-card icon-link block text-center content-fill unit-content-distribute island-2">
+      &lt;div class="pad-t push-2">
+        &lt;img class="img-flex" src="http://placehold.it/256x256" alt="">
+      &lt;/div>
+      &lt;h2 class="card-title mega">Abby&lt;/h2>
+      &lt;p class="content-fill">Italian Greyhound / Miniature Pinscher / Mixed (short coat)&lt;/p>
+      &lt;p>Young Female&lt;/p>
+    &lt;/a>
+  &lt;/li>
+&lt;/ul>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="cards-quicklink-card" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Quicklink card</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/cards/quicklink-card.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/cards/quicklink-card.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -918,18 +919,15 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;ul class="grid"&gt;
-  &lt;li class="unit unit-content-distribute list-group island-1-4">
-    &lt;a href="#" class="card dog-info-card icon-link block text-center content-fill unit-content-distribute island-2">
-      &lt;div class="pad-t push-2">
-        &lt;img class="img-flex" src="http://placehold.it/275x275" alt="">
-      &lt;/div>
-      &lt;h2 class="card-title mega">Abby&lt;/h2>
-      &lt;p class="content-fill">Italian Greyhound / Miniature Pinscher / Mixed (short coat)&lt;/p>
-      &lt;p>Young Female&lt;/p>
-    &lt;/a>
-  &lt;/li>
-&lt;/ul>
+              <code><pre>&lt;a class="card basic-card icon-link block pad-t pad-b text-center"&gt;
+  &lt;div class="card-content">
+    &lt;i class="icon i-64 card-icon push-1-2">
+        &lt;svg>&lt;use xlink:href="../../images/icons.svg#application"/>&lt;/svg>
+      &lt;/i>
+    &lt;h3 class="card-title push-0 mega">Adoption Application&lt;/h3>
+    &lt;p class="push-0">Your first step to adoption.&lt;/p>
+  &lt;/div>
+&lt;/a>
 </pre></code>
             </div>
           </div>
@@ -976,39 +974,67 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;footer role="contentinfo" class="footer"&gt;
-  &lt;div class="footer-content wrapper gutter">
-    &lt;div class="pad-t pad-b micro">
-      &lt;div class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call &lt;a>705-772-4916&lt;/a>, email &lt;a href="mailto:info@loyalrescue.com.">info@loyalrescue.com&lt;/a>, or visit us on social media.&lt;/div>
-      &lt;div class="grid text-center">
-        &lt;div class="footer-copyright unit xs-1 s-1-2 push-1-2">Copyright &#xA9; 2017 Loyal Inc. All rights reserved.&lt;/div>
-        &lt;div class="footer-social-content unit xs-1 s-1-2">
-          &lt;span class="footer-social push-r-1-2">
-              &lt;a class="footer-social-link ib icon-link" href="">
-                &lt;i class="icon i-16 push-r-1-8">
+              <code><pre>&lt;footer class="footer pad-t pad-b " role="contentinfo"&gt;
+  &lt;div class="wrapper gutter">
+    &lt;div class="micro">
+
+      &lt;nav class="footer-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+        &lt;ol class="list-group-inline">
+          &lt;li class="push-r-1-4">
+            &lt;a class="footer-link ib" href="#">
+              &lt;i class="icon i-32 footer-logo">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#logo"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="visually-hidden">Loyal Rescue&lt;/span>
+            &lt;/a>
+          &lt;/li>
+          &lt;li class="push-r-1-4">
+            &lt;i class="icon i-breadcrumb push-r-1-4">
+                &lt;svg class="i-breadcrumb">&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
+              &lt;/i>
+            &lt;a class="footer-link" href="#">Adopt&lt;/a>
+          &lt;/li>
+          &lt;li class="push-r-1-4">
+            &lt;i class="icon i-breadcrumb push-r-1-4">
+                &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
+              &lt;/i>
+            &lt;a class="footer-link" href="#">Adoption Process&lt;/a>
+          &lt;/li>
+        &lt;/ol>
+      &lt;/nav>
+
+      &lt;p class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call &lt;a>705-772-4916&lt;/a>, email &lt;a href="mailto:info@loyalrescue.com.">info@loyalrescue.com&lt;/a>, or visit us on social media.&lt;/p>
+
+      &lt;div class="grid">
+        &lt;div class="footer-copyright unit [ xs-1 s-1-2 ] push-1-2">Copyright &#xA9; 2017 Loyal Rescue Inc. All rights reserved.&lt;/div>
+        &lt;div class="footer-social-wrapper unit [ xs-1 s-1-2 ]">
+          &lt;div class="footer-social ib push-r-1-2">
+            &lt;a class="footer-link ib icon-link" href="">
+              &lt;i class="icon i-16 push-r-1-8">
                   &lt;svg>&lt;use xlink:href="../../images/icons.svg#facebook"/>&lt;/svg>
                 &lt;/i>
-                &lt;span class="icon-label">Facebook&lt;/span>
-          &lt;/a>
-          &lt;/span>
-          &lt;span class="footer-social push-r-1-2">
-              &lt;a class="footer-social-link ib icon-link" href="">
-                &lt;i class="icon i-16 push-r-1-8">
+              &lt;span class="icon-label">Facebook&lt;/span>
+            &lt;/a>
+          &lt;/div>
+          &lt;div class="footer-social ib push-r-1-2">
+            &lt;a class="footer-link ib icon-link" href="">
+              &lt;i class="icon i-16 push-r-1-8">
                   &lt;svg>&lt;use xlink:href="../../images/icons.svg#instagram"/>&lt;/svg>
                 &lt;/i>
-                &lt;span class="icon-label">Instagram&lt;/span>
-          &lt;/a>
-          &lt;/span>
-          &lt;span class="footer-social">
-            &lt;a class="footer-social-link ib icon-link" href="">
+              &lt;span class="icon-label">Instagram&lt;/span>
+            &lt;/a>
+          &lt;/div>
+          &lt;div class="footer-social ib">
+            &lt;a class="footer-link ib icon-link" href="">
               &lt;i class="icon i-16 push-r-1-8">
-                &lt;svg>&lt;use xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
-              &lt;/i>
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
+                &lt;/i>
               &lt;span class="icon-label">Twitter&lt;/span>
-          &lt;/a>
-          &lt;/span>
+            &lt;/a>
+          &lt;/div>
         &lt;/div>
       &lt;/div>
+
     &lt;/div>
   &lt;/div>
 &lt;/footer>
@@ -1767,7 +1793,7 @@
       &lt;/div>
     &lt;/div>
   &lt;/div>
-  &lt;figure class="section-img push-0">&lt;/figure>
+  &lt;span class="section-img push-0">&lt;/span>
 &lt;/section>
 </pre></code>
             </div>
@@ -1811,54 +1837,56 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;ul class="grid grid-stretch"&gt;
+              <code><pre>&lt;section class="quick-links"&gt;
+  &lt;ul class="grid grid-stretch">
 
-  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
-    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
-      &lt;div class="card-content max-length">
-        &lt;i class="icon i-64 push-1-2 card-icon">
-            &lt;svg>&lt;use xlink:href="../../images/icons.svg#donate"/>&lt;/svg>
-          &lt;/i>
-        &lt;h3 class="card-title push-0 mega">Donate&lt;/h3>
-        &lt;p class="content-fill push-0">Every cent counts.&lt;/p>
-      &lt;/div>
-    &lt;/a>
-  &lt;/li>
-  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute m-border-right">
-    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
-      &lt;div class="card-content max-length">
-        &lt;i class="icon i-64 push-1-2 card-icon">
-            &lt;svg>&lt;use xlink:href="../../images/icons.svg#donate"/>&lt;/svg>
-          &lt;/i>
-        &lt;h3 class="card-title push-0 mega">Helping Lost Pet&lt;/h3>
-        &lt;p class="content-fill push-0">Lorem ipsum dolor sit.&lt;/p>
-      &lt;/div>
-    &lt;/a>
-  &lt;/li>
-  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute s-border-right">
-    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
-      &lt;div class="card-content max-length">
-        &lt;i class="icon i-64 push-1-2 card-icon">
-            &lt;svg>&lt;use xlink:href="../../images/icons.svg#donate"/>&lt;/svg>
-          &lt;/i>
-        &lt;h3 class="card-title push-0 mega">Latest Happy Tail&lt;/h3>
-        &lt;p class="content-fill push-0">Lorem ipsum dolor sit.&lt;/p>
-      &lt;/div>
-    &lt;/a>
-  &lt;/li>
-  &lt;li class="unit xs-1 s-1-2 m-1-4 unit-content-distribute">
-    &lt;a class="card basic-card icon-link block island text-center unit-content-distribute content-fill">
-      &lt;div class="card-content max-length">
-        &lt;i class="icon i-64 push-1-2 card-icon">
-            &lt;svg>&lt;use xlink:href="../../images/icons.svg#donate"/>&lt;/svg>
-          &lt;/i>
-        &lt;h3 class="card-title push-0 mega">Adoption Process&lt;/h3>
-        &lt;p class="content-fill push-0">It&apos;s as easy as 1, 2, 3.&lt;/p>
-      &lt;/div>
-    &lt;/a>
-  &lt;/li>
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#application"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Adoption Application&lt;/h3>
+          &lt;p class="push-0">Your first step to adoption.&lt;/p>
+        &lt;/div>
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] m-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#faq"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">FAQ&lt;/h3>
+          &lt;p class="push-0">We&apos;ve got your answers!.&lt;/p>
+        &lt;/div>
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#newsletter"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Newsletter&lt;/h3>
+          &lt;p class="push-0">Join our monthly newsletter.&lt;/p>
+        &lt;/div>
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="unit xs-1 s-1-2 m-1-4">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#pet"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Helping Lost Pets&lt;/h3>
+          &lt;p class="push-0">Learn the procedure.&lt;/p>
+        &lt;/div>
+      &lt;/a>
+    &lt;/li>
 
-&lt;/ul>
+  &lt;/ul>
+&lt;/section>
 </pre></code>
             </div>
           </div>

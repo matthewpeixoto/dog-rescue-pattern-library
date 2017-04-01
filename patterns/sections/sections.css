@@ -19,3 +19,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Quick Links */
+
+.quick-links {
+  border-bottom: 2px solid #fff;
+}

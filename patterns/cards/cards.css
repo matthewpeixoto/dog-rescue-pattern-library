@@ -6,7 +6,7 @@
 }
 
 .card-icon {
-  color: var(--color-primary);
+  color: var(--color-neutral-light);
 }
 
 .card:hover .card-title {
@@ -14,7 +14,7 @@
 }
 
 .basic-card {
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-neutral-ultralight);
 }
 
 .dog-info-card {
@@ -26,7 +26,7 @@
 }
 
 .dog-info-card-background {
-  background-color: var(--color-neutral-light);
+  background-color: var(--color-neutral-ultralight);
 }
 
 @media only screen and (min-width: 46em) {

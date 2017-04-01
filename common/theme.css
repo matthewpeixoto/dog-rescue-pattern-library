@@ -1,11 +1,12 @@
 :root {
   --color-primary: #3f51b5;
   --color-accent: #ff4081;
+  --color-accent-ultralight: #fcc3d8;
   --color-accent-light: #ff80ab;
   --color-accent-dark: #f50057;
-  --color-accent-highlight: #fcc3d8;
   --color-neutral: #888;
-  --color-neutral-light: #f2f2f2;
+  --color-neutral-ultralight: #f2f2f2;
+  --color-neutral-light: #d6d6d6;
   --color-neutral-dark: #333;
 
   --font-primary: roboto, sans-serif;
@@ -62,7 +63,7 @@ q {
 /* Emphasis & edits */
 
 mark {
-  background-color: var(--color-accent-highlight);
+  background-color: var(--color-accent-ultralight);
 }
 
 b,
@@ -88,6 +89,6 @@ input:focus,
 textarea:focus,
 button:focus,
 select:focus {
-  box-shadow: 0 0 0 3px var(--color-accent-highlight);
+  box-shadow: 0 0 0 3px var(--color-accent-ultralight);
   outline: none;
 }
