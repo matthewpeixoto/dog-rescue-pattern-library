@@ -1,8 +1,8 @@
 ---
-basic-card:
+icon-card:
   width: 400
   desc: |
-    The basic card is used for quick-links on the homepage and gives users a window into featured inside pages.
+    The icon card is used to promote helpful links. These cards work well in a grid and provide users a quick and easy way to navigate to various inside pages.
 info-card:
   backgroundColor: "#f2f2f2"
   width: 400
