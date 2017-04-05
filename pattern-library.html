@@ -725,10 +725,10 @@
   &lt;a class="hero-link block w-1 h-1 icon-link relative" href="#">
     &lt;div class="hero-content center-contents text-center pad-t-2">
       &lt;h2 class="exa push-1-4 block gutter">Find your perfect companion.&lt;/h2>
-      &lt;div class="btn btn-subtle btn-subtle-large giga">
-        &lt;span class="icon-text">View available dogs&lt;/span>
+      &lt;div class="btn btn-subtle btn-subtle-large giga" href="#">
+        &lt;span class="icon-text">Large subtle button&lt;/span>
         &lt;i class="icon i-arrow">
-            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
           &lt;/i>
       &lt;/div>
     &lt;/div>
@@ -794,14 +794,14 @@
 &lt;a class="btn btn-small micro" href="#">Small important button&lt;/a>
 
 &lt;a class="btn btn-subtle" href="#">
-  &lt;span class="icon-label">Standard subtle button&lt;/span>
+  &lt;span class="icon-text">Standard subtle button&lt;/span>
   &lt;i class="icon i-arrow">
       &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
     &lt;/i>
 &lt;/a>
 
 &lt;a class="btn btn-subtle btn-subtle-large giga" href="#">
-  &lt;span class="icon-label">Large subtle button&lt;/span>
+  &lt;span class="icon-text">Large subtle button&lt;/span>
   &lt;i class="icon i-arrow">
       &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
     &lt;/i>
@@ -1404,7 +1404,7 @@
         &lt;div class="btn btn-subtle btn-subtle-large giga">
           &lt;span class="icon-text">View available dogs&lt;/span>
           &lt;i class="icon i-arrow">
-              &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-300"/>&lt;/svg>
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
             &lt;/i>
         &lt;/div>
       &lt;/div>
@@ -1734,19 +1734,134 @@
     <h2 class="pattern-name peta push-1-4">Sections</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
+            <li><a href="#sections-faq">Faq</a></li>
             <li><a href="#sections-photo-section">Photo section</a></li>
             <li><a href="#sections-quick-links">Quick links</a></li>
         </ol>
       </nav>
   </div>
 
-      <div class="pattern-desc milli island" >
-        <div class="max-length"><p>The photo section is bold and simple. Use this section to deliver written information in a pleasant and engaging manner.</p>
-</div>
-      </div>
 
   
 
+    <div class="pattern-details" id="sections-faq" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Faq</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/sections/faq.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/sections/faq.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2" style="">
+              <code><pre>&lt;section class="faq pad-b"&gt;
+  &lt;div class="wrapper gutter">
+
+    &lt;div class="faq-header">
+      &lt;h2 class="pad-t-2 pad-b-2 push-0">Frequently Asked Questions&lt;/h2>
+    &lt;/div>
+
+    &lt;div class="faq-content">
+      &lt;input class="q1-check" type="checkbox" id="q1-check">
+      &lt;input class="q2-check" type="checkbox" id="q2-check">
+      &lt;input class="q3-check" type="checkbox" id="q3-check">
+      &lt;ul class="faq-list list-group push-0">
+        &lt;li class="faq-list-item">
+          &lt;div class="faq-title-container">
+            &lt;h3 class="kilo push-0">
+                &lt;label class="faq-btn pad-t pad-b" for="q1-check">
+                  &lt;span>Why is there an adoption fee?&lt;/span>
+                  &lt;div class="faq-toggle right">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q1-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/div>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="faq-answer push-2" id="q1-answer">
+            &lt;p class="push-0">The sad reality is that we get the unwanted, unvetted, uncared for. We have had, and still have many adult dogs, most of whom came to us in need of medical care. Veterinary costs for the special cases can run into thousands of dollars. Some of the dogs have special needs like medications such as insulin for diabetes, Vetoryl for Cushings disease and heart medications for those that have heart issues in order to provide a better quality of life. Younger healthier dogs may not have quite the same health issues as the older dogs do but they too need to be examined, vaccinated and altered prior to adoption. They could also have problems like eye surgery, lump removals, diabetic. The adoption fee only partially covers these costs. Donations from the public are limited. LOYAL Rescue offsets the difference through fundraising efforts where we can.&lt;/p>
+          &lt;/div>
+        &lt;/li>
+        &lt;li class="faq-list-item">
+          &lt;div class="faq-title-container">
+            &lt;h3 class="kilo push-0">
+                &lt;label class="faq-btn pad-t pad-b" for="q2-check">
+                  &lt;span>Can I donate to Loyal Rescue?&lt;/span>
+                  &lt;div class="faq-toggle right">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/div>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="faq-answer push-2" id="q2-answer">
+            &lt;p class="push-1-2">Yes! We are a nonprofit organization. We count on the support of others. If you would like to donate items please visit our donation page to make a donation or to learn more. Your support is greatly appreciated.&lt;/p>
+            &lt;a class="btn btn-subtle" href="#">
+              &lt;span class="icon-text">More information on making a donation&lt;/span>
+              &lt;i class="icon i-arrow">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
+                &lt;/i>
+            &lt;/a>
+          &lt;/div>
+        &lt;/li>
+        &lt;li class="faq-list-item">
+          &lt;div class="faq-title-container">
+            &lt;h3 class="kilo push-0">
+                &lt;label class="faq-btn pad-t pad-b" for="q3-check">
+                  &lt;span>Can I foster a dog in my home?&lt;/span>
+                  &lt;div class="faq-toggle right">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q3-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/div>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="faq-answer push-2" id="q3-answer">
+            &lt;p class="push-1-2">If you have room in your heart and your home, you might consider fostering for us. At any given time, there are ~80 dogs in foster care. The need for foster homes is so great that we have no choice but to turn away requests for help from shelters and from the public. If you would like to become a foster home, please go to our contacts tab and complete the form.&lt;/p>
+            &lt;a class="btn btn-subtle" href="#">
+              &lt;span class="icon-text">More information on fostering&lt;/span>
+              &lt;i class="icon i-arrow">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
+                &lt;/i>
+            &lt;/a>
+          &lt;/div>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="sections-photo-section" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Photo section</h3>

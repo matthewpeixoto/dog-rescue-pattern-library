@@ -25,3 +25,37 @@
 .quick-links {
   border-bottom: 2px solid #fff;
 }
+
+/* Faq */
+
+.faq {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.faq-list-item {
+  border-top: 1px solid #e3e3e3;
+}
+
+.faq-btn:hover {
+  color: var(--color-accent);
+}
+
+.faq-answer {
+  display: none;
+}
+
+.q1-check:checked ~ .faq-list #q1-answer,
+.q2-check:checked ~ .faq-list #q2-answer,
+.q3-check:checked ~ .faq-list #q3-answer {
+  display: block;
+}
+
+.faq-icon {
+  transition: transform 200ms ease-in-out;
+}
+
+.q1-check:checked ~ .faq-list #q1-icon,
+.q2-check:checked ~ .faq-list #q2-icon,
+.q3-check:checked ~ .faq-list #q3-icon {
+  transform: rotate(45deg);
+}

@@ -1,7 +1,7 @@
 /* Hero banner */
 
 .hero-container {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 100px);
   max-height: 640px;
   min-height: 420px;
 }
@@ -40,11 +40,11 @@
   }
 
   .hero-content {
-    height: 35%;
+    height: 40%;
   }
 
   .hero-image {
-    top: 35%;
+    top: 40%;
   }
 
 }
@@ -52,7 +52,7 @@
 @media only screen and (min-width: 90em) {
 
   .hero-container {
-    height: calc(100vh - 203.6px);
+    height: calc(100vh - 200px);
   }
 
 }
