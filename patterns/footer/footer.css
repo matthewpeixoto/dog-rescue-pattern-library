@@ -12,10 +12,6 @@
   color: var(--color-neutral-dark);
 }
 
-.footer-logo:hover {
-  color: #303f9f;
-}
-
 .footer-link:hover .icon-label {
   text-decoration: underline;
 }
@@ -32,13 +28,6 @@
 .footer-social:last-child {
   padding: 0;
   border: 0;
-}
-
-.i-breadcrumb {
-  height: 16px;
-  width: 7px;
-
-  color: var(--color-neutral-light);
 }
 
 @media only screen and (min-width: 46em) {

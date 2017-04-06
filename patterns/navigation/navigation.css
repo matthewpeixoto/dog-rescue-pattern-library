@@ -378,13 +378,16 @@ input[type="checkbox"] + label::before {
   color: var(--color-primary);
 }
 
+.breadcrumbs-logo:hover {
+  color: #303f9f;
+}
+
 .i-breadcrumb {
   height: 16px;
   width: 7px;
 
   color: var(--color-neutral-light);
 }
-
 
 .breadcrumbs-link {
   color: #555;
