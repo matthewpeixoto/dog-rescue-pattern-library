@@ -1,23 +1,36 @@
-.photo-section {
-  height: 90vh;
-  min-height: 960px;
-}
-
-.section-content-container {
-  height: 30%;
-}
-
 .section-title {
-  font-weight: 600;
+  color: #fff;
 }
 
-.section-img {
-  height: 70%;
-
-  background-image: url("../../images/section-img.jpg");
-  background-position: top center;
-  background-repeat: no-repeat;
+.section-image {
+  height: 600px;
+  background-image: url("../../images/overview-image.jpg");
+  background-position: center center;
   background-size: cover;
+}
+
+.section-card {
+  background-color: #fafafa;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .section-image {
+    height: 700px;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .section-image {
+    height: 1000px;
+  }
+
+  .section-card {
+    padding: 6rem;
+  }
+
 }
 
 /* Quick Links */
@@ -29,11 +42,12 @@
 /* Faq */
 
 .faq {
-  border-bottom: 1px solid #e3e3e3;
+  border-bottom: 1px solid var(--color-neutral-light);
+  border-top: 1px solid var(--color-neutral-light);
 }
 
 .faq-list-item {
-  border-top: 1px solid #e3e3e3;
+  border-top: 1px solid var(--color-neutral-light);
 }
 
 .faq-btn:hover {
