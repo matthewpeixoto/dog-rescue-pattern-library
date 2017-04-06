@@ -1,4 +1,4 @@
-/* main Nav */
+/* main nav */
 
 .nav-container,
 .mainnav-link-group {
@@ -153,7 +153,7 @@ input[type="checkbox"] + label::before {
 
 }
 
-/* sub Nav */
+/* sub nav */
 
 .subnav-container {
   border-bottom: 1px solid #cdcdcd;
@@ -278,7 +278,7 @@ input[type="checkbox"] + label::before {
 
 }
 
-/* Filter */
+/* filter */
 
 .filter-container {
   border-bottom: 1px solid var(--color-neutral-ultralight);
@@ -356,7 +356,7 @@ input[type="checkbox"] + label::before {
 
 }
 
-/* Tab Nav */
+/* tab nav */
 
 .tabnav-btn {
   color: var(--color-neutral);
@@ -369,5 +369,27 @@ input[type="checkbox"] + label::before {
 #other-control:checked ~ .tabnav-controls [for="other-control"] {
   border-bottom: 1px solid var(--color-neutral-dark);
 
+  color: var(--color-neutral-dark);
+}
+
+/* breadcrumbs */
+
+.breadcrumbs-logo {
+  color: var(--color-primary);
+}
+
+.i-breadcrumb {
+  height: 16px;
+  width: 7px;
+
+  color: var(--color-neutral-light);
+}
+
+
+.breadcrumbs-link {
+  color: #555;
+}
+
+.breadcrumbs-link:hover {
   color: var(--color-neutral-dark);
 }

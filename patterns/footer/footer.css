@@ -12,10 +12,6 @@
   color: var(--color-neutral-dark);
 }
 
-.footer-logo {
-  color: var(--color-primary);
-}
-
 .footer-logo:hover {
   color: #303f9f;
 }

@@ -57,6 +57,7 @@
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#header">Header</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#navigation">Navigation</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#pages">Pages</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#sections">Sections</a></li>
           </ul>
         </nav>
@@ -725,7 +726,7 @@
   &lt;a class="hero-link block w-1 h-1 icon-link relative" href="#">
     &lt;div class="hero-content center-contents text-center pad-t-2">
       &lt;h2 class="exa push-1-4 block gutter">Find your perfect companion.&lt;/h2>
-      &lt;div class="btn btn-subtle btn-subtle-large giga" href="#">
+      &lt;div class="btn btn-subtle btn-subtle-large giga">
         &lt;span class="icon-text">Large subtle button&lt;/span>
         &lt;i class="icon i-arrow">
             &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
@@ -981,7 +982,6 @@
               <code><pre>&lt;footer class="footer pad-t pad-b " role="contentinfo"&gt;
   &lt;div class="wrapper gutter">
     &lt;div class="micro">
-
       &lt;nav class="footer-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
         &lt;ol class="list-group-inline">
           &lt;li class="push-r-1-4">
@@ -1038,7 +1038,6 @@
           &lt;/div>
         &lt;/div>
       &lt;/div>
-
     &lt;/div>
   &lt;/div>
 &lt;/footer>
@@ -1425,26 +1424,21 @@
     <h2 class="pattern-name peta push-1-4">Navigation</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
-            <li><a href="#navigation-filter">Filter</a></li>
+            <li><a href="#navigation-breadcrumbs">Breadcrumbs</a></li>
             <li><a href="#navigation-main-nav">Main nav</a></li>
             <li><a href="#navigation-sub-nav">Sub nav</a></li>
-            <li><a href="#navigation-tab-nav">Tab nav</a></li>
         </ol>
       </nav>
   </div>
 
-    <div class="pattern-desc milli island" >
-      <div class="max-length"><p>Navigations are the backbone to large websites and come in all shapes and sizes.</p>
-</div>
-    </div>
 
   
 
-    <div class="pattern-details" id="navigation-filter" style="">
+    <div class="pattern-details" id="navigation-breadcrumbs" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Filter</h3>
+          <h3 class="pattern-name tera push-1-8">Breadcrumbs</h3>
             <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/navigation/filter.html" target="_blank" title="Open pattern in a new tab">
+              <a class="pattern-pop" href="patterns/navigation/breadcrumbs.html" target="_blank" title="Open pattern in a new tab">
                 <i class="icon i-18">
                   <svg><use xlink:href="#pop-out" /></svg>
                 </i>
@@ -1455,7 +1449,7 @@
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/navigation/filter.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+            <iframe src="patterns/navigation/breadcrumbs.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1473,55 +1467,30 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;div class="filter-container"&gt;
-  &lt;div class="wrapper">
-
-    &lt;input id="filter-check" type="checkbox" class="filter-check absolute">
-    &lt;label for="filter-check" class="filter-label w-1 pad-t pad-b gutter">
-      &lt;i class="icon i-16 push-r-1-4">
-          &lt;svg>&lt;use xlink:href="../../images/icons.svg#filter"/>&lt;/svg>
+              <code><pre>&lt;nav role="navigation" aria-label="Breadcrumbs"&gt;
+  &lt;ol class="list-group-inline">
+    &lt;li class="push-r-1-4">
+      &lt;a class="breadcrumbs-link ib" href="#">
+        &lt;i class="icon i-32 breadcrumbs-logo">
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#logo"/>&lt;/svg>
+          &lt;/i>
+        &lt;span class="visually-hidden">Loyal Rescue&lt;/span>
+      &lt;/a>
+    &lt;/li>
+    &lt;li class="push-r-1-4">
+      &lt;i class="icon i-breadcrumb push-r-1-4">
+          &lt;svg class="i-breadcrumb">&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
         &lt;/i>
-      &lt;span class="icon-label milli">Filter:&lt;/span>
-    &lt;/label>
-    &lt;div class="filters grid grid-middle gutter pad-t-1-2 pad-b" id="filters">
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
-        &lt;label class="filter-item-label bold milli push-1-8" for="species">Species&lt;/label>
-        &lt;select class="filter-select milli" id="species">
-          &lt;option>All&lt;/option>
-          &lt;option>Dog&lt;/option>
-          &lt;option>Cat&lt;/option>
-        &lt;/select>
-      &lt;/div>
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
-        &lt;label class="filter-item-label bold milli push-1-8" for="breed">Breed&lt;/label>
-        &lt;select class="filter-select milli" id="breed">
-          &lt;option>All&lt;/option>
-          &lt;option>Boxer&lt;/option>
-          &lt;option>Dog&lt;/option>
-        &lt;/select>
-      &lt;/div>
-      &lt;div class="filter-item filter-item-border unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
-        &lt;label class="filter-item-label bold milli push-1-8" for="age">Age&lt;/label>
-        &lt;select class="filter-select milli" id="age">
-          &lt;option>All&lt;/option>
-          &lt;option>Baby&lt;/option>
-          &lt;option>Young&lt;/option>
-          &lt;option>Adult&lt;/option>
-          &lt;option>Senior&lt;/option>
-        &lt;/select>
-      &lt;/div>
-      &lt;div class="filter-item unit xs-1 s-1-4 pad-t-1-2 pad-b-1-2">
-        &lt;label class="filter-item-label bold milli push-1-8" for="sex">Sex&lt;/label>
-        &lt;select class="filter-select milli" id="sex">
-          &lt;option>All&lt;/option>
-          &lt;option>Male&lt;/option>
-          &lt;option>Female&lt;/option>
-        &lt;/select>
-      &lt;/div>
-    &lt;/div>
-
-  &lt;/div>
-&lt;/div>
+      &lt;a class="breadcrumbs-link" href="#">Adopt&lt;/a>
+    &lt;/li>
+    &lt;li class="push-r-1-4">
+      &lt;i class="icon i-breadcrumb push-r-1-4">
+          &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
+        &lt;/i>
+      &lt;a class="breadcrumbs-link" href="#">Adoption Process&lt;/a>
+    &lt;/li>
+  &lt;/ol>
+&lt;/nav>
 </pre></code>
             </div>
           </div>
@@ -1538,10 +1507,6 @@
               </a>
             </div>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The main navigation is used at the top of every pages. It drives users to the various inside pages of the website and helps express the Loyal Rescue brand.</p>
-</div>
-          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
@@ -1604,10 +1569,6 @@
               </a>
             </div>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The sub navigation is used on inside pages and provides navigation that relates to the specific page.</p>
-</div>
-          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
@@ -1659,26 +1620,30 @@
           </div>
       </div>
     </div>
-    <div class="pattern-details" id="navigation-tab-nav" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Tab nav</h3>
-            <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/navigation/tab-nav.html" target="_blank" title="Open pattern in a new tab">
-                <i class="icon i-18">
-                  <svg><use xlink:href="#pop-out" /></svg>
-                </i>
-              </a>
-            </div>
+
+</section>
+
+        <section class="pattern" id="pages" style="">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative" style="">
+    <h2 class="pattern-name peta push-1-4">Pages</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/pages/home.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The tab navigation is used to denote progress-based actions. Use this navigation to break long application forms into manageable pieces.</p>
-</div>
-          </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="pages-home" style="">
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/navigation/tab-nav.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+            <iframe src="patterns/pages/home.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -1696,31 +1661,189 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;div class="tabnav pad-t"&gt;
-  &lt;input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
-  &lt;input class="tabnav-input" type="radio" name="form" id="about-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="petinfo-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="other-control">
+              <code><pre>&lt;header role="banner"&gt;
+  &lt;div class="nav-container absolute w-1 zindex-2">
+    &lt;div class="logo-wrapper-xs unit-s-hidden text-center">
+      &lt;a class="mainnav-link-logo gutter-1-2 ib" href="#">
+        &lt;h1 class="logo logo-xs push-0 ir">Loyal Rescue&lt;/h1>
+      &lt;/a>
+    &lt;/div>
+    &lt;div class="wrapper">
+      &lt;input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+      &lt;label class="mainnav-label absolute pin-tl" for="mainnav-check">
+        &lt;span class="mainnav-icon mainnav-icon-top block absolute">&lt;/span>
+        &lt;span class="mainnav-icon mainnav-icon-bottom block absolute">&lt;/span>
+      &lt;/label>
+      &lt;nav role="navigation" class="mainnav" id="mainnav">
+        &lt;ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+          &lt;li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper">&lt;a class="mainnav-link-logo logo-wrapper gutter-1-2 ib" href="#">&lt;h1 class="logo milli push-0 ib ir">Loyal Rescue&lt;/h1>&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ] mainnav-link-border">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog&lt;/a>&lt;/li>
+          &lt;li class="unit [ xs-1 s-1-7 ]">&lt;a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact&lt;/a>&lt;/li>
+        &lt;/ul>
+      &lt;/nav>
+    &lt;/div>
+  &lt;/div>
 
-  &lt;ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement&lt;/label>
+  &lt;div class="hero-container">
+    &lt;a class="hero-link block w-1 h-1 icon-link relative" href="#">
+      &lt;div class="hero-content center-contents text-center pad-t-2">
+        &lt;h2 class="exa push-1-4 block gutter">Find your perfect companion.&lt;/h2>
+        &lt;div class="btn btn-subtle btn-subtle-large giga">
+          &lt;span class="icon-text">View available dogs&lt;/span>
+          &lt;i class="icon i-arrow">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-light"/>&lt;/svg>
+            &lt;/i>
+        &lt;/div>
+      &lt;/div>
+      &lt;span class="hero-image absolute pin-bl pin-br push-0">&lt;/span>
+    &lt;/a>
+  &lt;/div>
+&lt;/header>
+
+&lt;section class="quick-links">
+  &lt;ul class="grid grid-stretch">
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#application"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Adoption Application&lt;/h3>
+          &lt;p class="push-0">Your first step to adoption.&lt;/p>
+        &lt;/div>
+      &lt;/a>
     &lt;/li>
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You&lt;/label>
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] m-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#faq"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">FAQ&lt;/h3>
+          &lt;p class="push-0">We&apos;ve got your answers!.&lt;/p>
+        &lt;/div>
+      &lt;/a>
     &lt;/li>
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Lifestyle&lt;/label>
+    &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#newsletter"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Newsletter&lt;/h3>
+          &lt;p class="push-0">Join our monthly newsletter.&lt;/p>
+        &lt;/div>
+      &lt;/a>
     &lt;/li>
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information&lt;/label>
-    &lt;/li>
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other&lt;/label>
+    &lt;li class="unit xs-1 s-1-2 m-1-4">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+        &lt;div class="card-content">
+          &lt;i class="icon i-64 card-icon push-1-2">
+              &lt;svg>&lt;use xlink:href="../../images/icons.svg#pet"/>&lt;/svg>
+            &lt;/i>
+          &lt;h3 class="card-title push-0 mega">Helping Lost Pets&lt;/h3>
+          &lt;p class="push-0">Learn the procedure.&lt;/p>
+        &lt;/div>
+      &lt;/a>
     &lt;/li>
   &lt;/ul>
-&lt;/div>
+&lt;/section>
+
+&lt;section class="overview-section relative">
+  &lt;span class="block section-image push-0">&lt;/span>
+  &lt;div class="absolute w-1 pin-tl">
+    &lt;div class="section-header-container wrapper">
+      &lt;div class="section-content gutter pad-t-2">
+        &lt;h2 class="section-title yotta push-0 fw-600">&lt;span class="block push-1-2 fw-400 giga">Adopt&lt;/span>Easy as 1,&#xA0;2,&#xA0;3.&lt;/h2>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="grid island-1-2">
+    &lt;div class="unit [ xs-1 s-1-2 ] island-1-2">
+      &lt;div class="section-card island-2">
+        &lt;div class="section-card-content max-length">
+          &lt;h3 class="fw-600 mega">Adoption is just a few steps away.&lt;/h3>
+          &lt;p class="fw-300 mega push-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+    &lt;div class="unit [ xs-1 s-1-2 ] island-1-2">
+      &lt;div class="section-card island-2">
+        &lt;div class="section-card-content max-length">
+          &lt;strong class="fw-600 yotta">1&lt;/strong>
+          &lt;p class="milli push-0">Submit application&lt;/p>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
+
+&lt;footer class="footer pad-t pad-b " role="contentinfo">
+  &lt;div class="wrapper gutter">
+    &lt;div class="micro">
+      &lt;nav class="footer-breadcrumbs" role="navigation" aria-label="Breadcrumbs">
+        &lt;ol class="list-group-inline">
+          &lt;li class="push-r-1-4">
+            &lt;a class="footer-link ib" href="#">
+              &lt;i class="icon i-32 footer-logo">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#logo"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="visually-hidden">Loyal Rescue&lt;/span>
+            &lt;/a>
+          &lt;/li>
+          &lt;li class="push-r-1-4">
+            &lt;i class="icon i-breadcrumb push-r-1-4">
+                &lt;svg class="i-breadcrumb">&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
+              &lt;/i>
+            &lt;a class="footer-link" href="#">Adopt&lt;/a>
+          &lt;/li>
+          &lt;li class="push-r-1-4">
+            &lt;i class="icon i-breadcrumb push-r-1-4">
+                &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow-ultralight"/>&lt;/svg>
+              &lt;/i>
+            &lt;a class="footer-link" href="#">Adoption Process&lt;/a>
+          &lt;/li>
+        &lt;/ol>
+      &lt;/nav>
+
+      &lt;p class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call &lt;a>705-772-4916&lt;/a>, email &lt;a href="mailto:info@loyalrescue.com.">info@loyalrescue.com&lt;/a>, or visit us on social media.&lt;/p>
+
+      &lt;div class="grid">
+        &lt;div class="footer-copyright unit [ xs-1 s-1-2 ] push-1-2">Copyright &#xA9; 2017 Loyal Rescue Inc. All rights reserved.&lt;/div>
+        &lt;div class="footer-social-wrapper unit [ xs-1 s-1-2 ]">
+          &lt;div class="footer-social ib push-r-1-2">
+            &lt;a class="footer-link ib icon-link" href="">
+              &lt;i class="icon i-16 push-r-1-8">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#facebook"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Facebook&lt;/span>
+            &lt;/a>
+          &lt;/div>
+          &lt;div class="footer-social ib push-r-1-2">
+            &lt;a class="footer-link ib icon-link" href="">
+              &lt;i class="icon i-16 push-r-1-8">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#instagram"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Instagram&lt;/span>
+            &lt;/a>
+          &lt;/div>
+          &lt;div class="footer-social ib">
+            &lt;a class="footer-link ib icon-link" href="">
+              &lt;i class="icon i-16 push-r-1-8">
+                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
+                &lt;/i>
+              &lt;span class="icon-label">Twitter&lt;/span>
+            &lt;/a>
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/footer>
 </pre></code>
             </div>
           </div>
@@ -1794,11 +1917,11 @@
             &lt;h3 class="kilo push-0 pad-t pad-b">
                 &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q1-check">
                   &lt;span>Why is there an adoption fee?&lt;/span>
-                  &lt;div class="faq-toggle right">
+                  &lt;span class="faq-toggle right">
                     &lt;i class="faq-icon icon i-16 valign-middle" id="q1-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
-                  &lt;/div>
+                  &lt;/span>
                 &lt;/label>
               &lt;/h3>
           &lt;/div>
@@ -1811,11 +1934,11 @@
             &lt;h3 class="kilo push-0 pad-t pad-b">
                 &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q2-check">
                   &lt;span>Can I donate to Loyal Rescue?&lt;/span>
-                  &lt;div class="faq-toggle right">
+                  &lt;span class="faq-toggle right">
                     &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
-                  &lt;/div>
+                  &lt;/span>
                 &lt;/label>
               &lt;/h3>
           &lt;/div>
@@ -1834,11 +1957,11 @@
             &lt;h3 class="kilo push-0 pad-t pad-b">
                 &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q3-check">
                   &lt;span>Can I foster a dog in my home?&lt;/span>
-                  &lt;div class="faq-toggle right">
+                  &lt;span class="faq-toggle right">
                     &lt;i class="faq-icon icon i-16 valign-middle" id="q3-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
-                  &lt;/div>
+                  &lt;/span>
                 &lt;/label>
               &lt;/h3>
           &lt;/div>
@@ -1873,6 +1996,10 @@
               </a>
             </div>
         </div>
+          <div class="pattern-desc milli island" style="">
+            <div class="max-length"><p>The overview section is big and bold. Use this section to highlight specific topics in an engaging and eye-catching manner.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2">
@@ -1895,8 +2022,8 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2" style="">
-              <code><pre>&lt;section class="overview-section"&gt;
-  &lt;figure class="section-image push-0">&lt;/figure>
+              <code><pre>&lt;section class="overview-section relative"&gt;
+  &lt;span class="block section-image push-0">&lt;/span>
   &lt;div class="absolute w-1 pin-tl">
     &lt;div class="section-header-container wrapper">
       &lt;div class="section-content gutter pad-t-2">
@@ -1905,21 +2032,31 @@
     &lt;/div>
   &lt;/div>
 
-  &lt;div class="grid island-1-2">
-    &lt;div class="unit [ xs-1 s-1-2 ] island-1-2">
-      &lt;div class="section-card island-2">
+  &lt;div class="grid grid-stretch island-1-2">
+    &lt;div class="unit [ xs-1 s-1-2 ] unit-content-distribute island-1-2">
+      &lt;div class="section-card island-2 content-fill center-content-vertical">
         &lt;div class="section-card-content max-length">
           &lt;h3 class="fw-600 mega">Adoption is just a few steps away.&lt;/h3>
           &lt;p class="fw-300 mega push-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p>
         &lt;/div>
       &lt;/div>
     &lt;/div>
-    &lt;div class="unit [ xs-1 s-1-2 ] island-1-2">
-      &lt;div class="section-card island-2">
-        &lt;div class="section-card-content max-length">
-          &lt;h3 class="fw-600 mega">Lorem ipsum dolor sit.&lt;/h3>
-          &lt;p class="fw-300 mega push-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&lt;/p>
-        &lt;/div>
+    &lt;div class="unit [ xs-1 s-1-2 ] unit-content-distribute island-1-2">
+      &lt;div class="section-card island-2 content-fill center-content">
+        &lt;ol class="max-length list-group push-0">
+          &lt;li class="push-1-2">
+            &lt;strong class="push-r exa push-0 yotta">1&lt;/strong>
+            &lt;span class="milli push-0">Application&lt;/span>
+          &lt;/li>
+          &lt;li class="push-1-2">
+            &lt;strong class="push-r exa push-0 yotta">2&lt;/strong>
+            &lt;span class="milli push-0">Approval&lt;/span>
+          &lt;/li>
+          &lt;li>
+            &lt;strong class="push-r exa push-0 yotta">3&lt;/strong>
+            &lt;span class="milli push-0">Adoption&lt;/span>
+          &lt;/li>
+        &lt;/ol>
       &lt;/div>
     &lt;/div>
   &lt;/div>
