@@ -6,7 +6,7 @@
 }
 
 .card-icon {
-  color: var(--color-neutral-light);
+  color: var(--color-primary);
 }
 
 .card:hover .card-title {

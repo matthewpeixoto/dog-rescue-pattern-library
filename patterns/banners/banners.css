@@ -4,6 +4,8 @@
   height: calc(100vh - 110px);
   max-height: 640px;
   min-height: 420px;
+
+  background-color: #fafafa;
 }
 
 .hero-content {
@@ -13,7 +15,7 @@
 .hero-image {
   top: 45%;
 
-  background-image: url("../../images/banner-img.jpg");
+  background-image: url("../../images/hero-image.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto 100%;
