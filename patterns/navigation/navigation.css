@@ -21,6 +21,10 @@
   text-decoration: none;
 }
 
+.current {
+  opacity: .65;
+}
+
 .mainnav-link-border {
   border-bottom: 1px solid #5c6bc0;
 }

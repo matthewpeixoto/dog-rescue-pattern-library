@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Application - Loyal Rescue</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../common/modules.css" rel="stylesheet">
+  <link href="../common/grid.css" rel="stylesheet">
+  <link href="../common/type.css" rel="stylesheet">
+  <link href="../common/theme.css" rel="stylesheet">
+  <link href="../patterns/banners/banners.css" rel="stylesheet">
+  <link href="../patterns/buttons/buttons.css" rel="stylesheet">
+  <link href="../patterns/cards/cards.css" rel="stylesheet">
+  <link href="../patterns/footer/footer.css" rel="stylesheet">
+  <link href="../patterns/forms/forms.css" rel="stylesheet">
+  <link href="../patterns/navigation/navigation.css" rel="stylesheet">
+  <link href="../patterns/sections/sections.css" rel="stylesheet">
+</head>
+<body>
+
+  <header role="banner">
+    <div class="nav-container absolute w-1 zindex-2">
+      <div class="logo-wrapper-xs unit-s-hidden text-center">
+        <a class="mainnav-link-logo gutter-1-2 ib" href="home.html">
+          <h1 class="logo logo-xs push-0 ir">Loyal Rescue</h1>
+        </a>
+      </div>
+      <div class="wrapper">
+        <input class="mainnav-check absolute" type="checkbox" id="mainnav-check">
+        <label class="mainnav-label absolute pin-tl" for="mainnav-check">
+          <span class="mainnav-icon mainnav-icon-top block absolute"></span>
+          <span class="mainnav-icon mainnav-icon-bottom block absolute"></span>
+        </label>
+        <nav role="navigation" class="mainnav" id="mainnav">
+          <ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
+            <li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper"><a class="mainnav-link-logo logo-wrapper gutter-1-2 ib" href="home.html"><h1 class="logo milli push-0 ib ir">Loyal Rescue</h1></a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="current mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Adopt</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog</a></li>
+            <li class="unit [ xs-1 s-1-7 ]"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="subnav-container relative">
+      <div class="subnav-wrapper grid grid-middle wrapper relative">
+        <h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
+          <a href="#" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt</a>
+        </h1>
+        <div class="unit xs-1 s-1-2 subnav-link-wrapper">
+          <input id="subnav-check" type="checkbox" class="subnav-check absolute">
+          <label for="subnav-check" class="subnav-label absolute pin-tr">
+            <span class="ir block giga gutter pad-t-1-2 pad-b-1-2">Open Menu</span>
+            <strong class="absolute pin-c h-1 w-1">
+              <span class="subnav-icon subnav-icon-left block absolute"></span>
+              <span class="subnav-icon subnav-icon-right block absolute"></span>
+            </strong>
+          </label>
+          <nav role="navigation" class="subnav" id="subnav">
+            <ul class="subnav-link-group list-group push-0 milli gutter-2 pad-t-1-2 pad-b">
+              <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Adoption Process</a></li>
+              <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Application</a></li>
+              <li><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <footer class="footer pad-t pad-b " role="contentinfo">
+    <div class="wrapper gutter">
+      <div class="micro">
+        <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
+          <ol class="list-group-inline">
+            <li class="push-r-1-4">
+              <a class="breadcrumbs-link ib" href="#">
+                <i class="icon i-32 breadcrumbs-logo">
+                  <svg><use xlink:href="../../images/icons.svg#logo" /></svg>
+                </i>
+                <span class="visually-hidden">Loyal Rescue</span>
+              </a>
+            </li>
+            <li class="push-r-1-4">
+              <i class="icon i-breadcrumb push-r-1-4">
+                <svg class="i-breadcrumb"><use xlink:href="../../images/icons.svg#arrow-ultralight" /></svg>
+              </i>
+              <a class="breadcrumbs-link" href="#">Adopt</a>
+            </li>
+            <li class="push-r-1-4">
+              <i class="icon i-breadcrumb push-r-1-4">
+                <svg><use xlink:href="../../images/icons.svg#arrow-ultralight" /></svg>
+              </i>
+              <a class="breadcrumbs-link" href="#">Adoption Process</a>
+            </li>
+          </ol>
+        </nav>
+        <p class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call <a href="tel:+18007057724916">705-772-4916</a>, email <a href="mailto:info@loyalrescue.com.">info@loyalrescue.com</a>, or visit us on social media.</p>
+        <div class="grid">
+          <div class="footer-copyright unit [ xs-1 s-1-2 ] push-1-2">Copyright © 2017 Loyal Rescue Inc. All rights reserved.</div>
+          <div class="footer-social-wrapper unit [ xs-1 s-1-2 ]">
+            <div class="footer-social ib push-r-1-2">
+              <a class="ib icon-link" href="">
+                <i class="icon i-16 push-r-1-8">
+                  <svg><use xlink:href="../../images/icons.svg#facebook" /></svg>
+                </i>
+              </a>
+            </div>
+            <div class="footer-social ib">
+              <a class="ib icon-link" href="">
+                <i class="icon i-16 push-r-1-8">
+                  <svg><use xlink:href="../../images/icons.svg#twitter" /></svg>
+                </i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
