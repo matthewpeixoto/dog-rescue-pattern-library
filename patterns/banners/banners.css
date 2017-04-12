@@ -61,44 +61,29 @@
 
 /* Billboard */
 
-.billboard {
-  background-color: #fff;
+.billboard-container {
+  height: 16em;
+
+  background-color: #fafafa;
 }
 
-.billboard-image-wrapper {
-  background-color: #f1f1f3;
-  height: 250px;
+.billboard-content {
+  height: 35%;
 }
 
 .billboard-image {
-  height: 250px;
+  top: 35%;
+
+  background-image: url("../../images/hero-image.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
 }
 
 @media only screen and (min-width: 46em) {
 
-  .billboard-image-wrapper,
-  .billboard-image {
-    height: 384px;
-  }
-
-}
-
-@media only screen and (min-width: 67em) {
-
-  .billboard-info-wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20em;
-
-    text-align: left;
-  }
-
-  .billboard-image {
-    left: auto;
-    right: 0;
-    top: auto;
-    transform: translate(0, 0);
+  .billboard-container {
+    height: 20em;
   }
 
 }
