@@ -2,8 +2,8 @@
 
 .hero-container {
   height: calc(100vh - 110px);
-  max-height: 640px;
-  min-height: 420px;
+  max-height: 40em;
+  min-height: 26em;
 
   background-color: #fafafa;
 }
@@ -28,8 +28,8 @@
 @media only screen and (min-width: 46em) {
 
   .hero-container {
-    max-height: 960px;
-    min-height: 500px;
+    max-height: 55em;
+    min-height: 28em;
   }
 
 }
@@ -38,7 +38,7 @@
 
   .hero-container {
     max-height: 100vh;
-    min-height: 540px;
+    min-height: 28em;
   }
 
   .hero-content {

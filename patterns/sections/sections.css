@@ -1,12 +1,17 @@
 .section-title {
   color: #fff;
+  text-shadow: 0 0 200px rgba(0, 0, 0, .8);
 }
 
 .section-image {
-  height: 600px;
-  background-image: url("../../images/overview-image.jpg");
+  height: 40em;
+  background-image: url("../../images/adopt-image.jpg");
   background-position: center center;
   background-size: cover;
+}
+
+.foster-image {
+  background-image: url("../../images/foster-image.jpg");
 }
 
 .section-card {
@@ -23,10 +28,6 @@
 
 @media only screen and (min-width: 46em) {
 
-  .section-image {
-    height: 700px;
-  }
-
   .badge-list {
     max-width: 6em;
   }
@@ -36,7 +37,7 @@
 @media only screen and (min-width: 67em) {
 
   .section-image {
-    height: 1000px;
+    height: 50em;
   }
 
   .section-card {
