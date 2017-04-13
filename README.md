@@ -1,4 +1,6 @@
 ---
+outputFile: "index.html"
+
 name: "Loyal Rescue"
 fontUrl: "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"
 fonts:
