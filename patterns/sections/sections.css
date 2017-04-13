@@ -1,6 +1,6 @@
 .section-title {
   color: #fff;
-  text-shadow: 0 0 200px rgba(0, 0, 0, .8);
+  text-shadow: 0 0 200px rgba(0, 0, 0, .9);
 }
 
 .section-image {
@@ -18,17 +18,22 @@
   background-color: #fafafa;
 }
 
-.badge-label {
+.section-card-icons {
+  background-color: #fafafa;
+}
+
+.card-icon-label {
   color: var(--color-neutral);
 }
 
 @media only screen and (min-width: 46em) {
 
-  .badge-container {
-    padding: 1.4rem;
+  .section-card {
+    padding: 2.8rem;
   }
 
-  .badge-container {
+  .section-card,
+  .section-card-icons {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -46,15 +51,24 @@
     flex-flow: column wrap;
   }
 
+  .section-card-icons {
+    padding: 0;
+  }
+
 }
 @media only screen and (min-width: 67em) {
 
   .section-image {
-    height: 50em;
+    height: 52em;
   }
 
   .section-card {
     padding: 6rem;
+  }
+
+  .card-icon {
+    padding-left: .75rem;
+    padding-right: .75rem;
   }
 
 }

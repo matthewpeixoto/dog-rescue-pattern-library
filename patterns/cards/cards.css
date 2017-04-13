@@ -9,7 +9,8 @@
   color: var(--color-primary);
 }
 
-.card:hover .card-title {
+.card:hover .card-title,
+.card:hover .card-icon {
   color: var(--color-accent);
 }
 
