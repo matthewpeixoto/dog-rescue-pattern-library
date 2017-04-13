@@ -81,11 +81,6 @@
 
 /* Faq */
 
-.faq {
-  border-bottom: 1px solid var(--color-neutral-light);
-  border-top: 1px solid var(--color-neutral-light);
-}
-
 .faq-list-item {
   border-top: 1px solid var(--color-neutral-light);
 }
@@ -129,8 +124,8 @@
 }
 
 .carousel-btn {
-  height: 12px;
-  width: 12px;
+  height: 10px;
+  width: 10px;
 
   background-color: rgba(0, 0, 0, .15);
   border-radius: 50%;

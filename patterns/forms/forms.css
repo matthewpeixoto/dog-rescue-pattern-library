@@ -19,7 +19,7 @@ fieldset {
 }
 
 label {
-  color: var(--color-neutral);
+  color: var(--color-primary);
 }
 
 .is-validated input:invalid,
