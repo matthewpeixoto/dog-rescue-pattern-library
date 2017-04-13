@@ -1922,7 +1922,7 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="navigation-sub-nav-code-sample-copy-chunk">&lt;div class="subnav-container"&gt;
+              <code><pre id="navigation-sub-nav-code-sample-copy-chunk">&lt;div class="subnav-container absolute"&gt;
   &lt;div class="subnav-wrapper grid grid-middle wrapper relative">
     &lt;h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
         &lt;a href="#" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
@@ -2107,49 +2107,88 @@
                 </i>
               </button>
               <code><pre id="sections-carousel-code-sample-copy-chunk">&lt;section class="unit [ xs-1 s-1-2 ] unit-content-distribute island-1-2"&gt;
-  &lt;div class="carousel section-card island-2 content-fill">
-    &lt;input class="carousel-input" type="radio" name="foster" id="photo1-control" checked>
-    &lt;input class="carousel-input" type="radio" name="foster" id="photo2-control">
-    &lt;input class="carousel-input" type="radio" name="foster" id="photo3-control">
-    &lt;input class="carousel-input" type="radio" name="foster" id="photo4-control">
-    &lt;input class="carousel-input" type="radio" name="foster" id="photo5-control">
+  &lt;div class="section-card pad-t-2 pad-b-2 gutter content-fill">
+    &lt;div class="carousel w-1 max-length">
+      &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo1-control" checked>
+      &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo2-control">
+      &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo3-control">
+      &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo4-control">
+      &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo5-control">
 
-    &lt;div class="carousel-inner relative">
-      &lt;div class="carousel-items">
-        &lt;div class="carousel-item embed embed-4by3" id="photo1">
-          &lt;img class="embed-item" src="../../images/carousel/photo1.jpg" alt="">
+      &lt;div class="carousel-inner relative">
+        &lt;div class="carousel-items">
+          &lt;div class="carousel-item embed embed-4by3" id="photo1">
+            &lt;img class="embed-item" src="../../images/carousel/photo1.jpg" alt="">
+
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo2-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-rc h-1 w-1-2 center-content-vertical" for="photo2-control" aria-label="Next photo">
+              &lt;i class="icon i-64 i-carousel pin-rc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+          &lt;/div>
+          &lt;div class="carousel-item embed embed-4by3" id="photo2">
+            &lt;img class="embed-item" src="../../images/carousel/photo2.jpg" alt="">
+
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo3-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-lc h-1 w-1-2 center-content-vertical" for="photo1-control" aria-label="Previous photo">
+              &lt;i class="icon i-64 i-carousel pin-lc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo3-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-rc h-1 w-1-2 center-content-vertical" for="photo3-control" aria-label="Next photo">
+              &lt;i class="icon i-64 i-carousel pin-rc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+          &lt;/div>
+          &lt;div class="carousel-item embed embed-4by3" id="photo3">
+            &lt;img class="embed-item" src="../../images/carousel/photo3.jpg" alt="">
+
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo2-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-lc h-1 w-1-2 center-content-vertical" for="photo2-control" aria-label="Previous photo">
+              &lt;i class="icon i-64 i-carousel pin-lc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo4-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-rc h-1 w-1-2 center-content-vertical" for="photo4-control" aria-label="Next photo">
+              &lt;i class="icon i-64 i-carousel pin-rc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+          &lt;/div>
+          &lt;div class="carousel-item embed embed-4by3" id="photo4">
+            &lt;img class="embed-item" src="../../images/carousel/photo4.jpg" alt="">
+
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo3-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-lc h-1 w-1-2 center-content-vertical" for="photo3-control" aria-label="Previous photo">
+              &lt;i class="icon i-64 i-carousel pin-lc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo5-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-rc h-1 w-1-2 center-content-vertical" for="photo5-control" aria-label="Next photo">
+              &lt;i class="icon i-64 i-carousel pin-rc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+          &lt;/div>
+          &lt;div class="carousel-item embed embed-4by3" id="photo5">
+            &lt;img class="embed-item" src="../../images/carousel/photo5.jpg" alt="">
+
+            &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo4-control">
+            &lt;label class="carousel-arrow hide-custom-input pin-lc h-1 w-1-2 center-content-vertical" for="photo4-control" aria-label="Previous photo">
+              &lt;i class="icon i-64 i-carousel pin-lc">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
+            &lt;/label>
+          &lt;/div>
         &lt;/div>
-        &lt;div class="carousel-item embed embed-4by3" id="photo2">
-          &lt;img class="embed-item" src="../../images/carousel/photo2.jpg" alt="">
-        &lt;/div>
-        &lt;div class="carousel-item embed embed-4by3" id="photo3">
-          &lt;img class="embed-item" src="../../images/carousel/photo3.jpg" alt="">
-        &lt;/div>
-        &lt;div class="carousel-item embed embed-4by3" id="photo4">
-          &lt;img class="embed-item" src="../../images/carousel/photo4.jpg" alt="">
-        &lt;/div>
-        &lt;div class="carousel-item embed embed-4by3" id="photo5">
-          &lt;img class="embed-item" src="../../images/carousel/photo5.jpg" alt="">
-        &lt;/div>
+
+        &lt;ul class="carousel-controls list-group-inline absolute w-1 text-center push-0 pad-t-1-2">
+          &lt;li class="gutter-1-4">
+            &lt;label class="carousel-btn icon i-18 ir" for="photo1-control">Photo 1&lt;/label>
+          &lt;/li>
+          &lt;li class="gutter-1-4">
+            &lt;label class="carousel-btn icon i-18 ir" for="photo2-control">Photo 2&lt;/label>
+          &lt;/li>
+          &lt;li class="gutter-1-4">
+            &lt;label class="carousel-btn icon i-18 ir" for="photo3-control">Photo 3&lt;/label>
+          &lt;/li>
+          &lt;li class="gutter-1-4">
+            &lt;label class="carousel-btn icon i-18 ir" for="photo4-control">Photo 4&lt;/label>
+          &lt;/li>
+          &lt;li class="gutter-1-4">
+            &lt;label class="carousel-btn icon i-18 ir" for="photo5-control">Photo 5&lt;/label>
+          &lt;/li>
+        &lt;/ul>
       &lt;/div>
-
-      &lt;ul class="carousel-controls list-group-inline absolute w-1 text-center push-0 pad-t-1-2">
-        &lt;li class="gutter-1-4">
-          &lt;label class="carousel-btn icon i-18 ir" for="photo1-control">Photo 1&lt;/label>
-        &lt;/li>
-        &lt;li class="gutter-1-4">
-          &lt;label class="carousel-btn icon i-18 ir" for="photo2-control">Photo 2&lt;/label>
-        &lt;/li>
-        &lt;li class="gutter-1-4">
-          &lt;label class="carousel-btn icon i-18 ir" for="photo3-control">Photo 3&lt;/label>
-        &lt;/li>
-        &lt;li class="gutter-1-4">
-          &lt;label class="carousel-btn icon i-18 ir" for="photo4-control">Photo 4&lt;/label>
-        &lt;/li>
-        &lt;li class="gutter-1-4">
-          &lt;label class="carousel-btn icon i-18 ir" for="photo5-control">Photo 5&lt;/label>
-        &lt;/li>
-      &lt;/ul>
     &lt;/div>
   &lt;/div>
 &lt;/section>

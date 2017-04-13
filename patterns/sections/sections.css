@@ -140,6 +140,18 @@
   background-color: var(--color-accent-light);
 }
 
+.carousel-arrow {
+  color: #fff;
+}
+
+.i-carousel {
+  opacity: 0;
+}
+
+.carousel-arrow:hover .i-carousel {
+  opacity: .5;
+}
+
 #photo1-control:checked ~ .carousel-inner [for="photo1-control"],
 #photo2-control:checked ~ .carousel-inner [for="photo2-control"],
 #photo3-control:checked ~ .carousel-inner [for="photo3-control"],

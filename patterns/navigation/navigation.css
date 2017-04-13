@@ -160,6 +160,8 @@ input[type="checkbox"] + label::before {
 /* sub nav */
 
 .subnav-container {
+  padding-top: 3rem;
+
   border-bottom: 1px solid #cdcdcd;
 }
 
