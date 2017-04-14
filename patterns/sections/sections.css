@@ -56,6 +56,7 @@
   }
 
 }
+
 @media only screen and (min-width: 67em) {
 
   .section-image {
@@ -136,14 +137,17 @@
 }
 
 .carousel-arrow {
-  color: #fff;
+  color: #000;
 }
 
 .i-carousel {
   opacity: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: opacity 250ms linear;
 }
 
-.carousel-arrow:hover .i-carousel {
+.carousel-inner:hover .i-carousel {
   opacity: .5;
 }
 
@@ -153,4 +157,24 @@
 #photo4-control:checked ~ .carousel-inner [for="photo4-control"],
 #photo5-control:checked ~ .carousel-inner [for="photo5-control"] {
   background-color: var(--color-accent);
+}
+
+.push-l-1-2 {
+  margin-left: .65rem;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .push-l-1-2 {
+    margin-left: .7rem;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .push-l-1-2 {
+    margin-left: .75rem;
+  }
+
 }
