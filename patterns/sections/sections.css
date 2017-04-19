@@ -136,15 +136,13 @@
   background-color: var(--color-accent-light);
 }
 
-.carousel-arrow {
-  color: #000;
-}
-
 .i-carousel {
-  opacity: 0;
   background-color: #fff;
   border-radius: 50%;
+  opacity: 0;
   transition: opacity 250ms linear;
+
+  color: #000;
 }
 
 .carousel-inner:hover .i-carousel {

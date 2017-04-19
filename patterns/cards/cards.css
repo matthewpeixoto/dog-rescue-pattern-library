@@ -40,6 +40,10 @@
     border-right: 2px solid #fff;
   }
 
+  .push-l-1-2 {
+    margin-left: .7rem;
+  }
+
 }
 
 @media only screen and (min-width: 67em) {
@@ -48,4 +52,59 @@
     border-right: 2px solid #fff;
   }
 
+  .push-l-1-2 {
+    margin-left: .75rem;
+  }
+
+}
+
+/* Carousel */
+
+.carousel-items > div {
+  display: none;
+}
+
+#photo1-control:checked ~ .carousel-inner #photo1,
+#photo2-control:checked ~ .carousel-inner #photo2,
+#photo3-control:checked ~ .carousel-inner #photo3,
+#photo4-control:checked ~ .carousel-inner #photo4,
+#photo5-control:checked ~ .carousel-inner #photo5 {
+  display: block;
+}
+
+.carousel-btn {
+  height: 10px;
+  width: 10px;
+
+  background-color: rgba(0, 0, 0, .15);
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: var(--color-accent-light);
+}
+
+.i-carousel {
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 250ms linear;
+
+  color: #000;
+}
+
+.carousel-inner:hover .i-carousel {
+  opacity: .5;
+}
+
+#photo1-control:checked ~ .carousel-inner [for="photo1-control"],
+#photo2-control:checked ~ .carousel-inner [for="photo2-control"],
+#photo3-control:checked ~ .carousel-inner [for="photo3-control"],
+#photo4-control:checked ~ .carousel-inner [for="photo4-control"],
+#photo5-control:checked ~ .carousel-inner [for="photo5-control"] {
+  background-color: var(--color-accent);
+}
+
+.push-l-1-2 {
+  margin-left: .65rem;
 }
