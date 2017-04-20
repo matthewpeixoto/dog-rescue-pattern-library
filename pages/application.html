@@ -81,64 +81,108 @@
   </header>
 
   <main>
-    <div class="max-length push-2">
-      <form method="post" action="https://formspree.io/matthewpeixoto@gmail.com">
-        <!-- Tab Nav -->
-        <input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
-        <input class="tabnav-input" type="radio" name="form" id="about-control">
-        <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
-        <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
-        <input class="tabnav-input" type="radio" name="form" id="other-control">
+    <form class="max-length pad-t pad-b" method="post" novalidate>
+      <!-- Tab Nav -->
+      <input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
+      <input class="tabnav-input" type="radio" name="form" id="about-control">
+      <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
+      <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
+      <input class="tabnav-input" type="radio" name="form" id="other-control">
 
-        <div class="tabnav pad-t pad-b-1-2">
-          <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
-            <li class="gutter push-1-2">
-              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
-            </li>
-            <li class="gutter push-1-2">
-              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You</label>
-            </li>
-            <li class="gutter push-1-2">
-              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Lifestyle</label>
-            </li>
-            <li class="gutter push-1-2">
-              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information</label>
-            </li>
-            <li class="gutter push-1-2">
-              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other</label>
-            </li>
-          </ul>
+      <div class="tabnav pad-t pad-b-1-2">
+        <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
+          </li>
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You</label>
+          </li>
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Lifestyle</label>
+          </li>
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information</label>
+          </li>
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other</label>
+          </li>
+        </ul>
+      </div>
+      <!-- End Tab Nav -->
+
+      <div class="form-inner relative">
+        <div class="form-items">
+
+          <fieldset class="application-fieldset" id="agreement">
+            <legend>Agreement</legend>
+
+            <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+            <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+            <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
+            <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+            <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
+            <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
+            <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
+
+            <div class="unit xs-1 push-1-2 relative gutter-1-4">
+              <input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="agree-error">
+              <label for="agree">Agree to the terms and conditions.</label>
+              <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+                <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                <span class="icon-label">Please enter your first name.</span>
+              </p>
+            </div>
+
+            <div class="text-center">
+              <label class="hide-custom-input ib" for="about-control" aria-label="Continue">
+                <span class="btn" href="#">Continue</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="application-fieldset" id="about">
+            <legend>Tell us a little bit about yourself.</legend>
+
+            <div class="text-center">
+              <label class="hide-custom-input ib" for="lifestyle-control" aria-label="Continue">
+                <span class="btn" href="#">Continue</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="application-fieldset" id="lifestyle">
+            <legend>Lifestyle</legend>
+
+            <div class="text-center">
+              <label class="hide-custom-input ib" for="petinfo-control" aria-label="Continue">
+                <span class="btn" href="#">Continue</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="application-fieldset" id="petinfo">
+            <legend>Pet Information</legend>
+
+            <div class="text-center">
+              <label class="hide-custom-input ib" for="other-control" aria-label="Continue">
+                <span class="btn" href="#">Continue</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="application-fieldset" id="other">
+            <legend>Other</legend>
+
+            <div class="text-center">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+          </fieldset>
+
         </div>
-        <!-- End Tab Nav -->
+      </div>
 
-        <div class="form-inner relative">
-          <div class="form-items">
-
-            <fieldset class="application-fieldset" id="agreement">
-              <legend>Agreement</legend>
-            </fieldset>
-
-            <fieldset class="application-fieldset" id="about">
-              <legend>About you</legend>
-            </fieldset>
-
-            <fieldset class="application-fieldset" id="lifestyle">
-              <legend>Lifestyle</legend>
-            </fieldset>
-
-            <fieldset class="application-fieldset" id="petinfo">
-              <legend>Pet Information</legend>
-            </fieldset>
-
-            <fieldset class="application-fieldset" id="other">
-              <legend>Other</legend>
-            </fieldset>
-
-          </div>
-        </div>
-
-      </form>
-    </div>
+    </form>
   </main>
 
   <footer class="footer pad-t pad-b " role="contentinfo">

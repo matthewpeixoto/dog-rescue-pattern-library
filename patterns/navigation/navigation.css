@@ -46,7 +46,8 @@
   width: 48px;
 }
 
-input[type="checkbox"] + label::before {
+.nav-container input[type="checkbox"] + label::before,
+.subnav-container input[type="checkbox"] + label::before {
   display: none;
 }
 
@@ -94,7 +95,8 @@ input[type="checkbox"] + label::before {
 
 @media only screen and (min-width: 46em) {
 
-  input[type="checkbox"] + label {
+  .nav-container input[type="checkbox"] + label,
+  .subnav-container input[type="checkbox"] + label {
     display: none;
   }
 

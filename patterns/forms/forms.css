@@ -18,6 +18,10 @@ fieldset {
   border-top: none;
 }
 
+legend {
+  color: var(--color-primary);
+}
+
 label {
   color: var(--color-primary);
 }
@@ -46,22 +50,6 @@ label {
 .is-validated input:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: inline-block;
-}
-
-::-webkit-input-placeholder {
-  color: #b3b3b3;
-}
-
-::-moz-placeholder {
-  color: #b3b3b3;
-}
-
-:-ms-input-placeholder {
-  color: #b3b3b3;
-}
-
-:-moz-placeholder {
-  color: #b3b3b3;
 }
 
 .warning-arrow {
