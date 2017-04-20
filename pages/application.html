@@ -39,7 +39,7 @@
         <nav role="navigation" class="mainnav" id="mainnav">
           <ul class="mainnav-link-group grid grid-middle list-group milli gutter-2 pad-t-1-2 pad-b">
             <li class="unit [ s-2-7 ] unit-xs-hidden logo-wrapper"><a class="mainnav-link-logo logo-wrapper gutter-1-2 ib" href="home.html"><h1 class="logo milli push-0 ib ir">Loyal Rescue</h1></a></li>
-            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="current mainnav-link block pad-t-1-2 pad-b-1-2" href="adopt.html">Adopt</a></li>
+            <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="current mainnav-link block pad-t-1-2 pad-b-1-2" href="available-dogs.html">Adopt</a></li>
             <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Foster</a></li>
             <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">About</a></li>
             <li class="unit [ xs-1 s-1-7 ] mainnav-link-border"><a class="mainnav-link block pad-t-1-2 pad-b-1-2" href="#">Blog</a></li>
@@ -51,7 +51,7 @@
     <div class="subnav-container relative">
       <div class="subnav-wrapper grid grid-middle wrapper relative">
         <h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
-          <a href="adopt.html" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Application</a>
+          <a href="available-dogs.html" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Application</a>
         </h1>
         <div class="unit xs-1 s-1-2 subnav-link-wrapper">
           <input id="subnav-check" type="checkbox" class="subnav-check absolute">
@@ -64,7 +64,7 @@
           </label>
           <nav role="navigation" class="subnav" id="subnav">
             <ul class="subnav-link-group list-group push-0 milli gutter-2 pad-t-1-2 pad-b">
-              <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="adopt.html">Available dogs</a></li>
+              <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="available-dogs.html">Available dogs</a></li>
               <li class="subnav-link-style"><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Adoption Process</a></li>
               <li><a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">FAQ</a></li>
             </ul>
@@ -81,8 +81,62 @@
   </header>
 
   <main>
-    <div class="wrapper push-2">
+    <div class="max-length push-2">
       <form method="post" action="https://formspree.io/matthewpeixoto@gmail.com">
+        <!-- Tab Nav -->
+        <input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
+        <input class="tabnav-input" type="radio" name="form" id="about-control">
+        <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
+        <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
+        <input class="tabnav-input" type="radio" name="form" id="other-control">
+
+        <div class="tabnav pad-t pad-b-1-2">
+          <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
+            <li class="gutter push-1-2">
+              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
+            </li>
+            <li class="gutter push-1-2">
+              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You</label>
+            </li>
+            <li class="gutter push-1-2">
+              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Lifestyle</label>
+            </li>
+            <li class="gutter push-1-2">
+              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information</label>
+            </li>
+            <li class="gutter push-1-2">
+              <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other</label>
+            </li>
+          </ul>
+        </div>
+        <!-- End Tab Nav -->
+
+        <div class="form-inner relative">
+          <div class="form-items">
+
+            <fieldset class="application-fieldset" id="agreement">
+              <legend>Agreement</legend>
+            </fieldset>
+
+            <fieldset class="application-fieldset" id="about">
+              <legend>About you</legend>
+            </fieldset>
+
+            <fieldset class="application-fieldset" id="lifestyle">
+              <legend>Lifestyle</legend>
+            </fieldset>
+
+            <fieldset class="application-fieldset" id="petinfo">
+              <legend>Pet Information</legend>
+            </fieldset>
+
+            <fieldset class="application-fieldset" id="other">
+              <legend>Other</legend>
+            </fieldset>
+
+          </div>
+        </div>
+
       </form>
     </div>
   </main>
@@ -104,7 +158,7 @@
               <i class="icon i-breadcrumb push-r-1-4">
                 <svg class="i-breadcrumb"><use xlink:href="../../images/icons.svg#arrow-ultralight" /></svg>
               </i>
-              <a class="breadcrumbs-link" href="adopt.html">Adopt</a>
+              <a class="breadcrumbs-link" href="available-dogs.html">Adopt</a>
             </li>
             <li class="push-r-1-4">
               <i class="icon i-breadcrumb push-r-1-4">
