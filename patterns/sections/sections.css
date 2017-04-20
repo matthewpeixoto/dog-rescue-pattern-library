@@ -90,6 +90,10 @@
   color: var(--color-accent);
 }
 
+.faq-question {
+  margin-right: 2.6rem;
+}
+
 .faq-answer {
   display: none;
 }

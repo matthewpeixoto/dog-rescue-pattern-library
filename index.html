@@ -1124,14 +1124,14 @@
         &lt;div class="footer-social-wrapper unit [ xs-1 s-1-2 ]">
           &lt;div class="footer-social ib push-r-1-2">
             &lt;a class="ib icon-link" href="">
-              &lt;i class="icon i-16 push-r-1-8">
+              &lt;i class="icon i-16">
                   &lt;svg>&lt;use xlink:href="../../images/icons.svg#facebook"/>&lt;/svg>
                 &lt;/i>
             &lt;/a>
           &lt;/div>
           &lt;div class="footer-social ib">
             &lt;a class="ib icon-link" href="">
-              &lt;i class="icon i-16 push-r-1-8">
+              &lt;i class="icon i-16">
                   &lt;svg>&lt;use xlink:href="../../images/icons.svg#twitter"/>&lt;/svg>
                 &lt;/i>
             &lt;/a>
@@ -2104,7 +2104,7 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="sections-carousel-code-sample-copy-chunk">&lt;section class="unit-content-distribute island-1-2"&gt;
+              <code><pre id="sections-carousel-code-sample-copy-chunk">&lt;section class="unit [ xs-1 s-1-2 ] unit-content-distribute island-1-2"&gt;
   &lt;div class="section-card pad-t-2 pad-b-2 gutter content-fill">
     &lt;div class="carousel w-1 max-length">
       &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo1-control" checked>
@@ -2118,7 +2118,6 @@
           &lt;div class="carousel-item embed embed-4by3" id="photo1">
             &lt;img class="embed-item" src="../../images/carousel/photo1.jpg" alt="">
 
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo2-control" aria-label="Next">
               &lt;i class="icon i-48 i-carousel pin-rc push-r-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
             &lt;/label>
@@ -2126,11 +2125,9 @@
           &lt;div class="carousel-item embed embed-4by3" id="photo2">
             &lt;img class="embed-item" src="../../images/carousel/photo2.jpg" alt="">
 
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo1-control" aria-label="Previous">
               &lt;i class="icon i-48 i-carousel pin-lc push-l-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
             &lt;/label>
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="carousel-arrow hide-custom-input center-content-vertical" for="photo3-control" aria-label="Next">
               &lt;i class="icon i-48 i-carousel pin-rc push-r-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
             &lt;/label>
@@ -2138,11 +2135,9 @@
           &lt;div class="carousel-item embed embed-4by3" id="photo3">
             &lt;img class="embed-item" src="../../images/carousel/photo3.jpg" alt="">
 
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo2-control" aria-label="Previous">
               &lt;i class="icon i-48 i-carousel pin-lc push-l-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
             &lt;/label>
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="carousel-arrow hide-custom-input center-content-vertical" for="photo4-control" aria-label="Next">
               &lt;i class="icon i-48 i-carousel pin-rc push-r-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
             &lt;/label>
@@ -2150,11 +2145,9 @@
           &lt;div class="carousel-item embed embed-4by3" id="photo4">
             &lt;img class="embed-item" src="../../images/carousel/photo4.jpg" alt="">
 
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo3-control" aria-label="Previous">
               &lt;i class="icon i-48 i-carousel pin-lc push-l-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
             &lt;/label>
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo5-control" aria-label="Next">
               &lt;i class="icon i-48 i-carousel pin-rc push-r-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#next"/>&lt;/svg>&lt;/i>
             &lt;/label>
@@ -2162,7 +2155,6 @@
           &lt;div class="carousel-item embed embed-4by3" id="photo5">
             &lt;img class="embed-item" src="../../images/carousel/photo5.jpg" alt="">
 
-            &lt;input class="carousel-input" type="radio" name="foster-carousel">
             &lt;label class="hide-custom-input center-content-vertical" for="photo4-control" aria-label="Previous">
               &lt;i class="icon i-48 i-carousel pin-lc push-l-1-2">&lt;svg>&lt;use xlink:href="../../images/icons.svg#previous"/>&lt;/svg>&lt;/i>
             &lt;/label>
@@ -2261,16 +2253,15 @@
         &lt;li class="faq-list-item">
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q1-check">
-                  &lt;span>Why is there an adoption fee?&lt;/span>
-                  &lt;span class="faq-toggle right">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q1-icon">
+                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
+                  &lt;span class="faq-question ib">Why do you charge an adoption fee?&lt;/span>
+                  &lt;span class="faq-toggle pin-rt">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
                   &lt;/span>
                 &lt;/label>
-              &lt;/h3>
-          &lt;/div>
+            &lt;/h3>&lt;/div>
           &lt;div class="faq-answer max-length-no-center push-2" id="q1-answer">
             &lt;p class="push-0">The sad reality is that we get the unwanted, unvetted, uncared for. We have had, and still have many adult dogs, most of whom came to us in need of medical care. Veterinary costs for the special cases can run into thousands of dollars. Some of the dogs have special needs like medications such as insulin for diabetes, Vetoryl for Cushings disease and heart medications for those that have heart issues in order to provide a better quality of life. Younger healthier dogs may not have quite the same health issues as the older dogs do but they too need to be examined, vaccinated and altered prior to adoption. They could also have problems like eye surgery, lump removals, diabetic. The adoption fee only partially covers these costs. Donations from the public are limited. LOYAL Rescue offsets the difference through fundraising efforts where we can.&lt;/p>
           &lt;/div>
@@ -2278,9 +2269,9 @@
         &lt;li class="faq-list-item">
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q2-check">
-                  &lt;span>Can I donate to Loyal Rescue?&lt;/span>
-                  &lt;span class="faq-toggle right">
+                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
+                  &lt;span class="faq-question ib">Can I donate to Loyal Rescue?&lt;/span>
+                  &lt;span class="faq-toggle pin-rt">
                     &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
@@ -2301,10 +2292,10 @@
         &lt;li class="faq-list-item">
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8" for="q3-check">
-                  &lt;span>Can I foster a dog in my home?&lt;/span>
-                  &lt;span class="faq-toggle right">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q3-icon">
+                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
+                  &lt;span class="faq-question ib">Can I foster a dog in my home?&lt;/span>
+                  &lt;span class="faq-toggle pin-rt">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
                   &lt;/span>

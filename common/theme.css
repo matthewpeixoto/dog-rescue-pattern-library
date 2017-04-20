@@ -108,3 +108,13 @@ select:focus {
   box-shadow: 0 0 0 3px var(--color-accent-ultralight);
   outline: none;
 }
+
+/*Skip links*/
+
+.skip-links a,
+.skip-links button {
+  background-color: var(--color-primary);
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+}

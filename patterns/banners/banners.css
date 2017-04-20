@@ -67,6 +67,10 @@
   background-color: #fafafa;
 }
 
+.billboard-container-application {
+  background-color: #fefefe;
+}
+
 .billboard-content {
   height: 35%;
 }
@@ -78,6 +82,10 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: auto 100%;
+}
+
+.billboard-image-application {
+  background-image: url("../../images/application-billboard.jpg");
 }
 
 @media only screen and (min-width: 46em) {
