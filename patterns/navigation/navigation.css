@@ -47,7 +47,8 @@
 }
 
 .nav-container input[type="checkbox"] + label::before,
-.subnav-container input[type="checkbox"] + label::before {
+.subnav-container input[type="checkbox"] + label::before,
+.filter-container input[type="checkbox"] + label::before {
   display: none;
 }
 
@@ -96,7 +97,8 @@
 @media only screen and (min-width: 46em) {
 
   .nav-container input[type="checkbox"] + label,
-  .subnav-container input[type="checkbox"] + label {
+  .subnav-container input[type="checkbox"] + label,
+  .filter-container input[type="checkbox"] + label {
     display: none;
   }
 

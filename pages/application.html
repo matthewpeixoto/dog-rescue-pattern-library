@@ -72,12 +72,6 @@
         </div>
       </div>
     </div>
-    <div class="billboard-container billboard-container-application relative">
-      <div class="billboard-content center-content text-center island">
-        <h2 class="push-0">You're just a few steps away.</h2>
-      </div>
-      <span class="billboard-image billboard-image-application absolute pin-bl pin-br"></span>
-    </div>
   </header>
 
   <main>
@@ -89,7 +83,7 @@
       <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
       <input class="tabnav-input" type="radio" name="form" id="other-control">
 
-      <div class="tabnav pad-t pad-b-1-2">
+      <div class="tabnav push-1-2">
         <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
           <li class="gutter push-1-2">
             <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
@@ -114,7 +108,9 @@
         <div class="form-items">
 
           <fieldset class="application-fieldset" id="agreement">
-            <legend>Agreement</legend>
+            <legend class="text-center push">
+              <h2>Agreement</h2>
+            </legend>
 
             <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
             <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
@@ -136,13 +132,20 @@
 
             <div class="text-center">
               <label class="hide-custom-input ib" for="about-control" aria-label="Continue">
-                <span class="btn" href="#">Continue</span>
+                <a class="btn btn-subtle" href="#">
+                  <span class="icon-text">Continue</span>
+                  <i class="icon i-arrow">
+                    <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                  </i>
+                </a>
               </label>
             </div>
           </fieldset>
 
           <fieldset class="application-fieldset" id="about">
-            <legend>Tell us a little bit about yourself.</legend>
+            <legend class="text-center push">
+              <h2>About You</h2>
+            </legend>
 
             <div class="text-center">
               <label class="hide-custom-input ib" for="lifestyle-control" aria-label="Continue">
@@ -152,7 +155,9 @@
           </fieldset>
 
           <fieldset class="application-fieldset" id="lifestyle">
-            <legend>Lifestyle</legend>
+            <legend class="text-center push">
+              <h2>Lifestyle</h2>
+            </legend>
 
             <div class="text-center">
               <label class="hide-custom-input ib" for="petinfo-control" aria-label="Continue">
@@ -162,7 +167,9 @@
           </fieldset>
 
           <fieldset class="application-fieldset" id="petinfo">
-            <legend>Pet Information</legend>
+            <legend class="text-center push">
+              <h2>Pet Information</h2>
+            </legend>
 
             <div class="text-center">
               <label class="hide-custom-input ib" for="other-control" aria-label="Continue">
@@ -172,7 +179,9 @@
           </fieldset>
 
           <fieldset class="application-fieldset" id="other">
-            <legend>Other</legend>
+            <legend class="text-center push">
+              <h2>Other</h2>
+            </legend>
 
             <div class="text-center">
               <button class="btn" type="submit">Submit</button>
