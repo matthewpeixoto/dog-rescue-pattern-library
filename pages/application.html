@@ -75,15 +75,14 @@
   </header>
 
   <main>
-    <form class="max-length pad-t pad-b" method="post" novalidate>
+    <form class="pad-t pad-b" method="post" action="https://formspree.io/peix0012@algonquinlive.com" novalidate>
       <!-- Tab Nav -->
       <input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
       <input class="tabnav-input" type="radio" name="form" id="about-control">
       <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
       <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
       <input class="tabnav-input" type="radio" name="form" id="other-control">
-
-      <div class="tabnav push-1-2">
+      <div class="tabnav push">
         <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
           <li class="gutter push-1-2">
             <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
@@ -104,87 +103,162 @@
       </div>
       <!-- End Tab Nav -->
 
-      <div class="form-inner relative">
+      <div class="form-inner relative wrapper gutter">
         <div class="form-items">
 
-          <fieldset class="application-fieldset" id="agreement">
-            <legend class="text-center push">
-              <h2>Agreement</h2>
+          <!-- Agreement -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="agreement">
+            <legend class="text-center">
+              <h2 class="push-0">Do you agree?</h2>
             </legend>
 
-            <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
-            <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
-            <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
-            <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
-            <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
-            <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
-            <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
+            <fieldset class="pad-t pad-b-2 push-0">
+              <div class="max-length">
+                <legend class="push">Terms and Conditions</legend>
+                <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+                <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+                <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
+                <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+                <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
+                <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
+                <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
+                <div class="pad-t">
+                  <input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="agree-error">
+                  <label for="agree">Agree to the terms and conditions.</label>
+                  <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
 
-            <div class="unit xs-1 push-1-2 relative gutter-1-4">
-              <input class="gutter-1-2 push-1-2" type="checkbox" id="agree" required aria-describedby="agree-error">
-              <label for="agree">Agree to the terms and conditions.</label>
-              <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
-                <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                <span class="icon-label">Please enter your first name.</span>
-              </p>
-            </div>
-
-            <div class="text-center">
-              <label class="hide-custom-input ib" for="about-control" aria-label="Continue">
-                <a class="btn btn-subtle" href="#">
-                  <span class="icon-text">Continue</span>
-                  <i class="icon i-arrow">
-                    <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
-                  </i>
-                </a>
+            <div class="text-center pad-t-2">
+              <label class="hide-custom-input ib btn btn-subtle" for="about-control" aria-label="Continue">
+                <span class="icon-text">Continue</span>
+                <i class="icon i-arrow">
+                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                </i>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="application-fieldset" id="about">
-            <legend class="text-center push">
-              <h2>About You</h2>
+          <!-- About You -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="about">
+            <legend class="text-center">
+              <h2 class="push-0">Tell us about you.</h2>
             </legend>
 
-            <div class="text-center">
-              <label class="hide-custom-input ib" for="lifestyle-control" aria-label="Continue">
-                <span class="btn" href="#">Continue</span>
+            <fieldset class="pad-t pad-b-2 push-0">
+              <div class="max-length">
+                <legend class="push">Personal details</legend>
+                <div class="grid">
+                  <div class="unit xs-1 s-1-2 relative push space-right">
+                    <label class="push-1-8 "for="first-name">First Name</label>
+                    <input id="first-name" class="gutter-1-2" placeholder="first name" required aria-describedby="first-name-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter a first name.</span>
+                    </p>
+                  </div>
+                  <div class="unit xs-1 s-1-2 relative push space-left">
+                    <label class="push-1-8 "for="last-name">Last Name</label>
+                    <input id="last-name" class="gutter-1-2" placeholder="last name" required aria-describedby="last-name-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter a last name.</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="relative">
+                  <label class="push-1-8 "for="birthday">Birthday</label>
+                  <input id="birthday" class="gutter-1-2" placeholder="birthday" type="date" required aria-describedby="birthday-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter a valid birthday.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-0">
+              <div class="max-length">
+                <legend class="push">Address</legend>
+                <div class="relative push">
+                  <label  class="push-1-8 "for="street-address">Street Address</label>
+                  <input id="street-address" class="gutter-1-2" placeholder="street address" required aria-describedby="street-address-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter a valid street address.</span>
+                  </p>
+                </div>
+                <div class="relative push">
+                  <label  class="push-1-8 "for="city">City</label>
+                  <input id="city" class="gutter-1-2" placeholder="city" required aria-describedby="city-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter a valid city.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="text-center pad-t-2">
+              <label class="hide-custom-input ib btn btn-subtle" for="lifestyle-control" aria-label="Continue">
+                <span class="icon-text">Continue</span>
+                <i class="icon i-arrow">
+                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                </i>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="application-fieldset" id="lifestyle">
+          <!-- Lifestyle -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="lifestyle">
             <legend class="text-center push">
-              <h2>Lifestyle</h2>
+              <h2>Tell us about your lifestyle.</h2>
             </legend>
 
-            <div class="text-center">
-              <label class="hide-custom-input ib" for="petinfo-control" aria-label="Continue">
-                <span class="btn" href="#">Continue</span>
+            <div class="text-center pad-t-2">
+              <label class="hide-custom-input ib btn btn-subtle" for="petinfo-control" aria-label="Continue">
+                <span class="icon-text">Continue</span>
+                <i class="icon i-arrow">
+                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                </i>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="application-fieldset" id="petinfo">
+          <!-- Pet Info -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="petinfo">
             <legend class="text-center push">
-              <h2>Pet Information</h2>
+              <h2>Tell us about your pets.</h2>
             </legend>
 
-            <div class="text-center">
-              <label class="hide-custom-input ib" for="other-control" aria-label="Continue">
-                <span class="btn" href="#">Continue</span>
+            <div class="text-center pad-t-2">
+              <label class="hide-custom-input ib btn btn-subtle" for="other-control" aria-label="Continue">
+                <span class="icon-text">Continue</span>
+                <i class="icon i-arrow">
+                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                </i>
               </label>
             </div>
           </fieldset>
 
-          <fieldset class="application-fieldset" id="other">
+          <!-- Other -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="other">
             <legend class="text-center push">
               <h2>Other</h2>
             </legend>
 
-            <div class="text-center">
-              <button class="btn" type="submit">Submit</button>
+            <div class="text-center pad-t-2">
+              <button class="btn" type="submit">Submit Application</button>
             </div>
           </fieldset>
 
@@ -245,5 +319,6 @@
     </div>
   </footer>
 
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>

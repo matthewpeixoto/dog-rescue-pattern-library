@@ -18,9 +18,18 @@ fieldset {
   border-top: none;
 }
 
-label {
+legend {
   color: var(--color-primary);
 }
+
+.no-border {
+  border: none;
+}
+
+/*legend {
+  color: var(--color-neutral);
+  font-weight: 300;
+}*/
 
 .is-validated input:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
@@ -34,6 +43,8 @@ label {
   background-color: #ffecb3;
   border-radius: 4px;
   border: 1px solid #ffc107;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .error-message-highlighted {

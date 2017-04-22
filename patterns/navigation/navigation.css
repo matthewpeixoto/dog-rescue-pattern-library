@@ -372,7 +372,7 @@
   color: var(--color-neutral);
 }
 
-.form-items > fieldset {
+.application-fieldset {
   display: none;
 }
 
