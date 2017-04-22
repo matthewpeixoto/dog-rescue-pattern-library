@@ -1,6 +1,6 @@
 ---
 icon-card:
-  width: 400
+  width: 288
   desc: |
     The icon card is used to promote helpful links. These cards work well in a grid of four and provide users a quick and easy way to navigate to various inside pages.
 info-card:

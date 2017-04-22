@@ -40,12 +40,18 @@
     border-right: 2px solid #fff;
   }
 
+
 }
 
 @media only screen and (min-width: 67em) {
 
   .m-border-right {
     border-right: 2px solid #fff;
+  }
+
+  .dog-info-card {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
 }

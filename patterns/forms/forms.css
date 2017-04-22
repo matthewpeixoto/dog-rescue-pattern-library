@@ -97,11 +97,23 @@ select {
 @media only screen and (min-width: 46em) {
 
   .space-right {
-    padding-right: .3rem;
+    padding-right: .35rem;
   }
 
   .space-left {
-    padding-left: .3rem;
+    padding-left: .35rem;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  .space-right {
+    padding-right: .375rem;
+  }
+
+  .space-left {
+    padding-left: .375rem;
   }
 
 }

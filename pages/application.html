@@ -173,7 +173,7 @@
                     </p>
                   </div>
                 </div>
-                <div class="relative">
+                <div class="relative push">
                   <label class="push-1-8 "for="birthday">Birthday</label>
                   <input id="birthday" class="gutter-1-2" placeholder="birthday" type="date" required aria-describedby="birthday-error">
                   <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
@@ -182,6 +182,27 @@
                     <span class="icon-label">Enter a valid birthday.</span>
                   </p>
                 </div>
+                <div class="grid">
+                  <div class="unit xs-1 s-1-2 relative push space-right">
+                    <label for="email" class="push-1-8">Email</label>
+                    <input id="email" class="gutter-1-2" placeholder="name@example.com" type="email" required aria-describedby="email-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter a valid email address.</span>
+                    </p>
+                  </div>
+                  <div class="unit xs-1 s-1-2 relative push space-left">
+                    <label for="phone" class="push-1-8">Phone Number</label>
+                    <input id="phone" class="gutter-1-2" placeholder="123-456-7890" type="tel" required aria-describedby="phone-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter a valid phone number.</span>
+                    </p>
+                  </div>
+                </div>
+
               </div>
             </fieldset>
 
@@ -206,6 +227,80 @@
                     <span class="icon-label">Enter a valid city.</span>
                   </p>
                 </div>
+                <div class="grid">
+                  <div class="unit xs-1 s-1-2 relative push space-right">
+                    <label for="province">Province</label>
+                    <select id="province" class="gutter-1-2" required aria-describedby="province-error">
+                      <option value="">Province</option>
+                      <option>AB - Alberta</option>
+                      <option>BC - British Columbia</option>
+                      <option>MB - Manitoba</option>
+                      <option>NB - New Brunswick</option>
+                      <option>NL - Newfoundland and Labrador</option>
+                      <option>NS - Nova Scotia</option>
+                      <option>NT - Northwest Territories</option>
+                      <option>NU - Nunavut</option>
+                      <option>ON - Ontario</option>
+                      <option>PE - Prince Edward Island</option>
+                      <option>QC - Quebec</option>
+                      <option>SK - Saskatchewan</option>
+                      <option>YT - Yukon</option>
+                    </select>
+                    <p class="error-message island-1-4 push-0 relative " id="email-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Select a province.</span>
+                    </p>
+                  </div>
+
+                  <div class="unit xs-1 s-1-2 relative push space-left">
+                    <label for="postcode" class="push-1-8">Postcode</label>
+                    <input id="postcode" class="gutter-1-2" placeholder="postcode" required aria-describedby="postcode-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter a valid postcode.</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-0">
+              <div class="max-length">
+                <legend class="push">Employer</legend>
+
+                <div class="grid">
+                  <div class="unit xs-1 s-1-2 relative push space-right">
+                    <label for="employer-first-name" class="push-1-8">Employer's First Name</label>
+                    <input id="employer-first-name" class="gutter-1-2" placeholder="first name" required aria-describedby="employer-first-name-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter your employer's first name.</span>
+                    </p>
+                  </div>
+                  <div class="unit xs-1 s-1-2 relative push space-left">
+                    <label for="employer-last-name" class="push-1-8">Employer's Last Name</label>
+                    <input id="employer-last-name" class="gutter-1-2" placeholder="last name" required aria-describedby="employer-last-name-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                      <span class="icon-label">Enter your employer's last name</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="relative push">
+                  <label for="employer-phone" class="push-1-8">Employer's Phone Number</label>
+                  <input id="employer-phone" class="gutter-1-2" placeholder="123-456-7890" required aria-describedby="employer-phone-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter your employer's phone number</span>
+                  </p>
+                </div>
+
               </div>
             </fieldset>
 
