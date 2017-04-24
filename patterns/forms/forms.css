@@ -1,5 +1,6 @@
 input,
 input[type="checkbox"] + label::before,
+[type="radio"] + label::before,
 select,
 textarea {
   border-radius: 4px;
@@ -80,9 +81,20 @@ input[type="checkbox"]:checked + label::before {
   border-color: var(--color-accent);
 }
 
-input[type="checkbox"]:focus + label::before {
+input[type="checkbox"]:focus + label::before,
+[type="radio"]:focus + label::before,
+[type="radio"] + label:focus::before {
   box-shadow: 0 0 0 3px var(--color-accent-ultralight);
   outline: none;
+}
+
+/*Radio*/
+
+[type="radio"] + label::before {
+  height: 1.3em;
+  width: 1.3em;
+
+  border-radius: 50%;
 }
 
 /* Select Box */

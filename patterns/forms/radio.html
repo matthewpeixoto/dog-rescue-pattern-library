@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Radio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="../buttons/buttons.css" rel="stylesheet">
+  <link href="forms.css" rel="stylesheet">
+</head>
+<body>
+
+  <form class="max-length" method="post" novalidate>
+
+    <fieldset>
+      <legend class="push">Have you owned a dog before?</legend>
+      <div class="ib push">
+        <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="agree-error">
+        <label for="owned-dog-yes">Yes</label>
+        <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+          <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+          <span class="icon-label">Agree to the terms and conditions.</span>
+        </p>
+      </div>
+      <div class="ib push">
+        <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="agree-error">
+        <label for="owned-dog-no">No</label>
+        <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+          <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+          <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+          <span class="icon-label">Agree to the terms and conditions.</span>
+        </p>
+      </div>
+    </fieldset>
+
+  </form>
+
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
+</body>
+</html>
