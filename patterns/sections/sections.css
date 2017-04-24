@@ -180,3 +180,9 @@
   }
 
 }
+
+/*Details*/
+
+.details-section {
+  border-top: 1px solid var(--color-neutral-light)
+}

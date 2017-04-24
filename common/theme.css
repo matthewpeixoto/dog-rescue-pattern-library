@@ -58,8 +58,6 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Lists */
-
 /* Blockquotes */
 
 blockquote {
@@ -86,7 +84,7 @@ b,
 strong,
 dt {
   color: var(--color-primary);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 dfn,

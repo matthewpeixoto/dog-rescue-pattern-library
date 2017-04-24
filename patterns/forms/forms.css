@@ -9,13 +9,15 @@ textarea {
 
 input:focus,
 input[type="checkbox"]:focus + label::before,
+[type="radio"]:focus + label::before,
+[type="radio"] + label:focus::before,
 select:focus,
 textarea:focus {
   border-color: var(--color-accent);
 }
 
 fieldset {
-  border-bottom: 1px solid #e7e7e8;
+  border-bottom: 1px solid var(--color-neutral-light);
   border-top: none;
 }
 
