@@ -14,27 +14,30 @@
 </head>
 <body>
 
-  <form class="grid max-length pad-t pad-b" method="post" novalidate>
+  <form class="max-length" method="post" novalidate>
 
-    <div class="unit xs-1 push-1-2 relative">
-      <label class="milli" for="province">Province</label>
-      <select class="gutter-1-2 push-1-2" id="province" required aria-describedby="email-error">
+    <div class="relative push">
+      <label class="push-1-8" for="province">Province</label>
+      <select id="province" class="gutter-1-2" required aria-describedby="province-error">
         <option value="">Province</option>
-        <option>Alberta</option>
-        <option>British Columbia</option>
-        <option>Manitoba</option>
-        <option>New Brunswick</option>
-        <option>Newfoundland and Labrador</option>
-        <option>Nova Scotia</option>
-        <option>Ontario</option>
-        <option>Prince Edward Island</option>
-        <option>Quebec</option>
-        <option>Saskatchewan</option>
+        <option>AB - Alberta</option>
+        <option>BC - British Columbia</option>
+        <option>MB - Manitoba</option>
+        <option>NB - New Brunswick</option>
+        <option>NL - Newfoundland and Labrador</option>
+        <option>NS - Nova Scotia</option>
+        <option>NT - Northwest Territories</option>
+        <option>NU - Nunavut</option>
+        <option>ON - Ontario</option>
+        <option>PE - Prince Edward Island</option>
+        <option>QC - Quebec</option>
+        <option>SK - Saskatchewan</option>
+        <option>YT - Yukon</option>
       </select>
       <p class="error-message island-1-4 push-0 relative " id="email-error">
         <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
         <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-        <span class="icon-label">Please enter a valid email address.</span>
+        <span class="icon-label">Select a province.</span>
       </p>
     </div>
 

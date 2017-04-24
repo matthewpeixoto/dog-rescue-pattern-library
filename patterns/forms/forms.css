@@ -106,7 +106,7 @@ select {
 
 }
 
-@media only screen and (min-width: 25em) {
+@media only screen and (min-width: 67em) {
 
   .space-right {
     padding-right: .375rem;
