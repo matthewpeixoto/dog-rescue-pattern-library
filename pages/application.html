@@ -108,13 +108,13 @@
 
           <!-- Agreement -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="agreement">
-            <legend class="text-center">
+            <legend class="text-center push">
               <h2 class="push-0">Do you agree?</h2>
             </legend>
 
             <fieldset class="pad-t pad-b-2 push-0">
+              <legend class="max-length push">Terms and Conditions</legend>
               <div class="max-length">
-                <legend class="push">Terms and Conditions</legend>
                 <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
                 <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
                 <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
@@ -126,7 +126,7 @@
                 <div class="relative pad-t">
                   <input type="checkbox" id="agree" required aria-describedby="agree-error">
                   <label for="agree">Agree to the terms and conditions.</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
                     <span class="icon-label">Agree to the terms and conditions.</span>
@@ -147,15 +147,15 @@
 
           <!-- About You -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="about">
-            <legend class="text-center">
+            <legend class="text-center push">
               <h2 class="push-0">Tell us about you.</h2>
             </legend>
-            <fieldset class="pad-t pad-b-2 push-0">
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Personal details</legend>
               <div class="max-length">
-                <legend class="push">Personal details</legend>
                 <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
-                    <label class="push-1-8 "for="first-name">First Name</label>
+                    <label class="push-1-8" for="first-name">First Name</label>
                     <input id="first-name" class="gutter-1-2" placeholder="Urna" required aria-describedby="first-name-error">
                     <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -164,7 +164,7 @@
                     </p>
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
-                    <label class="push-1-8 "for="last-name">Last Name</label>
+                    <label class="push-1-8" for="last-name">Last Name</label>
                     <input id="last-name" class="gutter-1-2" placeholder="Semper" required aria-describedby="last-name-error">
                     <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="last-name-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -174,7 +174,7 @@
                   </div>
                 </div>
                 <div class="relative push">
-                  <label class="push-1-8 "for="birthday">Birthday</label>
+                  <label class="push-1-8" for="birthday">Birthday</label>
                   <input id="birthday" class="gutter-1-2" placeholder="birthday" type="date" required aria-describedby="birthday-error">
                   <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="birthday-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -205,11 +205,11 @@
               </div>
             </fieldset>
 
-            <fieldset class="pad-t-2 pad-b-2 push-0">
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Address</legend>
               <div class="max-length">
-                <legend class="push">Address</legend>
                 <div class="relative push">
-                  <label  class="push-1-8 "for="street-address">Street Address</label>
+                  <label class="push-1-8" for="street-address">Street Address</label>
                   <input id="street-address" class="gutter-1-2" placeholder="1234 Main Street" required aria-describedby="street-address-error">
                   <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="street-address-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -218,7 +218,7 @@
                   </p>
                 </div>
                 <div class="relative push">
-                  <label  class="push-1-8 "for="city">City</label>
+                  <label class="push-1-8" for="city">City</label>
                   <input id="city" class="gutter-1-2" placeholder="Anytown" required aria-describedby="city-error">
                   <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="city-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -245,7 +245,7 @@
                       <option>SK - Saskatchewan</option>
                       <option>YT - Yukon</option>
                     </select>
-                    <p class="error-message island-1-4 push-0 relative " id="email-error">
+                    <p class="error-message island-1-4 push-0 relative" id="province-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
                       <span class="icon-label">Select a province.</span>
@@ -265,8 +265,8 @@
             </fieldset>
 
             <fieldset class="pad-t-2 pad-b-2 push-0">
+              <legend class="max-length">Employer</legend>
               <div class="max-length">
-                <legend class="push">Employer</legend>
                 <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label for="employer-first-name" class="push-1-8">Empoyer First Name</label>
@@ -321,12 +321,12 @@
 
           <!-- Home Information -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="lifestyle">
-            <legend class="text-center">
+            <legend class="text-center push">
               <h2 class="push-0">Tell us about your home.</h2>
             </legend>
-            <fieldset class="pad-t pad-b-2 push-0">
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Home details</legend>
               <div class="max-length">
-                <legend class="push">Home details</legend>
                 <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label class="push-1-8" for="home-style">Style of home</label>
@@ -341,22 +341,22 @@
                       <option>Mobile home</option>
                       <option>Other</option>
                     </select>
-                    <p class="error-message island-1-4 push-0 relative " id="email-error">
+                    <p class="error-message island-1-4 push-0 relative" id="home-style-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Select a province.</span>
+                      <span class="icon-label">Select a style of home.</span>
                     </p>
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="homestyle-describe" class="push-1-8">If "Other", please describe</label>
-                    <input id="homestyle-describe" class="gutter-1-2" placeholder="home type" aria-describedby="homestyle-describe-error">
+                    <input id="homestyle-describe" class="gutter-1-2">
                   </div>
                 </div>
                 <div class="grid push">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label for="sq-footage" class="push-1-8">Home Square Footage</label>
-                    <input id="sq-footage" class="gutter-1-2" placeholder="home square footage" required aria-describedby="sq-footage-error">
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-phone-error">
+                    <input id="sq-footage" class="gutter-1-2" required aria-describedby="sq-footage-error">
+                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="sq-footage-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
                       <span class="icon-label">Enter your home's square footage.</span>
@@ -364,7 +364,7 @@
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="yard-size" class="push-1-8">Approximate Yard Size</label>
-                    <input id="yard-size" class="gutter-1-2" placeholder="yard size" aria-describedby="yard-size-error">
+                    <input id="yard-size" class="gutter-1-2" required aria-describedby="yard-size-error">
                     <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="yard-size-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
@@ -381,7 +381,7 @@
                       <option>Own</option>
                       <option>Other</option>
                     </select>
-                    <p class="error-message island-1-4 push-0 relative " id="email-error">
+                    <p class="error-message island-1-4 push-0 relative " id="ownership-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
                       <span class="icon-label">Select a province.</span>
@@ -389,46 +389,70 @@
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="desc-other" class="push-1-8">If "Other", please describe</label>
-                    <input id="desc-other" class="gutter-1-2" placeholder="ownership type" aria-describedby="desc-other-error">
+                    <input id="desc-other" class="gutter-1-2">
                   </div>
                 </div>
-                <div class="grid push">
+                <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label for="landlord-name" class="push-1-8">If "Rent", Landlord's Name</label>
-                    <input id="landlord-name" class="gutter-1-2" placeholder="Urna Semper" aria-describedby="landlord-name-error">
+                    <input id="landlord-name" class="gutter-1-2" placeholder="Urna Semper">
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="landlord-phone" class="push-1-8">If "Rent", Landlord's Phone Number</label>
-                    <input id="landlord-phone" class="gutter-1-2" type="tel" placeholder="123-456-7890" aria-describedby="landlord-phone-error">
-                  </div>
-                </div>
-
-                <div class="grid grid-bottom">
-                  <div class="unit xs-1 s-1-3 relative push space-right">
-                    <label for="fence" class="push-1-8">Is your yard fully fenced and secure enough to contain a dog?</label>
-                    <select id="fence" class="gutter-1-2" required aria-describedby="fence-error">
-                      <option value="">Select</option>
-                      <option>Yes</option>
-                      <option>No</option>
-                    </select>
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-phone-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter your home's square footage.</span>
-                    </p>
-                  </div>
-                  <div class="unit xs-1 s-2-3 relative push space-left">
-                    <label for="text-area" class="push-1-8">	If "Yes", describe the fence (height, secured underground, invisible, etc.)</label>
-                    <textarea id="text-area" class="gutter-1-2" aria-describedby="text-area-error"></textarea>
-                    <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="text-area-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter a valid email address.</span>
-                    </p>
+                    <input id="landlord-phone" class="gutter-1-2" type="tel" placeholder="123-456-7890">
                   </div>
                 </div>
               </div>
             </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Is your yard fully fenced and secure enough to contain any dog?</legend>
+              <div class="max-length">
+                <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
+                  <input type="radio" id="has-fenceyes" name="has-fence" required aria-describedby="fence-yes-error">
+                  <label for="has-fenceyes">Yes</label>
+                  <p class="error-message island-1-4 push-0 relative milli" id="fence-yes-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
+                  </p>
+                </div>
+                <div class="push relative ib pad-t-1-8 pad-b-1-8">
+                  <input type="radio" id="has-fence-no" name="has-fence" required aria-describedby="fence-no-error">
+                  <label for="has-fence-no">No</label>
+                  <p class="error-message island-1-4 push-0 relative milli" id="fence-no-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-0">
+              <legend class="max-length">Dog-specific details</legend>
+              <div class="max-length">
+                <div class="relative push space-left">
+                  <label class="push-1-8" for="keep-day">Where will the dog be during the day?</label>
+                  <input id="keep-day" class="gutter-1-2" required aria-describedby="keep-day-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="keep-day-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter an answer.</span>
+                  </p>
+                </div>
+                <div class="relative push space-left">
+                  <label class="push-1-8" for="keep-night">Where will the dog be kept during the night?</label>
+                  <input id="keep-night" class="gutter-1-2" required aria-describedby="keep-night-error">
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="keep-night-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter an answer.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
             <div class="text-center pad-t-2">
               <label class="hide-custom-input ib btn btn-subtle" for="petinfo-control" aria-label="Continue">
                 <span class="icon-text">Continue</span>
@@ -441,29 +465,77 @@
 
           <!-- Pet Info -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="petinfo">
-            <legend class="text-center">
+            <legend class="text-center push">
               <h2 class="push-0">Tell us about your pets.</h2>
             </legend>
 
-            <fieldset class="pad-t pad-b-2 push-0">
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Have you owned a dog before?</legend>
               <div class="max-length">
-                <legend class="push">Have you owned a dog before?</legend>
-                <div class="ib pad-t-1-8 pad-b-1-8 push-r-1-2">
-                  <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="agree-error">
+                <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
+                  <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="owned-dog-yes-error">
                   <label for="owned-dog-yes">Yes</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+                  <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-yes-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Agree to the terms and conditions.</span>
+                    <span class="icon-label">Select a choice.</span>
                   </p>
                 </div>
-                <div class="ib pad-t-1-8 pad-b-1-8">
-                  <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="agree-error">
+                <div class="push relative ib pad-t-1-8 pad-b-1-8">
+                  <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="owned-dog-no-error">
                   <label for="owned-dog-no">No</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+                  <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-no-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Agree to the terms and conditions.</span>
+                    <span class="icon-label">Select a choice.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Do currently own any pets?</legend>
+              <div class="max-length">
+                <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
+                  <input type="radio" id="own-pet-yes" name="own-pet" required aria-describedby="own-pet-yes-error">
+                  <label for="own-pet-yes">Yes</label>
+                  <p class="error-message island-1-4 push-0 relative milli" id="own-pet-yes-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Select a choice.</span>
+                  </p>
+                </div>
+                <div class="push relative ib pad-t-1-8 pad-b-1-8">
+                  <input type="radio" id="own-pet-no" name="own-pet" required aria-describedby="own-pet-no-error">
+                  <label for="own-pet-no">No</label>
+                  <p class="error-message island-1-4 push-0 relative milli" id="own-pet-no-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Select a choice.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pad-t-2 pad-b-2 push-2">
+              <legend class="max-length">Pet Information</legend>
+              <div class="max-length">
+                <div class="relative push">
+                  <label for="other-pets" class="push-1-8">List other pets you have owned in the past 10 years and what happened to them</label>
+                  <textarea id="other-pets" class="gutter-1-2" required aria-describedby="past-pets-error"></textarea>
+                  <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="past-pets-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter a valid answer.</span>
+                  </p>
+                </div>
+                <div class="relative push">
+                  <label for="dog-origin" class="push-1-8">Where did your current and previous pets come from?</label>
+                  <textarea id="dog-origin" class="gutter-1-2" required aria-describedby="come-from-error"></textarea>
+                  <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="come-from-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Enter a valid answer.</span>
                   </p>
                 </div>
               </div>
@@ -492,7 +564,6 @@
 
         </div>
       </div>
-
     </form>
   </main>
 
@@ -520,7 +591,7 @@
               <i class="icon i-breadcrumb push-r-1-4">
                 <svg><use xlink:href="../../images/icons.svg#arrow-ultralight" /></svg>
               </i>
-              <span class="breadcrumbs-link" href="#">Application</spa>
+              <span class="breadcrumbs-link">Application</span>
             </li>
           </ol>
         </nav>

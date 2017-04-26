@@ -1,6 +1,12 @@
-.section-title {
+.sectitle {
   color: #fff;
   text-shadow: 0 0 200px rgba(0, 0, 0, .9);
+  opacity: 0;
+}
+
+.js-sectitle-animate {
+  opacity: 1;
+  color: #fff;
 }
 
 .section-image {
@@ -183,6 +189,32 @@
 
 /*Details*/
 
-.details-section {
-  border-top: 1px solid var(--color-neutral-light)
+.details-header {
+  border-bottom: 1px solid var(--color-neutral-light);
+}
+
+@media only screen and (min-width: 46em) {
+
+  .details-section {
+    padding-top: 2.8rem;
+    padding-bottom: 2.8rem;
+
+    border-top: 1px solid var(--color-neutral-light)
+  }
+
+  .details-header {
+    padding: 0;
+
+    border-bottom: 0;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .details-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
 }

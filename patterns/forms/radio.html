@@ -16,25 +16,25 @@
 
   <form class="wrapper" method="post" novalidate>
 
-    <fieldset class="pad-t pad-b-2 push-0">
+    <fieldset class="pad-t-2 pad-b-2 push-2">
+      <legend class="max-length">Have you owned a dog before?</legend>
       <div class="max-length">
-        <legend class="push">Have you owned a dog before?</legend>
-        <div class="ib pad-t-1-8 pad-b-1-8 push-r-1-2">
-          <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="agree-error">
+        <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
+          <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="owned-dog-yes-error">
           <label for="owned-dog-yes">Yes</label>
-          <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+          <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-yes-error">
             <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
             <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-            <span class="icon-label">Agree to the terms and conditions.</span>
+            <span class="icon-label">Select a choice.</span>
           </p>
         </div>
-        <div class="ib pad-t-1-8 pad-b-1-8">
-          <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="agree-error">
+        <div class="push relative ib pad-t-1-8 pad-b-1-8">
+          <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="owned-dog-no-error">
           <label for="owned-dog-no">No</label>
-          <p class="error-message island-1-4 push-0 relative milli" id="agree-error">
+          <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-no-error">
             <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
             <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-            <span class="icon-label">Agree to the terms and conditions.</span>
+            <span class="icon-label">Select a choice.</span>
           </p>
         </div>
       </div>

@@ -99,6 +99,12 @@ input[type="checkbox"]:focus + label::before,
   border-radius: 50%;
 }
 
+[type="radio"]:checked + label::before {
+  background-color: var(--color-accent);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='btn-subtle-arrow' width='256' height='256' viewBox='0 0 256 256'%3E%3Ccircle cx='128' cy='128' r='64' fill='%23fff'/%3E%3C/svg%3E");
+  border-color: var(--color-accent);
+}
+
 /* Select Box */
 
 select {
