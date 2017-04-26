@@ -77,27 +77,19 @@
   <main>
     <form class="pad-t pad-b" method="post" action="https://formspree.io/peix0012@algonquinlive.com" novalidate>
       <!-- Tab Nav -->
-      <input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
-      <input class="tabnav-input" type="radio" name="form" id="about-control">
+      <input class="tabnav-input" type="radio" name="form" id="about-control" checked>
       <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
       <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
-      <input class="tabnav-input" type="radio" name="form" id="other-control">
       <div class="tabnav push">
         <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
-          <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement</label>
-          </li>
           <li class="gutter push-1-2">
             <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You</label>
           </li>
           <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Home Info</label>
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Home Information</label>
           </li>
           <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Info</label>
-          </li>
-          <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other</label>
+            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information</label>
           </li>
         </ul>
       </div>
@@ -105,45 +97,6 @@
 
       <div class="form-inner relative wrapper gutter">
         <div class="form-items">
-
-          <!-- Agreement -->
-          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="agreement">
-            <legend class="text-center push">
-              <h2 class="push-0">Do you agree?</h2>
-            </legend>
-
-            <fieldset class="pad-t pad-b-2 push-0">
-              <legend class="max-length push">Terms and Conditions</legend>
-              <div class="max-length">
-                <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
-                <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
-                <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
-                <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
-                <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
-                <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
-                <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
-
-                <div class="relative pad-t">
-                  <input type="checkbox" id="agree" required aria-describedby="agree-error">
-                  <label for="agree">Agree to the terms and conditions.</label>
-                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Agree to the terms and conditions.</span>
-                  </p>
-                </div>
-              </div>
-            </fieldset>
-
-            <div class="text-center pad-t-2">
-              <label class="hide-custom-input ib btn btn-subtle" for="about-control" aria-label="Continue">
-                <span class="icon-text">Continue</span>
-                <i class="icon i-arrow">
-                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
-                </i>
-              </label>
-            </div>
-          </fieldset>
 
           <!-- About You -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="about">
@@ -591,7 +544,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="pad-t-2 pad-b-2 push-0">
+            <fieldset class="pad-t-2 pad-b-2 push-2">
               <legend class="max-length">Pet Information</legend>
               <div class="max-length">
                 <div class="relative push">
@@ -623,28 +576,35 @@
                 </div>
               </div>
             </fieldset>
+            <!-- Terms and Conditions -->
+            <fieldset class="pad-t-2 pad-b-2 push-0">
+              <legend class="max-length">Terms and Conditions</legend>
+              <div class="max-length">
+                <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
+                <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+                <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
+                <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
+                <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
+                <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
+                <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
 
-            <div class="text-center pad-t-2">
-              <label class="hide-custom-input ib btn btn-subtle" for="other-control" aria-label="Continue">
-                <span class="icon-text">Continue</span>
-                <i class="icon i-arrow">
-                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
-                </i>
-              </label>
-            </div>
-          </fieldset>
-
-          <!-- Other -->
-          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="other">
-            <legend class="text-center push">
-              <h2 class="push-0">Other</h2>
-            </legend>
+                <div class="relative pad-t">
+                  <input type="checkbox" id="agree" required aria-describedby="agree-error">
+                  <label for="agree">Agree to the terms and conditions.</label>
+                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
+                    <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
+                  </p>
+                </div>
+              </div>
+            </fieldset>
 
             <div class="text-center pad-t-2">
               <button class="btn" type="submit">Submit Application</button>
             </div>
-          </fieldset>
 
+          </fieldset>
         </div>
       </div>
     </form>
