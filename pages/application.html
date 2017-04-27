@@ -23,6 +23,11 @@
 </head>
 <body>
 
+  <ul class="skip-links">
+    <li><a href="availbale-dogs.html">Go to Available Dogs page</a></li>
+    <li><a href="#contact">Jump to contact info</a></li>
+  </ul>
+
   <header role="banner">
     <div class="nav-container absolute w-1 zindex-2">
       <div class="logo-wrapper-xs unit-s-hidden text-center">
@@ -73,14 +78,14 @@
     </div>
   </header>
 
-  <main>
+  <main role="main">
     <form class="pad-t pad-b" method="post" action="https://formspree.io/peix0012@algonquinlive.com" novalidate>
       <!-- Tab Nav -->
       <input class="tabnav-input" type="radio" name="form" id="about-control" checked>
       <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
       <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
       <input class="tabnav-input" type="radio" name="form" id="submit-control">
-      <div class="tabnav push">
+      <div class="tabnav push" id="tabnav">
         <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
           <li class="gutter push-1-2">
             <label class="tabnav-btn island-1-4" for="about-control">About You</label>
