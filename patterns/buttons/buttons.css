@@ -63,11 +63,6 @@
   text-decoration: underline;
 }
 
-.btn-subtle:focus::after,
-.btn-subtle:hover::after {
-  opacity: 0;
-}
-
 .btn-subtle-large {
   font-weight: 300;
 }
