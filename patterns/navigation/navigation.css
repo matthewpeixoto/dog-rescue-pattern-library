@@ -246,6 +246,10 @@
     display: inline-block;
   }
 
+  .subnav-header {
+    padding: 0;
+  }
+
   .subnav-wrapper {
     padding: .7rem 1.4rem;
   }
