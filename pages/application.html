@@ -346,8 +346,8 @@
                 <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
                   <input type="radio" id="has-fenceyes" name="has-fence" required aria-describedby="fence-yes-error">
                   <label for="has-fenceyes">Yes</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="fence-yes-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
+                  <p class="error-message error-message-alt gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+                    <i class="icon warning-arrow warning-arrow-alt absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
                     <span class="icon-label">Agree to the terms and conditions.</span>
                   </p>
@@ -410,19 +410,14 @@
                 <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
                   <input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="owned-dog-yes-error">
                   <label for="owned-dog-yes">Yes</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-yes-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
-                    <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Select a choice.</span>
-                  </p>
                 </div>
                 <div class="push relative ib pad-t-1-8 pad-b-1-8">
                   <input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="owned-dog-no-error">
                   <label for="owned-dog-no">No</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="owned-dog-no-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
+                  <p class="error-message error-message-alt gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+                    <i class="icon warning-arrow warning-arrow-alt absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Select a choice.</span>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
                   </p>
                 </div>
               </div>
@@ -434,19 +429,14 @@
                 <div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
                   <input type="radio" id="own-pet-yes" name="own-pet" required aria-describedby="own-pet-yes-error">
                   <label for="own-pet-yes">Yes</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="own-pet-yes-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
-                    <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Select a choice.</span>
-                  </p>
                 </div>
                 <div class="push relative ib pad-t-1-8 pad-b-1-8">
                   <input type="radio" id="own-pet-no" name="own-pet" required aria-describedby="own-pet-no-error">
                   <label for="own-pet-no">No</label>
-                  <p class="error-message island-1-4 push-0 relative milli" id="own-pet-no-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
+                  <p class="error-message error-message-alt gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+                    <i class="icon warning-arrow warning-arrow-alt absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
-                    <span class="icon-label">Select a choice.</span>
+                    <span class="icon-label">Agree to the terms and conditions.</span>
                   </p>
                 </div>
               </div>
@@ -588,8 +578,8 @@
                 <div class="relative pad-t">
                   <input type="checkbox" id="agree" required aria-describedby="agree-error">
                   <label for="agree">Agree to the terms and conditions.</label>
-                  <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
-                    <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
+                  <p class="error-message error-message-alt gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+                    <i class="icon warning-arrow warning-arrow-alt absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
                     <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
                     <span class="icon-label">Agree to the terms and conditions.</span>
                   </p>
@@ -600,7 +590,13 @@
             <div class="text-center pad-t-2">
               <button class="btn" type="submit">Submit Application</button>
             </div>
+
+            <div class="error-message text-center error-message-highlighted w-1 push island-1-2" role="alert" aria-live="assertive">
+              <i class="icon i-32"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
+              <span class="icon-label giga">There are items that require your attention.</span>
+            </div>
           </fieldset>
+
 
         </div>
       </div>
