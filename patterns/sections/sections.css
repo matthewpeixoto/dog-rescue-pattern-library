@@ -80,37 +80,37 @@
   border-bottom: 2px solid #fff;
 }
 
-/* Faq */
+/* accordion */
 
-.faq-list-item {
+.accordion-list-item {
   border-top: 1px solid var(--color-neutral-light);
 }
 
-.faq-btn:hover {
+.accordion-btn:hover {
   color: var(--color-accent);
 }
 
-.faq-question {
+.accordion-question {
   margin-right: 2.6rem;
 }
 
-.faq-answer {
+.accordion-answer {
   display: none;
 }
 
-.q1-check:checked ~ .faq-list #q1-answer,
-.q2-check:checked ~ .faq-list #q2-answer,
-.q3-check:checked ~ .faq-list #q3-answer {
+.q1-check:checked ~ .accordion-list #q1-answer,
+.q2-check:checked ~ .accordion-list #q2-answer,
+.q3-check:checked ~ .accordion-list #q3-answer {
   display: block;
 }
 
-.faq-icon {
+.accordion-icon {
   transition: transform 200ms ease-in-out;
 }
 
-.q1-check:checked ~ .faq-list #q1-icon,
-.q2-check:checked ~ .faq-list #q2-icon,
-.q3-check:checked ~ .faq-list #q3-icon {
+.q1-check:checked ~ .accordion-list #q1-icon,
+.q2-check:checked ~ .accordion-list #q2-icon,
+.q3-check:checked ~ .accordion-list #q3-icon {
   transform: rotate(45deg);
 }
 
@@ -211,4 +211,38 @@
     padding-bottom: 3rem;
   }
 
+}
+
+/*Post*/
+
+.post-user {
+  width: 130px;
+}
+
+.avatar {
+  width: 130px;
+  height: 130px;
+
+  border-radius: 50%;
+  border: 1px solid var(--color-neutral-light);
+}
+
+.star {
+  color: #f5a623;
+}
+
+.star-border {
+  color: var(--color-neutral);
+}
+
+.username {
+  padding-right: 1.3rem;
+
+  border-right: 1px solid var(--color-neutral-light);
+
+  color: var(--color-neutral-dark);
+}
+
+.adopted {
+  padding-left: 1.3rem;
 }

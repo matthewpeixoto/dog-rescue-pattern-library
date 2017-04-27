@@ -2158,22 +2158,151 @@
     <h2 class="pattern-name peta push-1-4">Sections</h2>
       <nav class="pattern-nav">
         <ol class="list-group-inline push-1-4">
+            <li><a href="#sections-accordion">Accordion</a></li>
             <li><a href="#sections-carousel">Carousel</a></li>
             <li><a href="#sections-details">Details</a></li>
-            <li><a href="#sections-faq">Faq</a></li>
             <li><a href="#sections-overview">Overview</a></li>
+            <li><a href="#sections-post">Post</a></li>
             <li><a href="#sections-quick-links">Quick links</a></li>
         </ol>
       </nav>
   </div>
 
-      <div class="pattern-desc milli island" >
-        <div class="max-length"><p>The carousel is a great way of displaying a gallery of images.</p>
+    <div class="pattern-desc milli island" >
+      <div class="max-length"><p>Sections are used to display information as well as act as secondary navigation driving people to specific locations.</p>
 </div>
-      </div>
+    </div>
 
   
 
+    <div class="pattern-details" id="sections-accordion" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Accordion</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="sections-accordion-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/sections/accordion.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+          <div class="pattern-desc milli island" style="">
+            <div class="max-length"><p>This section can hold a lot of content, yet stay compact thanks to its accordion-style functionality. This section should be placed at the bottom of pages that needs to store information in a clutter-free way.</p>
+</div>
+          </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/sections/accordion.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="sections-accordion-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#sections-accordion-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="sections-accordion-code-sample-copy-chunk">&lt;section class="accordion pad-b" id="accordion"&gt;
+  &lt;div class="wrapper gutter">
+
+    &lt;div class="accordion-header">
+      &lt;h2 class="pad-t-2 pad-b-2 push-0">Frequently Asked Questions&lt;/h2>
+    &lt;/div>
+
+    &lt;div class="accordion-content">
+      &lt;input class="q1-check" type="checkbox" id="q1-check">
+      &lt;input class="q2-check" type="checkbox" id="q2-check">
+      &lt;input class="q3-check" type="checkbox" id="q3-check">
+      &lt;ul class="accordion-list list-group push-0">
+        &lt;li class="accordion-list-item">
+          &lt;div class="accordion-question-container">
+            &lt;h3 class="kilo push-0 pad-t pad-b">
+                &lt;label class="accordion-btn pad-t-1-8 pad-b-1-8 relative" for="q1-check">
+                  &lt;span class="accordion-question ib">Why is there an adoption fee?&lt;/span>
+                  &lt;span class="accordion-toggle pin-rt">
+                    &lt;i class="accordion-icon icon i-16 valign-middle" id="q1-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/span>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="accordion-answer max-length-no-center push-2" id="q1-answer">
+            &lt;p class="push-0">The sad reality is that we get the unwanted, unvetted, uncared for. We have had, and still have many adult dogs, most of whom came to us in need of medical care. Veterinary costs for the special cases can run into thousands of dollars. Some of the dogs have special needs like medications such as insulin for diabetes, Vetoryl for Cushings disease and heart medications for those that have heart issues in order to provide a better quality of life. Younger healthier dogs may not have quite the same health issues as the older dogs do but they too need to be examined, vaccinated and altered prior to adoption. They could also have problems like eye surgery, lump removals, diabetic. The adoption fee only partially covers these costs. Donations from the public are limited. LOYAL Rescue offsets the difference through fundraising efforts where we can.&lt;/p>
+          &lt;/div>
+        &lt;/li>
+        &lt;li class="accordion-list-item">
+          &lt;div class="accordion-question-container">
+            &lt;h3 class="kilo push-0 pad-t pad-b">
+                &lt;label class="accordion-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
+                  &lt;span class="accordion-question ib">What will my newly adopted dog come with?&lt;/span>
+                  &lt;span class="accordion-toggle pin-rt">
+                    &lt;i class="accordion-icon icon i-16 valign-middle" id="q2-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/span>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="accordion-answer max-length-no-center push-2" id="q2-answer">
+            &lt;p>Often dogs come into our foster program with nothing but the fur on their backs; they do not have their own collar, leash, ID, toys, or bed. Other times a dog may come in with a lot of belongings. When you adopt your new dog, it will come with its vetting paperwork. Often a foster home will send a loved toy or bed along with the dog depending on how long it has been in foster care. You should be prepared to bring the following with you at the time of adoption: a secure, tight fitting collar (we recommend martingale collars), a sturdy leash, ID tags with your information on them to immediately put on the dog&apos;s collar, and, if required, a crate for transporting. What you choose to buy for your new family member beyond that in terms of toys, clothing, bedding, etc. is totally up to you, and their foster home will let you know what the dog prefers in terms of these items. They will likely also send you home with a bit of food that the dog has been eating in order to transition him/her onto the food you plan to feed, assuming that it is not the same brand. This transition is important to avoid stomach problems for your new pooch.&lt;/p>
+
+            &lt;p class="push-1-2">All questions regarding the dog&apos;s likes, dislikes and preferences, as well as what you should purchase and bring with you at the time of adoption, can be discussed with the foster family. The one essential item that is non-negotiable, however, is a tight-fitting collar with ID tags (including the ID tag that will come with your LOYAL dog and that should remain on him or her at all times). Dogs have been known to startle and go missing on the day of adoption or in the following days, and having a tight-fitting collar with ID (at a bare minimum, the LOYAL ID tag) on it is imperative and non-negotiable. You will not be permitted to take a dog home that is not wearing proper ID.&lt;/p>
+          &lt;/div>
+        &lt;/li>
+        &lt;li class="accordion-list-item">
+          &lt;div class="accordion-question-container">
+            &lt;h3 class="kilo push-0 pad-t pad-b">
+                &lt;label class="accordion-btn pad-t-1-8 pad-b-1-8 relative" for="q3-check">
+                  &lt;span class="accordion-question ib">Can I come visit a dog?&lt;/span>
+                  &lt;span class="accordion-toggle pin-rt">
+                    &lt;i class="accordion-icon icon i-16 valign-middle" id="q3-icon">
+                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
+                    &lt;/i>
+                  &lt;/span>
+                &lt;/label>
+              &lt;/h3>
+          &lt;/div>
+          &lt;div class="accordion-answer max-length-no-center push-2" id="q3-answer">
+            &lt;p>Since we are provincially-based, that means our dogs may be fostered anywhere in Ontario, so please check their profiles as to the location of their foster home.&lt;/p>
+            &lt;p>We are not a shelter, and therefore do not have one location where dogs can be visited, viewed and adopted.&lt;/p>
+            &lt;p class="push-1-2">If you are interested in meeting one of our adoptable dogs, please complete an application on our website to begin our adoption process. Only approved homes can make arrangements with our foster homes to meet our dogs in person, unless you have spoken to the foster family and made alternative arrangements.&lt;/p>
+          &lt;/div>
+        &lt;/li>
+      &lt;/ul>
+    &lt;/div>
+
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="sections-carousel" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Carousel</h3>
@@ -2195,7 +2324,7 @@
             </ul>
         </div>
           <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>The carousel is a great way of displaying a gallery of images.</p>
+            <div class="max-length"><p>The carousel is a great way of displaying a gallery of images. This section can be used on a dog&#39;s personal page to display photos or embeded in the overview-section to display relevant photos.</p>
 </div>
           </div>
 
@@ -2328,6 +2457,10 @@
                 </li>
             </ul>
         </div>
+          <div class="pattern-desc milli island" style="">
+            <div class="max-length"><p>The details section displays specific details in a easy-to-follow and organized way. Use this section on each dog&#39;s personal page to list all of their information.</p>
+</div>
+          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2">
@@ -2410,130 +2543,6 @@
         &lt;/dl>
       &lt;/div>
     &lt;/div>
-  &lt;/div>
-&lt;/section>
-</pre></code>
-            </div>
-          </div>
-      </div>
-    </div>
-    <div class="pattern-details" id="sections-faq" style="">
-        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
-          <h3 class="pattern-name tera push-1-8">Faq</h3>
-            <ul class="list-group-inline gutter absolute pin-cr">
-                <li>
-                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="sections-faq-code-sample">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-code"></use></svg>
-                    </i>
-                  </button>
-                </li>
-                <li>
-                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/sections/faq.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
-                    <i class="icon i-18">
-                      <svg><use xlink:href="#icon-pop-out"></use></svg>
-                    </i>
-                  </a>
-                </li>
-            </ul>
-        </div>
-
-      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
-        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
-          <div class="resizeable-pattern relative" style="">
-            <iframe data-src="patterns/sections/faq.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
-              <div class="resizeable-pattern-length">
-                <div class="resize-handle resize-handle-left" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-                <div class="resize-handle resize-handle-right" style="">
-                  <i class="icon i-18">
-                    <svg><use xlink:href="#icon-resize-handle" /></svg>
-                  </i>
-                </div>
-              </div>
-          </div>
-        </div>
-
-          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="sections-faq-code-sample" tabindex="-1">
-            <div class="pattern-code relative milli island-1-2" style="">
-              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#sections-faq-code-sample-copy-chunk" hidden>
-                <i class="icon i-18">
-                  <svg><use xlink:href="#icon-copy"></use></svg>
-                </i>
-              </button>
-              <code><pre id="sections-faq-code-sample-copy-chunk">&lt;section class="faq pad-b" id="faq"&gt;
-  &lt;div class="wrapper gutter">
-
-    &lt;div class="faq-header">
-      &lt;h2 class="pad-t-2 pad-b-2 push-0">Frequently Asked Questions&lt;/h2>
-    &lt;/div>
-
-    &lt;div class="faq-content">
-      &lt;input class="q1-check" type="checkbox" id="q1-check">
-      &lt;input class="q2-check" type="checkbox" id="q2-check">
-      &lt;input class="q3-check" type="checkbox" id="q3-check">
-      &lt;ul class="faq-list list-group push-0">
-        &lt;li class="faq-list-item">
-          &lt;div class="faq-question-container">
-            &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q1-check">
-                  &lt;span class="faq-question ib">Why is there an adoption fee?&lt;/span>
-                  &lt;span class="faq-toggle pin-rt">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q1-icon">
-                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
-                    &lt;/i>
-                  &lt;/span>
-                &lt;/label>
-              &lt;/h3>
-          &lt;/div>
-          &lt;div class="faq-answer max-length-no-center push-2" id="q1-answer">
-            &lt;p class="push-0">The sad reality is that we get the unwanted, unvetted, uncared for. We have had, and still have many adult dogs, most of whom came to us in need of medical care. Veterinary costs for the special cases can run into thousands of dollars. Some of the dogs have special needs like medications such as insulin for diabetes, Vetoryl for Cushings disease and heart medications for those that have heart issues in order to provide a better quality of life. Younger healthier dogs may not have quite the same health issues as the older dogs do but they too need to be examined, vaccinated and altered prior to adoption. They could also have problems like eye surgery, lump removals, diabetic. The adoption fee only partially covers these costs. Donations from the public are limited. LOYAL Rescue offsets the difference through fundraising efforts where we can.&lt;/p>
-          &lt;/div>
-        &lt;/li>
-        &lt;li class="faq-list-item">
-          &lt;div class="faq-question-container">
-            &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
-                  &lt;span class="faq-question ib">What will my newly adopted dog come with?&lt;/span>
-                  &lt;span class="faq-toggle pin-rt">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
-                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
-                    &lt;/i>
-                  &lt;/span>
-                &lt;/label>
-              &lt;/h3>
-          &lt;/div>
-          &lt;div class="faq-answer max-length-no-center push-2" id="q2-answer">
-            &lt;p>Often dogs come into our foster program with nothing but the fur on their backs; they do not have their own collar, leash, ID, toys, or bed. Other times a dog may come in with a lot of belongings. When you adopt your new dog, it will come with its vetting paperwork. Often a foster home will send a loved toy or bed along with the dog depending on how long it has been in foster care. You should be prepared to bring the following with you at the time of adoption: a secure, tight fitting collar (we recommend martingale collars), a sturdy leash, ID tags with your information on them to immediately put on the dog&apos;s collar, and, if required, a crate for transporting. What you choose to buy for your new family member beyond that in terms of toys, clothing, bedding, etc. is totally up to you, and their foster home will let you know what the dog prefers in terms of these items. They will likely also send you home with a bit of food that the dog has been eating in order to transition him/her onto the food you plan to feed, assuming that it is not the same brand. This transition is important to avoid stomach problems for your new pooch.&lt;/p>
-
-            &lt;p class="push-1-2">All questions regarding the dog&apos;s likes, dislikes and preferences, as well as what you should purchase and bring with you at the time of adoption, can be discussed with the foster family. The one essential item that is non-negotiable, however, is a tight-fitting collar with ID tags (including the ID tag that will come with your LOYAL dog and that should remain on him or her at all times). Dogs have been known to startle and go missing on the day of adoption or in the following days, and having a tight-fitting collar with ID (at a bare minimum, the LOYAL ID tag) on it is imperative and non-negotiable. You will not be permitted to take a dog home that is not wearing proper ID.&lt;/p>
-          &lt;/div>
-        &lt;/li>
-        &lt;li class="faq-list-item">
-          &lt;div class="faq-question-container">
-            &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q3-check">
-                  &lt;span class="faq-question ib">Can I come visit a dog?&lt;/span>
-                  &lt;span class="faq-toggle pin-rt">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q3-icon">
-                      &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
-                    &lt;/i>
-                  &lt;/span>
-                &lt;/label>
-              &lt;/h3>
-          &lt;/div>
-          &lt;div class="faq-answer max-length-no-center push-2" id="q3-answer">
-            &lt;p>Since we are provincially-based, that means our dogs may be fostered anywhere in Ontario, so please check their profiles as to the location of their foster home.&lt;/p>
-            &lt;p>We are not a shelter, and therefore do not have one location where dogs can be visited, viewed and adopted.&lt;/p>
-            &lt;p class="push-1-2">If you are interested in meeting one of our adoptable dogs, please complete an application on our website to begin our adoption process. Only approved homes can make arrangements with our foster homes to meet our dogs in person, unless you have spoken to the foster family and made alternative arrangements.&lt;/p>
-          &lt;/div>
-        &lt;/li>
-      &lt;/ul>
-    &lt;/div>
-
   &lt;/div>
 &lt;/section>
 </pre></code>
@@ -2642,6 +2651,90 @@
           </div>
       </div>
     </div>
+    <div class="pattern-details" id="sections-post" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Post</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="sections-post-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/sections/post.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/sections/post.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="sections-post-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#sections-post-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="sections-post-code-sample-copy-chunk">&lt;section class="featured-posts wrapper island"&gt;
+
+  &lt;div class="post grid">
+    &lt;div class="unit xs-1 s-1-4 post-user push-r push">
+      &lt;a class="embed embed-1by1" href="#">
+        &lt;img class="avatar" src="../../images/avatar.jpg" alt="">
+      &lt;/a>
+    &lt;/div>
+    &lt;div class="unit xs-1 s-3-4 post-desc">
+      &lt;div class="rating push">
+        &lt;i class="icon i-24 star">&lt;svg>&lt;use xlink:href="../../images/icons.svg#star"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-24 star">&lt;svg>&lt;use xlink:href="../../images/icons.svg#star"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-24 star">&lt;svg>&lt;use xlink:href="../../images/icons.svg#star"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-24 star">&lt;svg>&lt;use xlink:href="../../images/icons.svg#star"/>&lt;/svg>&lt;/i>
+        &lt;i class="icon i-24 star-border">&lt;svg>&lt;use xlink:href="../../images/icons.svg#star-border"/>&lt;/svg>&lt;/i>
+      &lt;/div>
+      &lt;h4 class="giga">Loyal Rescue helped me find a new best friend!&lt;/h4>
+      &lt;blockquote class="max-length-no-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua&#x2026;&lt;/blockquote>
+      &lt;div class="user-data push">
+        &lt;a class="username" href="#">Urna Semper&lt;/a>
+        &lt;span class="adopted">Adopted Lilly 4 days ago&lt;/span>
+      &lt;/div>
+      &lt;a class="btn btn-subtle" href="#">
+        &lt;span class="icon-text">Read full post&lt;/span>
+        &lt;i class="icon i-arrow">
+            &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
+          &lt;/i>
+      &lt;/a>
+    &lt;/div>
+  &lt;/div>
+
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="sections-quick-links" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Quick links</h3>
@@ -2663,7 +2756,7 @@
             </ul>
         </div>
           <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>This section is used to group together quick links in an organized grid.</p>
+            <div class="max-length"><p>This section is used to group together quick links in an organized grid. Use this section under the hero-banner on the homepage to quickly guide users to noteworthy locations.</p>
 </div>
           </div>
 
