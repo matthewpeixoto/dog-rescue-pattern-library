@@ -35,6 +35,8 @@ legend {
 }*/
 
 .is-validated input:invalid,
+.is-validated select:invalid,
+.is-validated textarea:invalid,
 .is-validated input[type="checkbox"]:invalid + label::before {
   background-color: #fffde7;
 }
@@ -57,7 +59,7 @@ legend {
   background-color: #ffecb3;
   border-radius: 4px;
   border: 1px solid #ffc107;
-  left: 1rem;
+  left: 1.3rem;
   transform: translateX(0%);
 }
 
@@ -69,6 +71,8 @@ legend {
 
 .is-validated .error-message-highlighted,
 .is-validated input:invalid + .error-message,
+.is-validated select:invalid + .error-message,
+.is-validated textarea:invalid + .error-message,
 .is-validated input:invalid + label + .error-message {
   display: inline-block;
 }
@@ -94,12 +98,20 @@ legend {
     margin-top: 1.4rem;
   }
 
+  .error-message-alt {
+    margin-left: 1.4rem;
+  }
+
 }
 
 @media only screen and (min-width: 67em) {
 
   .error-message-highlighted {
     margin-top: 1.5rem;
+  }
+
+  .error-message-alt {
+    margin-left: 1.5rem;
   }
 
 }
