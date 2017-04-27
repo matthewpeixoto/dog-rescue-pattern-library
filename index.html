@@ -1224,12 +1224,12 @@
               <code><pre id="forms-basic-input-code-sample-copy-chunk">&lt;form class="max-length" method="post" novalidate=""&gt;
 
   &lt;div class="relative push">
-    &lt;label for="street-address" class="push-1-8">Street Address&lt;/label>
-    &lt;input id="street-address" class="gutter-1-2" placeholder="1234 Main Street" required aria-describedby="street-address-error">
-    &lt;p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="street-address-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-      &lt;span class="icon-label">Enter a valid street address.&lt;/span>
+    &lt;label class="push-1-8" for="first-name">First Name&lt;/label>
+    &lt;input id="first-name" class="gutter-1-2" placeholder="Urna" required aria-describedby="first-name-error">
+    &lt;p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="first-name-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Enter a first name.&lt;/span>
     &lt;/p>
   &lt;/div>
 
@@ -1292,12 +1292,12 @@
               </button>
               <code><pre id="forms-checkbox-code-sample-copy-chunk">&lt;form class="max-length" method="post" novalidate=""&gt;
 
-  &lt;div class="relative push">
+  &lt;div class="relative pad-t">
     &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
-    &lt;label for="agree">Agree to the terms and conditions.&lt;/label>
-    &lt;p class="error-message island-1-4 push-0 relative milli" id="agree-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+    &lt;label for="agree" class="push">Agree to the terms and conditions.&lt;/label>
+    &lt;p class="error-message error-message-alt pin-lb gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="agree-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Agree to the terms and conditions.&lt;/span>
     &lt;/p>
   &lt;/div>
@@ -1359,18 +1359,18 @@
 
   &lt;fieldset class="pad-t-2 pad-b-2 push-2">
     &lt;legend class="max-length">Have you owned a dog before?&lt;/legend>
-    &lt;div class="max-length">
-      &lt;div class="push relative ib pad-t-1-8 pad-b-1-8 push-r">
-        &lt;input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="owned-dog-yes-error">
+    &lt;div class="max-length relative">
+      &lt;div class="push ib pad-t-1-8 pad-b-1-8 push-r">
+        &lt;input type="radio" id="owned-dog-yes" name="owned-dog" required aria-describedby="owned-dog-error">
         &lt;label for="owned-dog-yes">Yes&lt;/label>
       &lt;/div>
-      &lt;div class="push relative ib pad-t-1-8 pad-b-1-8">
-        &lt;input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="owned-dog-no-error">
+      &lt;div class="push ib pad-t-1-8 pad-b-1-8">
+        &lt;input type="radio" id="owned-dog-no" name="owned-dog" required aria-describedby="owned-dog-error">
         &lt;label for="owned-dog-no">No&lt;/label>
-        &lt;p class="error-message island-1-4 push-0 relative milli" id="owned-dog-no-error">
-          &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
-          &lt;span class="icon-label">Select a choice.&lt;/span>
+        &lt;p class="error-message error-message-alt pin-lb gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="owned-dog-error">
+          &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+          &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+          &lt;span class="icon-label">Select an answer.&lt;/span>
         &lt;/p>
       &lt;/div>
     &lt;/div>
@@ -1436,7 +1436,7 @@
               <code><pre id="forms-select-box-code-sample-copy-chunk">&lt;form class="max-length" method="post" novalidate=""&gt;
 
   &lt;div class="relative push">
-    &lt;label for="province" class="push-1-8">Province&lt;/label>
+    &lt;label class="push-1-8" for="province">Province&lt;/label>
     &lt;select id="province" class="gutter-1-2" required aria-describedby="province-error">
       &lt;option value="">Province&lt;/option>
       &lt;option>AB - Alberta&lt;/option>
@@ -1453,13 +1453,12 @@
       &lt;option>SK - Saskatchewan&lt;/option>
       &lt;option>YT - Yukon&lt;/option>
     &lt;/select>
-    &lt;p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative " id="email-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+    &lt;p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="province-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Select a province.&lt;/span>
     &lt;/p>
   &lt;/div>
-
 &lt;/form>
 </pre></code>
             </div>
@@ -1520,11 +1519,11 @@
               <code><pre id="forms-textarea-code-sample-copy-chunk">&lt;form class="max-length" method="post" novalidate=""&gt;
 
   &lt;div class="relative push">
-    &lt;label for="text-area" class="push-1-8">If there is no fence and gate, how you will keep your dog secure on your property?&lt;/label>
-    &lt;textarea id="text-area" class="gutter-1-2" required aria-describedby="text-area-error">&lt;/textarea>
-    &lt;p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="text-area-error">
-      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
-      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
+    &lt;label for="dog-origin" class="push-1-8">Where did your current and previous pets come from?&lt;/label>
+    &lt;textarea id="dog-origin" class="gutter-1-2" required aria-describedby="come-from-error">&lt;/textarea>
+    &lt;p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="come-from-error">
+      &lt;i class="icon warning-arrow absolute">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning-arrow"/>&lt;/svg>&lt;/i>
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="../images/icons.svg#warning"/>&lt;/svg>&lt;/i>
       &lt;span class="icon-label">Enter a valid answer.&lt;/span>
     &lt;/p>
   &lt;/div>

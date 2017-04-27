@@ -17,7 +17,7 @@
   <form class="max-length" method="post" novalidate>
 
     <div class="relative push">
-      <label for="province" class="push-1-8">Province</label>
+      <label class="push-1-8" for="province">Province</label>
       <select id="province" class="gutter-1-2" required aria-describedby="province-error">
         <option value="">Province</option>
         <option>AB - Alberta</option>
@@ -34,13 +34,12 @@
         <option>SK - Saskatchewan</option>
         <option>YT - Yukon</option>
       </select>
-      <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative " id="email-error">
-        <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-        <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
+      <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="province-error">
+        <i class="icon warning-arrow absolute"><svg><use xlink:href="../images/icons.svg#warning-arrow" /></svg></i>
+        <i class="icon i-16"><svg><use xlink:href="../images/icons.svg#warning" /></svg></i>
         <span class="icon-label">Select a province.</span>
       </p>
     </div>
-
   </form>
 
   <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
