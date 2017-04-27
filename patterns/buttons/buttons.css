@@ -37,20 +37,20 @@
   color: var(--color-accent);
 }
 
-.i-arrow {
-  height: 1em;
-  width: .43em;
-}
-
 .btn-subtle:focus,
 .btn-subtle:hover {
-  background-color: transparent;
+  background: transparent;
 
   color: var(--color-accent);
 }
 
 .btn-subtle:hover .icon-text {
   text-decoration: underline;
+}
+
+.i-arrow {
+  height: 1em;
+  width: .43em;
 }
 
 .btn-subtle-large {
