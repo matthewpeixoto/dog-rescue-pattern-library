@@ -429,7 +429,7 @@
   color: var(--color-neutral-dark);
 }
 
-/*Search*/
+/* Search */
 
 .search-input {
   height: 2.6rem;
@@ -440,9 +440,6 @@
 .search-btn {
   height: 2.6rem;
   width: 2.6rem;
-}
-
-.search-btn {
   padding: 0;
 
   background-color: transparent;

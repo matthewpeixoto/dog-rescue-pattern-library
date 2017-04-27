@@ -29,11 +29,6 @@ legend {
   border: none;
 }
 
-/*legend {
-  color: var(--color-neutral);
-  font-weight: 300;
-}*/
-
 .is-validated input:invalid,
 .is-validated select:invalid,
 .is-validated textarea:invalid,
@@ -49,18 +44,18 @@ legend {
   border-radius: 4px;
   border: 1px solid #ffc107;
   left: 50%;
-  transform: translateX(-50%)
+  transform: translateX(-50%);
 }
 
 .error-message-alt {
   bottom: -22px;
   left: 0;
-
   transform: translateX(0);
 }
 
 .error-message-highlighted {
-  margin: 1.3rem 0 0 0;
+  margin: 1.3rem 0 0;
+
   left: 0;
   transform: translateX(0);
 }
@@ -75,11 +70,11 @@ legend {
 
 .warning-arrow {
   height: 13px;
+  width: 24px;
+
   left: calc(50% - 12px);
   top: -12px;
-  width: 24px;
 }
-
 
 @media only screen and (min-width: 46em) {
 
@@ -118,7 +113,7 @@ input[type="checkbox"]:focus + label::before,
   outline: none;
 }
 
-/*Radio*/
+/* Radio */
 
 [type="radio"] + label::before {
   height: 1.3em;

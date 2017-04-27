@@ -181,7 +181,7 @@
 
 }
 
-/*Details*/
+/* Details */
 
 .details-header {
   border-bottom: 1px solid var(--color-neutral-light);
@@ -193,7 +193,7 @@
     padding-bottom: 2.8rem;
     padding-top: 2.8rem;
 
-    border-top: 1px solid var(--color-neutral-light)
+    border-top: 1px solid var(--color-neutral-light);
   }
 
   .details-header {
@@ -213,7 +213,7 @@
 
 }
 
-/*Post*/
+/* Post */
 
 .post-user {
   width: 130px;

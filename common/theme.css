@@ -102,7 +102,7 @@ select:focus {
   outline: none;
 }
 
-/*Skip links*/
+/* Skip links */
 
 .skip-links a,
 .skip-links button {
@@ -112,4 +112,4 @@ select:focus {
   font-weight: 500;
 }
 
-/*Lists*/
+/* Lists */
