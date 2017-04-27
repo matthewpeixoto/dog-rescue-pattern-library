@@ -81,7 +81,6 @@ mark {
 }
 
 b,
-strong,
 dt {
   color: var(--color-primary);
   font-weight: 600;

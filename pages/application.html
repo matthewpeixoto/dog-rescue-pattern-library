@@ -27,7 +27,7 @@
     <div class="nav-container absolute w-1 zindex-2">
       <div class="logo-wrapper-xs unit-s-hidden text-center">
         <a class="mainnav-link-logo gutter-1-2 ib" href="home.html">
-          <h1 class="logo logo-xs push-0 ir">Loyal Rescue</h1>
+          <strong class="logo logo-xs exa push-0 ir block">Loyal Rescue</strong>
         </a>
       </div>
       <div class="wrapper">
@@ -51,9 +51,7 @@
     <!-- Sub Nav -->
     <div class="subnav-container relative">
       <div class="subnav-wrapper grid grid-middle wrapper relative">
-        <h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
-          <a href="available-dogs.html" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Application</a>
-        </h1>
+        <h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0 pad-t-1-2 pad-b-1-2 gutter">Application</h1>
         <div class="unit xs-1 s-1-2 subnav-link-wrapper">
           <input id="subnav-check" type="checkbox" class="subnav-check absolute">
           <label for="subnav-check" class="subnav-label absolute pin-tr">
@@ -227,41 +225,21 @@
                 <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label for="employer-first-name" class="push-1-8">Empoyer First Name</label>
-                    <input id="employer-first-name" class="gutter-1-2" placeholder="Urna" required aria-describedby="employer-first-name-error">
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-first-name-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter your employer's first name.</span>
-                    </p>
+                    <input id="employer-first-name" class="gutter-1-2" placeholder="Urna">
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="employer-last-name" class="push-1-8">Employer Last Name</label>
-                    <input id="employer-last-name" class="gutter-1-2" placeholder="Semper" required aria-describedby="employer-last-name-error">
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-last-name-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter your employer's last name</span>
-                    </p>
+                    <input id="employer-last-name" class="gutter-1-2" placeholder="Semper">
                   </div>
                 </div>
                 <div class="grid">
                   <div class="unit xs-1 s-1-2 relative push space-right">
                     <label for="employer-phone" class="push-1-8">Employer Phone</label>
-                    <input id="employer-phone" class="gutter-1-2" placeholder="123-456-7890" required aria-describedby="employer-phone-error">
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-phone-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter your employer's phone number.</span>
-                    </p>
+                    <input id="employer-phone" class="gutter-1-2" placeholder="123-456-7890">
                   </div>
                   <div class="unit xs-1 s-1-2 relative push space-left">
                     <label for="employer-email" class="push-1-8">Employer Email (Optional)</label>
-                    <input id="employer-email" class="gutter-1-2" placeholder="name@example.com" aria-describedby="employer-email-error">
-                    <p class="error-message gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="employer-email-error">
-                      <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
-                      <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
-                      <span class="icon-label">Enter your employer's email address.</span>
-                    </p>
+                    <input id="employer-email" class="gutter-1-2" placeholder="name@example.com">
                   </div>
                 </div>
               </div>
@@ -504,7 +482,7 @@
                       <option>No</option>
                       <option>I don't own any pets</option>
                     </select>
-                    <p class="error-message island-1-4 push-0 relative " id="email-error">
+                    <p class="error-message island-1-4 push-0 relative" id="vaccinated-error">
                       <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
                       <i class="icon i-16"><svg><use xlink:href="../../images/icons.svg#warning" /></svg></i>
                       <span class="icon-label">Select an answer.</span>
@@ -552,7 +530,7 @@
               <legend class="max-length">Pet Information</legend>
               <div class="max-length">
                 <div class="relative push">
-                  <label for="why-adopt" class="push-1-8" class="push-1-8">Why do you want a rescued dog?</label>
+                  <label for="why-adopt" class="push-1-8">Why do you want a rescued dog?</label>
                   <textarea id="why-adopt" class="gutter-1-2" required aria-describedby="why-adopt-error"></textarea>
                   <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="why-adopt-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -561,7 +539,7 @@
                   </p>
                 </div>
                 <div class="relative push">
-                  <label for="circumstances" class="push-1-8" class="push-1-8">Under what circumstances would you give up the dog?</label>
+                  <label for="circumstances" class="push-1-8">Under what circumstances would you give up the dog?</label>
                   <textarea id="circumstances" class="gutter-1-2" required aria-describedby="circumstances-error"></textarea>
                   <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="circumstances-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -570,7 +548,7 @@
                   </p>
                 </div>
                 <div class="relative push">
-                  <label for="behaviors" class="push-1-8" class="push-1-8">Are there any specific behaviors that the dog may exhibit that would prompt you to give it up?</label>
+                  <label for="behaviors" class="push-1-8">Are there any specific behaviors that the dog may exhibit that would prompt you to give it up?</label>
                   <textarea id="behaviors" class="gutter-1-2" required aria-describedby="behaviors-error"></textarea>
                   <p class="error-message pin-bc gutter-1-2 pad-t-1-4 pad-b-1-4 push-0 relative milli text-center" id="behaviors-error">
                     <i class="icon warning-arrow absolute"><svg><use xlink:href="../../images/icons.svg#warning-arrow" /></svg></i>
@@ -582,7 +560,7 @@
             </fieldset>
 
             <div class="text-center pad-t-2">
-              <label class="hide-custom-input ib btn btn-subtle" for="terms-control" aria-label="Continue">
+              <label class="hide-custom-input ib btn btn-subtle" for="submit-control" aria-label="Continue">
                 <span class="icon-text">Continue</span>
                 <i class="icon i-arrow">
                   <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
@@ -591,7 +569,7 @@
             </div>
           </fieldset>
 
-          <!-- Terms and Conditions -->
+          <!-- Submit -->
           <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="submit">
             <legend class="text-center push">
               <h2 class="push-0">You're all done.</h2>
@@ -600,12 +578,12 @@
               <legend class="max-length">Terms and Conditions</legend>
               <div class="max-length">
                 <p>I understand that this application form is not a guarantee that the dog I have applied for will still be available if my application to adopt a dog is approved, as there could be several applications for this dog already in progress or the dog may have a requirement that my home does not provide.</p>
-                <p>I understand that LOYAL Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
-                <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the LOYAL Rescue Inc. website and continue with my application screening.</p>
+                <p>I understand that Loyal Rescue Inc. does not approve their dogs to applicants on a "first come first serve" basis, it is the best interest of the dog that is considered in the event of multiple applications for the same dog and the home best suited to the specific needs of the dog will be selected.</p>
+                <p>In the event that the dog I have applied for is approved to another adopter before my application is processed I will select another dog from the Loyal Rescue Inc. website and continue with my application screening.</p>
                 <p>I understand and accept that virtually all "rescued" dogs will have behavioral issues of varying degrees. Many of these dogs have been abused or neglected and have a tendency to be more timid and/or defensive than a dog raised from birth by a knowledgeable and responsible dog owner. I understand and accept that while all known behavioral issues will be disclosed prior to the adoption being completed, it is entirely possible that minor or major behavioral issues may arise after the adoption has occurred and the dog is in my home. I am not expecting a pre-trained dog and am willing to work with this dog to help it overcome any issues it may have, or develops while under my care.</p>
-                <p>I understand and accept that although all LOYAL Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
+                <p>I understand and accept that although all Loyal Rescue Inc. dogs have been evaluated by a veterinarian, and that a copy of the veterinarian's report(s) will be provided at the time of adoption, it is possible that the dog may have minor or major medical issues that are undiagnosed. I understand and accept that the approximate age of the dog is estimated by a veterinarian and may be slightly or significantly inaccurate.</p>
                 <p>I have verfied that this dog is being fostered in a location close enough for me to personally travel to, in order to adopt this dog, should I be the approved adopter.</p>
-                <p>I have thoroughly read and understand the information in the FAQ section of the LOYAL Rescue Inc. website.</p>
+                <p>I have thoroughly read and understand the information in the FAQ section of the Loyal Rescue Inc. website.</p>
 
                 <div class="relative pad-t">
                   <input type="checkbox" id="agree" required aria-describedby="agree-error">
@@ -657,19 +635,19 @@
             </li>
           </ol>
         </nav>
-        <p class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call <a href="tel:+18007057724916">705-772-4916</a>, email <a href="mailto:info@loyalrescue.com.">info@loyalrescue.com</a>, or visit us on social media.</p>
+        <p class="footer-contact pad-b-1-2 push-1-2">Questions, comments, or concerns: Call <a href="tel:+18007057724916">705-772-4916</a>, email <a href="mailto:info@Loyalrescue.com.">info@Loyalrescue.com</a>, or visit us on social media.</p>
         <div class="grid">
           <div class="footer-copyright unit [ xs-1 s-1-2 ] push-1-2">Copyright © 2017 Loyal Rescue Inc. All rights reserved.</div>
           <div class="footer-social-wrapper unit [ xs-1 s-1-2 ]">
             <div class="footer-social ib push-r-1-2">
-              <a class="ib icon-link" href="https://www.facebook.com/LOYAL-Rescue-Inc-109918792364494/" aria-label="Visit us on Facebook">
+              <a class="ib icon-link" href="https://www.facebook.com/Loyal-Rescue-Inc-109918792364494/" aria-label="Visit us on Facebook">
                 <i class="icon i-16">
                   <svg><use xlink:href="../../images/icons.svg#facebook" /></svg>
                 </i>
               </a>
             </div>
             <div class="footer-social ib">
-              <a class="ib icon-link" href="https://twitter.com/loyalrescueinc" aria-label="Visit us on Twitter">
+              <a class="ib icon-link" href="https://twitter.com/Loyalrescueinc" aria-label="Visit us on Twitter">
                 <i class="icon i-16">
                   <svg><use xlink:href="../../images/icons.svg#twitter" /></svg>
                 </i>

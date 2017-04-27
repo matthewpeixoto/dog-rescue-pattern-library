@@ -429,9 +429,8 @@
 
 .search-input {
   height: 2.6rem;
-  border-radius: 3px;
 
-  font-weight: 300;
+  border-radius: 3px;
 }
 
 .search-btn {
