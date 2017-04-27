@@ -44,7 +44,7 @@ legend {
   border-radius: 4px;
   border: 1px solid #ffc107;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
 
 .error-message-alt {

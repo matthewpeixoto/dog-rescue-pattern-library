@@ -10,4 +10,4 @@ info-card:
     Info cards should be used to display dogs and their basic information. These cards link the user to the chosen dog's profile page where they can learn more details and initiate the adoption process.
 ---
 
-Cards are simple, imformative, and easy to incorporate into pages.
+Cards are simple, imformative, and easy to incorporate into any page.
