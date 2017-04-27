@@ -9,6 +9,8 @@ carousel: |
   The carousel is a great way of displaying a gallery of images. This section can be used on a dog's personal page to display photos or embeded in the overview-section to display relevant photos.
 details: |
   The details section displays specific details in a easy-to-follow and organized way. Use this section on each dog's personal page to list all of their information.
+post: |
+  The post section can be used for blog entries, comments, or reviews.
 ---
 
 Sections are used to display information as well as act as secondary navigation driving people to specific locations.
