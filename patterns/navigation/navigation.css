@@ -376,22 +376,28 @@
   display: none;
 }
 
-#agreement-control:checked ~ .form-inner #agreement,
 #about-control:checked ~ .form-inner #about,
 #lifestyle-control:checked ~ .form-inner #lifestyle,
 #petinfo-control:checked ~ .form-inner #petinfo,
-#other-control:checked ~ .form-inner #other {
+#submit-control:checked ~ .form-inner #submit {
   display: block;
 }
 
-#agreement-control:checked ~ .tabnav [for="agreement-control"],
 #about-control:checked ~ .tabnav [for="about-control"],
 #lifestyle-control:checked ~ .tabnav [for="lifestyle-control"],
 #petinfo-control:checked ~ .tabnav [for="petinfo-control"],
-#other-control:checked ~ .tabnav [for="other-control"] {
+#submit-control:checked ~ .tabnav [for="submit-control"] {
   border-bottom: 1px solid var(--color-neutral-dark);
 
   color: var(--color-neutral-dark);
+}
+
+@media only screen and (min-width: 46em) {
+
+  .tabnav-controls > li {
+    display: inline-block;
+  }
+
 }
 
 /* Breadcrumbs */
@@ -417,4 +423,84 @@
 
 .breadcrumbs-link:hover {
   color: var(--color-neutral-dark);
+}
+
+/*Search*/
+
+.search-input {
+  height: 2.6rem;
+  border-radius: 3px;
+
+  font-weight: 300;
+}
+
+.search-btn {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+
+.search-btn {
+  padding: 0;
+
+  background-color: transparent;
+  border-radius: 0;
+  border: 0;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: transparent;
+}
+
+.i-search {
+  color: var(--color-neutral);
+}
+
+.search-suggestions {
+  display: none;
+
+  border: 1px solid var(--color-neutral-light);
+  border-radius: 3px;
+  border-top: 0;
+}
+
+.suggestion-link {
+  color: var(--color-neutral-dark);
+}
+
+.suggestion-link:hover {
+  background-color: var(--color-neutral-ultralight);
+
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+.search-input:focus ~ .search-suggestions {
+  display: block;
+}
+
+@media only screen and (min-width: 46em) {
+
+  .search-input {
+    height: 2.8rem;
+  }
+
+  .search-btn {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+}
+
+@media only screen and (min-width: 67em) {
+
+  .search-input {
+    height: 3rem;
+  }
+
+  .search-btn {
+    height: 3rem;
+    width: 3rem;
+  }
+
 }

@@ -48,6 +48,7 @@
         </nav>
       </div>
     </div>
+    <!-- Sub Nav -->
     <div class="subnav-container relative">
       <div class="subnav-wrapper grid grid-middle wrapper relative">
         <h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
@@ -80,20 +81,23 @@
       <input class="tabnav-input" type="radio" name="form" id="about-control" checked>
       <input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
       <input class="tabnav-input" type="radio" name="form" id="petinfo-control">
+      <input class="tabnav-input" type="radio" name="form" id="submit-control">
       <div class="tabnav push">
         <ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
           <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You</label>
+            <label class="tabnav-btn island-1-4" for="about-control">About You</label>
           </li>
           <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Home Information</label>
+            <label class="tabnav-btn island-1-4" for="lifestyle-control">Home Information</label>
           </li>
           <li class="gutter push-1-2">
-            <label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information</label>
+            <label class="tabnav-btn island-1-4" for="petinfo-control">Pet Information</label>
+          </li>
+          <li class="gutter push-1-2">
+            <label class="tabnav-btn island-1-4" for="submit-control">Submit</label>
           </li>
         </ul>
       </div>
-      <!-- End Tab Nav -->
 
       <div class="form-inner relative wrapper gutter">
         <div class="form-items">
@@ -544,7 +548,7 @@
               </div>
             </fieldset>
 
-            <fieldset class="pad-t-2 pad-b-2 push-2">
+            <fieldset class="pad-t-2 pad-b-2 push-0">
               <legend class="max-length">Pet Information</legend>
               <div class="max-length">
                 <div class="relative push">
@@ -576,7 +580,22 @@
                 </div>
               </div>
             </fieldset>
-            <!-- Terms and Conditions -->
+
+            <div class="text-center pad-t-2">
+              <label class="hide-custom-input ib btn btn-subtle" for="terms-control" aria-label="Continue">
+                <span class="icon-text">Continue</span>
+                <i class="icon i-arrow">
+                  <svg><use xlink:href="../../images/icons.svg#arrow" /></svg>
+                </i>
+              </label>
+            </div>
+          </fieldset>
+
+          <!-- Terms and Conditions -->
+          <fieldset class="application-fieldset push-0 pad-t pad-b no-border" id="submit">
+            <legend class="text-center push">
+              <h2 class="push-0">You're all done.</h2>
+            </legend>
             <fieldset class="pad-t-2 pad-b-2 push-0">
               <legend class="max-length">Terms and Conditions</legend>
               <div class="max-length">
@@ -603,8 +622,8 @@
             <div class="text-center pad-t-2">
               <button class="btn" type="submit">Submit Application</button>
             </div>
-
           </fieldset>
+
         </div>
       </div>
     </form>

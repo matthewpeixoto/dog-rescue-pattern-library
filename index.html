@@ -1656,6 +1656,7 @@
             <li><a href="#navigation-breadcrumbs">Breadcrumbs</a></li>
             <li><a href="#navigation-filter">Filter</a></li>
             <li><a href="#navigation-main-nav">Main nav</a></li>
+            <li><a href="#navigation-search">Search</a></li>
             <li><a href="#navigation-sub-nav">Sub nav</a></li>
             <li><a href="#navigation-tab-nav">Tab nav</a></li>
         </ol>
@@ -1928,6 +1929,77 @@
           </div>
       </div>
     </div>
+    <div class="pattern-details" id="navigation-search" style="">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
+          <h3 class="pattern-name tera push-1-8">Search</h3>
+            <ul class="list-group-inline gutter absolute pin-cr">
+                <li>
+                  <button class="center-contents-vertical pattern-tool-btn pattern-code-btn" title="Show code" aria-label="Show code" aria-pressed="false" aria-controls="navigation-search-code-sample">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-code"></use></svg>
+                    </i>
+                  </button>
+                </li>
+                <li>
+                  <a class="btn center-contents-vertical pattern-tool-btn pattern-pop-btn" href="patterns/navigation/search.html" target="_blank" title="Open pattern in a new tab" aria-label="Open pattern in a new tab">
+                    <i class="icon i-18">
+                      <svg><use xlink:href="#icon-pop-out"></use></svg>
+                    </i>
+                  </a>
+                </li>
+            </ul>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b-1-2">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2">
+          <div class="resizeable-pattern relative" style="">
+            <iframe data-src="patterns/navigation/search.html" scrolling="no" onload="resizeIframe(this)" ></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#icon-resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="pattern-code-wrap gutter pad-t-1-2 pad-b-1-2" hidden aria-hidden="true" id="navigation-search-code-sample" tabindex="-1">
+            <div class="pattern-code relative milli island-1-2" style="">
+              <button class="center-contents-vertical pattern-tool-btn pattern-copy-btn absolute pin-tr" title="Copy code" aria-label="Copy code" data-clipboard-target="#navigation-search-code-sample-copy-chunk" hidden>
+                <i class="icon i-18">
+                  <svg><use xlink:href="#icon-copy"></use></svg>
+                </i>
+              </button>
+              <code><pre id="navigation-search-code-sample-copy-chunk">&lt;form class="search max-length relative"&gt;
+  &lt;label for="search" class="visually-hidden">Search&lt;/label>
+  &lt;input id="search" class="search-input gutter-2 pad-t-1-8" type="search" placeholder="Search">
+  &lt;div class="search-btn-wrapper pin-lt center-content">
+    &lt;button class="search-btn island-1-2" type="submit" aria-label="Search">
+      &lt;i class="icon i-24 i-search">&lt;svg>&lt;use xlink:href="../../images/icons.svg#search"/>&lt;/svg>&lt;/i>
+    &lt;/button>
+  &lt;/div>
+
+  &lt;div class="search-suggestions island">
+    &lt;h2 class="kilo push-1-2">Quick Links&lt;/h2>
+    &lt;ul class="list-group gutter-1-2 push-0">
+      &lt;li class="push-1-4">&lt;a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Available Dogs&lt;/a>&lt;/li>
+      &lt;li class="push-1-4">&lt;a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Adoption Process&lt;/a>&lt;/li>
+      &lt;li class="push-1-4">&lt;a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Application&lt;/a>&lt;/li>
+      &lt;li>&lt;a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">FAQ&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/div>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
     <div class="pattern-details" id="navigation-sub-nav" style="">
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4" style="">
           <h3 class="pattern-name tera push-1-8">Sub nav</h3>
@@ -1979,10 +2051,10 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="navigation-sub-nav-code-sample-copy-chunk">&lt;div class="subnav-container absolute"&gt;
+              <code><pre id="navigation-sub-nav-code-sample-copy-chunk">&lt;div class="subnav-container relative"&gt;
   &lt;div class="subnav-wrapper grid grid-middle wrapper relative">
     &lt;h1 class="subnav-header unit [ xs-1 s-1-2 ] giga push-0">
-        &lt;a href="#" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Adopt&lt;/a>
+        &lt;a href="available-dogs.html" class="ib icon-link pad-t-1-2 pad-b-1-2 gutter">Application&lt;/a>
       &lt;/h1>
     &lt;div class="unit xs-1 s-1-2 subnav-link-wrapper">
       &lt;input id="subnav-check" type="checkbox" class="subnav-check absolute">
@@ -1995,8 +2067,8 @@
       &lt;/label>
       &lt;nav role="navigation" class="subnav" id="subnav">
         &lt;ul class="subnav-link-group list-group push-0 milli gutter-2 pad-t-1-2 pad-b">
+          &lt;li class="subnav-link-style">&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="available-dogs.html">Available dogs&lt;/a>&lt;/li>
           &lt;li class="subnav-link-style">&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Adoption Process&lt;/a>&lt;/li>
-          &lt;li class="subnav-link-style">&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">Application&lt;/a>&lt;/li>
           &lt;li>&lt;a class="subnav-link block pad-t-1-2 pad-b-1-2" href="#">FAQ&lt;/a>&lt;/li>
         &lt;/ul>
       &lt;/nav>
@@ -2059,28 +2131,23 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="navigation-tab-nav-code-sample-copy-chunk">&lt;div class="tabnav pad-t"&gt;
-  &lt;input class="tabnav-input" type="radio" name="form" id="agreement-control" checked>
-  &lt;input class="tabnav-input" type="radio" name="form" id="about-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="petinfo-control">
-  &lt;input class="tabnav-input" type="radio" name="form" id="other-control">
-
+              <code><pre id="navigation-tab-nav-code-sample-copy-chunk">&lt;input class="tabnav-input" type="radio" name="form" id="about-control" checked&gt;
+&lt;input class="tabnav-input" type="radio" name="form" id="lifestyle-control">
+&lt;input class="tabnav-input" type="radio" name="form" id="petinfo-control">
+&lt;input class="tabnav-input" type="radio" name="form" id="submit-control">
+&lt;div class="tabnav push">
   &lt;ul class="tabnav-controls list-group-inline milli w-1 text-center push-0">
     &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="agreement-control">Agreement&lt;/label>
+      &lt;label class="tabnav-btn island-1-4" for="about-control">About You&lt;/label>
     &lt;/li>
     &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="about-control">About You&lt;/label>
+      &lt;label class="tabnav-btn island-1-4" for="lifestyle-control">Home Information&lt;/label>
     &lt;/li>
     &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="lifestyle-control">Lifestyle&lt;/label>
+      &lt;label class="tabnav-btn island-1-4" for="petinfo-control">Pet Information&lt;/label>
     &lt;/li>
     &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="petinfo-control">Pet Information&lt;/label>
-    &lt;/li>
-    &lt;li class="gutter push-1-2">
-      &lt;label class="tabnav-btn pad-t-1-4 pad-b-1-4" for="other-control">Other&lt;/label>
+      &lt;label class="tabnav-btn island-1-4" for="submit-control">Submit&lt;/label>
     &lt;/li>
   &lt;/ul>
 &lt;/div>
@@ -2164,7 +2231,7 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="sections-carousel-code-sample-copy-chunk">&lt;section class="unit [ xs-1 s-1-2 ] unit-content-distribute island-1-2"&gt;
+              <code><pre id="sections-carousel-code-sample-copy-chunk">&lt;section class="island-1-2"&gt;
   &lt;div class="section-card pad-t-2 pad-b-2 gutter content-fill">
     &lt;div class="carousel w-1 max-length">
       &lt;input class="carousel-input" type="radio" name="foster-carousel" id="photo1-control" checked>
@@ -2312,7 +2379,7 @@
           &lt;dd class="push-1-2">Spayed&lt;/dd>
           &lt;dt class="push-1-2">Weight:&lt;/dt>
           &lt;dd class="push-1-2">10.5 lbs.&lt;/dd>
-          &lt;dt>Breed:&lt;/dt>
+          &lt;dt class="push-0">Breed:&lt;/dt>
           &lt;dd class="push-0">Chihuahua&lt;/dd>
         &lt;/dl>
       &lt;/div>
@@ -2327,7 +2394,7 @@
         &lt;dl class="list-group-inline push-0">
           &lt;dt class="push-1-2">Temperament:&lt;/dt>
           &lt;dd class="push-1-2">Loving, sociable, strong-willed&lt;/dd>
-          &lt;dt class="push-1-2">Energy Level:&lt;/dt>
+          &lt;dt class="push-0">Energy Level:&lt;/dt>
           &lt;dd class="push-0">Low&lt;/dd>
         &lt;/dl>
       &lt;/div>
@@ -2340,12 +2407,12 @@
       &lt;/div>
       &lt;div class="unit xs-1 s-2-3">
         &lt;dl class="list-group-inline push-0">
-          &lt;dt class="push-1-2">Foster Home Location:&lt;/dt>
+          &lt;dt class="push-1-2">Foster Home:&lt;/dt>
           &lt;dd class="push-1-2">Kanata, ON&lt;/dd>
           &lt;dt class="push-1-2">Adoption fee:&lt;/dt>
           &lt;dd class="push-1-2">$350&lt;/dd>
-          &lt;dt class="push-1-2">Adoption Requirements:&lt;/dt>
-          &lt;dd class="push-1-2">Owner with dog experience&lt;/dd>
+          &lt;dt class="push-0">Requirements:&lt;/dt>
+          &lt;dd class="push-0">Owner with dog experience&lt;/dd>
         &lt;/dl>
       &lt;/div>
     &lt;/div>
@@ -2376,10 +2443,6 @@
                 </li>
             </ul>
         </div>
-          <div class="pattern-desc milli island" style="">
-            <div class="max-length"><p>This frequently asked questions section can hold a lot of content, yet stay compact thanks to its accordion-style interface. This section can be placed at the bottom of any page that needs requires a FAQ.</p>
-</div>
-          </div>
 
       <div class="pattern-examples pad-t-1-2 pad-b-1-2">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2">
@@ -2407,7 +2470,7 @@
                   <svg><use xlink:href="#icon-copy"></use></svg>
                 </i>
               </button>
-              <code><pre id="sections-faq-code-sample-copy-chunk">&lt;section class="pad-b"&gt;
+              <code><pre id="sections-faq-code-sample-copy-chunk">&lt;section class="faq pad-b" id="faq"&gt;
   &lt;div class="wrapper gutter">
 
     &lt;div class="faq-header">
@@ -2422,15 +2485,16 @@
         &lt;li class="faq-list-item">
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
-                  &lt;span class="faq-question ib">Why do you charge an adoption fee?&lt;/span>
+                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q1-check">
+                  &lt;span class="faq-question ib">Why is there an adoption fee?&lt;/span>
                   &lt;span class="faq-toggle pin-rt">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q1-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
                   &lt;/span>
                 &lt;/label>
-            &lt;/h3>&lt;/div>
+              &lt;/h3>
+          &lt;/div>
           &lt;div class="faq-answer max-length-no-center push-2" id="q1-answer">
             &lt;p class="push-0">The sad reality is that we get the unwanted, unvetted, uncared for. We have had, and still have many adult dogs, most of whom came to us in need of medical care. Veterinary costs for the special cases can run into thousands of dollars. Some of the dogs have special needs like medications such as insulin for diabetes, Vetoryl for Cushings disease and heart medications for those that have heart issues in order to provide a better quality of life. Younger healthier dogs may not have quite the same health issues as the older dogs do but they too need to be examined, vaccinated and altered prior to adoption. They could also have problems like eye surgery, lump removals, diabetic. The adoption fee only partially covers these costs. Donations from the public are limited. LOYAL Rescue offsets the difference through fundraising efforts where we can.&lt;/p>
           &lt;/div>
@@ -2439,7 +2503,7 @@
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
                 &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
-                  &lt;span class="faq-question ib">Can I donate to Loyal Rescue?&lt;/span>
+                  &lt;span class="faq-question ib">What will my newly adopted dog come with?&lt;/span>
                   &lt;span class="faq-toggle pin-rt">
                     &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
@@ -2449,22 +2513,18 @@
               &lt;/h3>
           &lt;/div>
           &lt;div class="faq-answer max-length-no-center push-2" id="q2-answer">
-            &lt;p class="push-1-2">Yes! We are a nonprofit organization. We count on the support of others. If you would like to donate items please visit our donation page to make a donation or to learn more. Your support is greatly appreciated.&lt;/p>
-            &lt;a class="btn btn-subtle" href="#">
-              &lt;span class="icon-text">More information on donations&lt;/span>
-              &lt;i class="icon i-arrow">
-                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
-                &lt;/i>
-            &lt;/a>
+            &lt;p>Often dogs come into our foster program with nothing but the fur on their backs; they do not have their own collar, leash, ID, toys, or bed. Other times a dog may come in with a lot of belongings. When you adopt your new dog, it will come with its vetting paperwork. Often a foster home will send a loved toy or bed along with the dog depending on how long it has been in foster care. You should be prepared to bring the following with you at the time of adoption: a secure, tight fitting collar (we recommend martingale collars), a sturdy leash, ID tags with your information on them to immediately put on the dog&apos;s collar, and, if required, a crate for transporting. What you choose to buy for your new family member beyond that in terms of toys, clothing, bedding, etc. is totally up to you, and their foster home will let you know what the dog prefers in terms of these items. They will likely also send you home with a bit of food that the dog has been eating in order to transition him/her onto the food you plan to feed, assuming that it is not the same brand. This transition is important to avoid stomach problems for your new pooch.&lt;/p>
+
+            &lt;p class="push-1-2">All questions regarding the dog&apos;s likes, dislikes and preferences, as well as what you should purchase and bring with you at the time of adoption, can be discussed with the foster family. The one essential item that is non-negotiable, however, is a tight-fitting collar with ID tags (including the ID tag that will come with your LOYAL dog and that should remain on him or her at all times). Dogs have been known to startle and go missing on the day of adoption or in the following days, and having a tight-fitting collar with ID (at a bare minimum, the LOYAL ID tag) on it is imperative and non-negotiable. You will not be permitted to take a dog home that is not wearing proper ID.&lt;/p>
           &lt;/div>
         &lt;/li>
         &lt;li class="faq-list-item">
           &lt;div class="faq-question-container">
             &lt;h3 class="kilo push-0 pad-t pad-b">
-                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q2-check">
-                  &lt;span class="faq-question ib">Can I foster a dog in my home?&lt;/span>
+                &lt;label class="faq-btn pad-t-1-8 pad-b-1-8 relative" for="q3-check">
+                  &lt;span class="faq-question ib">Can I come visit a dog?&lt;/span>
                   &lt;span class="faq-toggle pin-rt">
-                    &lt;i class="faq-icon icon i-16 valign-middle" id="q2-icon">
+                    &lt;i class="faq-icon icon i-16 valign-middle" id="q3-icon">
                       &lt;svg>&lt;use xlink:href="../../images/icons.svg#more"/>&lt;/svg>
                     &lt;/i>
                   &lt;/span>
@@ -2472,13 +2532,9 @@
               &lt;/h3>
           &lt;/div>
           &lt;div class="faq-answer max-length-no-center push-2" id="q3-answer">
-            &lt;p class="push-1-2">If you have room in your heart and your home, you might consider fostering for us. At any given time, there are ~80 dogs in foster care. The need for foster homes is so great that we have no choice but to turn away requests for help from shelters and from the public. If you would like to become a foster home, please go to our contacts tab and complete the form.&lt;/p>
-            &lt;a class="btn btn-subtle" href="#">
-              &lt;span class="icon-text">More information on fostering&lt;/span>
-              &lt;i class="icon i-arrow">
-                  &lt;svg>&lt;use xlink:href="../../images/icons.svg#arrow"/>&lt;/svg>
-                &lt;/i>
-            &lt;/a>
+            &lt;p>Since we are provincially-based, that means our dogs may be fostered anywhere in Ontario, so please check their profiles as to the location of their foster home.&lt;/p>
+            &lt;p>We are not a shelter, and therefore do not have one location where dogs can be visited, viewed and adopted.&lt;/p>
+            &lt;p class="push-1-2">If you are interested in meeting one of our adoptable dogs, please complete an application on our website to begin our adoption process. Only approved homes can make arrangements with our foster homes to meet our dogs in person, unless you have spoken to the foster family and made alternative arrangements.&lt;/p>
           &lt;/div>
         &lt;/li>
       &lt;/ul>
@@ -2644,10 +2700,9 @@
                 </i>
               </button>
               <code><pre id="sections-quick-links-code-sample-copy-chunk">&lt;section class="quick-links"&gt;
-  &lt;ul class="grid grid-stretch">
-
+  &lt;ul class="grid grid-stretch list-group">
     &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
-      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center" href="application.html">
         &lt;div class="card-content">
           &lt;i class="icon i-64 card-icon push-1-2">
               &lt;svg>&lt;use xlink:href="../../images/icons.svg#application"/>&lt;/svg>
@@ -2658,7 +2713,7 @@
       &lt;/a>
     &lt;/li>
     &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] m-border-right">
-      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center" href="#">
         &lt;div class="card-content">
           &lt;i class="icon i-64 card-icon push-1-2">
               &lt;svg>&lt;use xlink:href="../../images/icons.svg#faq"/>&lt;/svg>
@@ -2669,7 +2724,7 @@
       &lt;/a>
     &lt;/li>
     &lt;li class="unit [ xs-1 s-1-2 m-1-4 ] s-border-right">
-      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center" href="#">
         &lt;div class="card-content">
           &lt;i class="icon i-64 card-icon push-1-2">
               &lt;svg>&lt;use xlink:href="../../images/icons.svg#newsletter"/>&lt;/svg>
@@ -2680,7 +2735,7 @@
       &lt;/a>
     &lt;/li>
     &lt;li class="unit xs-1 s-1-2 m-1-4">
-      &lt;a class="card basic-card icon-link block pad-t pad-b text-center">
+      &lt;a class="card basic-card icon-link block pad-t pad-b text-center" href="#">
         &lt;div class="card-content">
           &lt;i class="icon i-64 card-icon push-1-2">
               &lt;svg>&lt;use xlink:href="../../images/icons.svg#pet"/>&lt;/svg>
@@ -2690,7 +2745,6 @@
         &lt;/div>
       &lt;/a>
     &lt;/li>
-
   &lt;/ul>
 &lt;/section>
 </pre></code>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Search</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="../../common/modules.css" rel="stylesheet">
+  <link href="../../common/grid.css" rel="stylesheet">
+  <link href="../../common/type.css" rel="stylesheet">
+  <link href="../../common/theme.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link href="navigation.css" rel="stylesheet">
+  <link href="../forms/forms.css" rel="stylesheet">
+</head>
+<body>
+
+  <form class="search max-length relative">
+    <label for="search" class="visually-hidden">Search</label>
+    <input id="search" class="search-input gutter-2 pad-t-1-8" type="search" placeholder="Search">
+    <div class="search-btn-wrapper pin-lt center-content">
+      <button class="search-btn island-1-2" type="submit" aria-label="Search">
+        <i class="icon i-24 i-search"><svg><use xlink:href="../../images/icons.svg#search"></use></svg></i>
+      </button>
+    </div>
+
+    <div class="search-suggestions island">
+      <h2 class="kilo push-1-2">Quick Links</h2>
+      <ul class="list-group gutter-1-2 push-0">
+        <li class="push-1-4"><a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Available Dogs</a></li>
+        <li class="push-1-4"><a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Adoption Process</a></li>
+        <li class="push-1-4"><a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">Application</a></li>
+        <li><a class="suggestion-link gutter-1-2 pad-t-1-4 pad-b-1-4 w-1 ib" href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </form>
+
+</body>
+</html>
