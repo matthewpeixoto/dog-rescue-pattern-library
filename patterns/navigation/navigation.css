@@ -206,6 +206,10 @@
   width: 52px;
 }
 
+.subnav-label-hidden {
+  color: transparent;
+}
+
 .subnav-icon {
   height: 2px;
   left: 20px;
@@ -374,6 +378,10 @@
 
 .tabnav-btn {
   color: var(--color-neutral);
+}
+
+.tabnav-btn:hover {
+  color: var(--color-accent);
 }
 
 .application-fieldset {
