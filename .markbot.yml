@@ -1,19 +1,20 @@
-repo: 'dog-rescue-pattern-library'
-
-naming: true
-restrictFileTypes: true
-
-git:
-  numCommits: 2
-  allCommitted: true
-  allSynced: true
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css-order-modules-grid-type-theme
+  - css
 
 allFiles:
   html:
-    valid: true
-    bestPractices: true
-  css:
-    valid: true
-    bestPractices: true
+    outline: false
   md:
     valid: true
+  files:
+    maxSize: 250
+    maxWidth: 2500
+    maxHeight: 2500
+    smushed: true
+
+files:
+  - directory: 'images'
